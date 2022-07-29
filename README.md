@@ -191,7 +191,7 @@ __Chituru Chikwem__
 * Track- Product Design
 
 ## Documentation
-A more detailed documentation on the updates and details of this project can be found here - "documentationLinkWhenReady"
+A more detailed documentation on the updates and details of this project can be found here - "https://docs.google.com/document/d/12jgXlrcLgm9036wlhCjBQm_Kf-kMVzCoUXxW1ZHB7AE/edit"
 
 ## Acknowledgements
 
