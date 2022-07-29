@@ -12,6 +12,7 @@ This is a platform that allows users and owners of businesses or brands to gener
 * [Usage](#usage)
 * [Project Status](#project-status)
 * [Collaboration](#collaboration)
+* [How To Navigate Repository](#how-to-navigate-repository)
 * [Contributors](#contributors)
 * [Documentation](#documentation)
 * [Acknowledgements](#acknowledgements)
@@ -104,7 +105,7 @@ For team_80 members, follow the following steps to collaborate:
     `git push origin branchName` - This creates the branch remotely and pushes to that branch on the Github
 10. Go to Github and create a new pull request to the main branch. It will then be reviewed and merged into the master.
 
-##How To Navigate Repositorty
+## How To Navigate Repository
 1. `Tcgen-team80` is the django project folder.
 2. `termsgen` is the django app folder. This where your views, urls, templates, and statics go.
 
