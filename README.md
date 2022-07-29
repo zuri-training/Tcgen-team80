@@ -174,7 +174,7 @@ __Ezemenahi Benedict__
 * Github- https://github.com/Myxic
 * Track - Fullstack
 
-__Akinhunsoye Benedicta__
+__Akingunsoye Benedicta__
 * Github- https://github.com/Bennyspicey
 * Track - Product Design
 
