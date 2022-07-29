@@ -93,7 +93,7 @@ For team_80 members, follow the following steps to collaborate:
     `git pull upstream main`
 6. Create a new branch for the task you are working on :<br/>
     `git checkout -b branchName`<br/>
-    *(Make sure your branchName is descriptive in context to the feature you are working on. Also be sure to check which branch you are on using `git status` before you begin working)*
+    *(Make sure your branchName is descriptive in context to the feature you are working on. For frontend developers, prefix your branchname with `fn_`, and for backend developers, prefix your branchname with `bn_`. So that it looks like `fn_login_page` or `bn_login_page`. Also be sure to check which branch you are on using `git status` before you begin working)*
 7. When you're done with your task, do:<br/>
     `git add`<br/>
    - Commit your work with a message:<br/>
