@@ -160,7 +160,7 @@ __Adedeji Bolu__
 
 __Anita Ajah__
 * Github- https://github.com/AnitaAO
-* Track - [  Fullstack  ]
+* Track - Fullstack  
 
 __Hajarah Idegbesor__
 * Github- https://github.com/Hajarahbjay
