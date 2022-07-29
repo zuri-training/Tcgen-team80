@@ -77,18 +77,18 @@ Project is : *in progress*
 
 ## Collaboration
 For team_80 members, follow the following steps to collaborate:
-1. Visit the Repository to the Project on Github Website: https://github.com/zuri-training/T-C-Gen-Team-80
+1. Visit the Repository to the Project on Github Website: https://github.com/zuri-training/Tcgen-team80
 
 2. Fork the repository: Click the "Fork" button on the upper right corner of the Repo page.*
 3. Make a local clone: 
      Click on the "Code" button on the Repo page
-     Copy the URL for the forked Repo "https://github.com/zuri-training/T-C-Gen-Team-80.git"
+     Copy the URL for the forked Repo "https://github.com/zuri-training/Tcgen-team80.git"
      Create a Folder on your Local machine / Computer for the project Workspace
      Open Command prompt / Terminal in the same folder location
      In your Terminal, type: <br/>
-        `git clone https://github.com/github_username/T-C-Gen-Team-80.git`
+        `git clone https://github.com/github_username/Tcgen-team80.git`
 4. Open terminal and set upstream branch: <br/>
-    `git remote add upstream https://github.com/zuri-training/T-C-Gen-Team-80.git`
+    `git remote add upstream https://github.com/zuri-training/Tcgen-team80.git`
 5. Pull upstream to get up to date with the original repo:<br/>
     `git pull upstream main`
 6. Create a new branch for the task you are working on :<br/>
