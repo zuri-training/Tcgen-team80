@@ -111,88 +111,99 @@ For team_80 members, follow the following steps to collaborate:
 
 ## Contributors
 __Oreoluwa Fakolujo__(Team Lead)
-* Github- https://github.com/orefakolujo
+* Github - https://github.com/orefakolujo
 * Track - Fullstack
 * Email - orefakolujo@gmail.com
 
 __Osaode Eghianruwa__(Assistant Dev Team Lead)
-* Github- https://github.com/Osaode
+* Github - https://github.com/Osaode
 * Track - Fullstack
+* Email - osaodeeghianruwa@gmail.com
 
 __Obianua Faith__(Assistant Des Team Lead)
-* Github- https://github.com/Britney-O
+* Github - https://github.com/Britney-O
 * Track - Product Design
+* Email - Obianuafaith@gmail.com
 
 __Increase Uwadiale__
-* Github- https://github.com/Increaze
+* Github - https://github.com/Increaze
 * Track - Fullstack
+* Email - increasebruce@gmail.com
 
 __Augustine Gift__
-* Github- https://github.com/Augustine-Geeft
+* Github - https://github.com/Augustine-Geeft
 * Track - Fullstack
+* Email - geeftaugustine@gmail.com
 
 __Comfort Gideon__
-* Github- hhttps://github.com/CommyC4
+* Github - hhttps://github.com/CommyC4
 * Track - Product Design
+* Email - comfortedgideon@gmail.com
 
 __Ifeanyi Emmanuel__
-* Github- https://github.com/infernox10
+* Github - https://github.com/infernox10
 * Track - Fullstack
 
 __Oyerinde Ibrahim__
-* Github- https://github.com/Eliteconcept
+* Github - https://github.com/Eliteconcept
 * Track - Product Design
+* Email - Oyerindeibraheema@gmail.com
 
 __Melissa Davids__
-* Github- https://github.com/Melissa-Dayveeds
+* Github - https://github.com/Melissa-Dayveeds
 * Track - Product Design
 
 __Mayowa Afolabi__
-* Github- https://github.com/mayorks
+* Github - https://github.com/mayorks
 * Track - Fullstack
 
 __[   ]__
-* Github- https://github.com/casenora
+* Github - https://github.com/casenora
 * Track - Product Design
 
 __Deborah Eno Brown__
-* Github- https://github.com/orahwonder
+* Github - https://github.com/orahwonder
 * Track - Product Design
+* Email - debbieenobrown400@gmail.com
 
 __Adedeji Bolu__
-* Github- https://github.com/Thimmy017
+* Github - https://github.com/Thimmy017
 * Track - Product Design
+* Email - adedejitimileyin07@gmail.com 
 
 __Anita Ajah__
-* Github- https://github.com/AnitaAO
+* Github - https://github.com/AnitaAO
 * Track - Fullstack  
+* Email - anitaisbeta@gmail.com
 
 __Hajarah Idegbesor__
-* Github- https://github.com/Hajarahbjay
+* Github - https://github.com/Hajarahbjay
 * Track - Product Design
+* Email - hajarahidegbesor@gmail.com
 
 __Baridomaka Pop-Yornwin__
-* Github- https://github.com/domaka
+* Github - https://github.com/domaka
 * Track - Fullstack
 
 __Ezemenahi Benedict__
-* Github- https://github.com/Myxic
+* Github - https://github.com/Myxic
 * Track - Fullstack
 
 __Akingunsoye Benedicta__
-* Github- https://github.com/Bennyspicey
+* Github - https://github.com/Bennyspicey
 * Track - Product Design
+* Email - bennyspicey@gmail.com
 
 __Subomi__
-* Github- https://github.com/Subomiveronica
+* Github - https://github.com/Subomiveronica
 * Track - Product Design
 
 __Israel Onwuzama__
-* Github- https://github.com/Just-Icon
+* Github - https://github.com/Just-Icon
 * Track - FullStack
 
 __Chituru Chikwem__
-* Github- https://github.com/Gudieblonde
+* Github - https://github.com/Gudieblonde
 * Track- Product Design
 
 ## Documentation
