@@ -135,7 +135,7 @@ __Augustine Gift__
 * Track - Fullstack
 * Email - geeftaugustine@gmail.com
 
-__Comfort Gideon__
+__Mamudu Ene Comfort__
 * Github - hhttps://github.com/CommyC4
 * Track - Product Design
 * Email - comfortedgideon@gmail.com
