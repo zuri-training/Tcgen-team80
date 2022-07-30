@@ -199,7 +199,7 @@ __Akingunsoye Benedicta__
 * Track - Product Design
 * Email - bennyspicey@gmail.com
 
-__Subomi__
+__Subomi Akinlofa__
 * Github - https://github.com/Subomiveronica
 * Track - Product Design
 
