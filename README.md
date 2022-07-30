@@ -149,7 +149,7 @@ __Oyerinde Ibrahim__
 * Track - Product Design
 * Email - Oyerindeibraheema@gmail.com
 
-__Melissa Davids__
+__Melissa Omede__
 * Github - https://github.com/Melissa-Dayveeds
 * Track - Product Design
 
@@ -167,9 +167,9 @@ __Deborah Eno Brown__
 * Email - debbieenobrown400@gmail.com
 
 __Kolawole Esther__
-* Github - 
+* Github - https://github.com/K-ESTHER20
 * Track - Product Design
-* Email -  
+* Email - estherkolawole2003@gmail.com
 
 __Adedeji Bolu__
 * Github - https://github.com/Thimmy017
