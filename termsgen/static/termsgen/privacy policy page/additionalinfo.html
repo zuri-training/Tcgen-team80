@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="additionalinfo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Additional Information</title>
+  </head>
+  <body>
+    <div class="sticky-el">
+
+      <!--side bar is here-->
+      <div class="side-bar" id="side-bar">
+
+        <!--LOGO is here-->
+        <img
+        class="logo"
+        width="120px"
+        height="44px"
+        src="assets/images/logo_white.png"
+        alt="site-logo"
+        />
+
+        <!--sidebar progress-list is here-->
+        <ul>
+          <li>
+            <a href="/index.html" id="first-el">
+              <button  type="button" id="businessinfo-btn">1</button>
+              <p style="color: white;">Business Information</p>
+            </a>
+          </li>
+          <hr class="vert" />
+          <li>
+            <a href="/additionalinfo.html" id="second-el">
+              <button type="button" id="additionalinfo-btn" onclick="openBusiness()"><bold>2</bold></button>
+              <p style="color: white;">Additional Information</p>
+            </a>
+          </li>
+          <hr class="vert" />
+          <li>
+            <a href="/security.html" id="third-el">
+              <button type="button" id="security-btn"><bold>3</bold></button>
+              <p style="color: white;">Security Details</p>
+            </a>
+          </li>
+          <hr class="vert" />
+          <li>
+            <a href="previewdoc.html" id="fourth-el">
+              <button type="button" id="preview-btn"><bold>4</bold></button>
+              <p style="color: white;">Preview Document</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li>
+                <a href="/">
+                  <select style="border: none; background: none; font-size: 24px;" id="country" name="country">
+                    <option selected disabled>Generate</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AX">Aland Islands</option>
+                  </select>
+                </a>
+              </li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!--user profile is here-->
+        <div class="user">
+          <img id="avatar" src="/assets/images/avatar.jpg" alt="user-image" />
+          <p><bold>Dashboard</p></p>
+        </div>
+      </header> 
+    </div>
+
+    <section class="additionalinfo">
+      <div class="content-area">
+        <div class="title">
+          <h1 style="font-size: 48px;">Enter Additional Information</h1>
+          <button type="button">Preview</button>
+        </div>
+        <hr/>
+
+        <div class="content">
+          <h3 style="font-size: 32px;">What other information do you require from users?</h3>
+          <div class="column">
+            <div class="col-1">
+              <div class="Q1">
+                <p style="padding-bottom: 32px;">Do you collect personal information from your users?</p> 
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;"> Yes, we do </p>
+                </div> 
+                <div style="display: flex;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;"> No, we do </p>
+                </div>                   
+              </div>
+              <div class="Q2">
+                <p style="padding-bottom: 32px;">Does your website/app send emails or newsletters to users?</p>
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">From us </p>
+                </div> 
+                <div style="display: flex;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;"> No </p>
+                </div>
+              </div>
+              <div class="Q3">
+                <p style="padding-bottom: 8px;">Which of the following does your website/app use or plan to  use? </p>
+                <p style="font-size: 20px; padding-bottom: 32px;">Ignore if not applicable to you</p>
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Google Maps APIs </p>
+                </div> 
+                <div style="display: flex;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Cookies and/ or web beacons</p>
+                </div>
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Local Storage</p>
+                </div> 
+                <div style="display: flex;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Sessions</p>
+                </div>
+              </div>
+              <div class="Q4">
+                <p style="padding-bottom: 32px;">Does your website/app show ads? </p>
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Yes, our website/app show ads</p>
+                </div> 
+                <div style="display: flex;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">No, they don't</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="Q1">
+                <p style="padding-bottom: 32px;">Do you use any digital analytics software for tracking purposes?</p>
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Yes, we use tracking solutions to measure website/app trafficYes, our website/app show ads</p>
+                </div> 
+                <div style="display: flex;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">No</p>
+              </div>                    
+            </div>
+            <div class="Q2">
+              <p style="padding-bottom: 32px;">Does your website/app use re-targeting for advertising?</p>
+              <div style="display: flex; padding-bottom: 8px;">                        
+                <input type="radio" name="Q1" id="q-one">
+                <p style="padding-left: 15px; font-size: 16px;">Yes, we use retargeting to advertise our business</p>
+              </div> 
+              <div style="display: flex;">                        
+                <input type="radio" name="Q1" id="q-one">
+                <p style="padding-left: 15px; font-size: 16px;">No</p>
+              </div>
+            </div>
+            <div class="Q3">
+              <p style="padding-bottom: 32px;">Do you have the Facebook pixel installed in your website/app?  </p>
+              <div style="display: flex; padding-bottom: 8px;">                        
+                <input type="radio" name="Q1" id="q-one">
+                <p style="padding-left: 15px; font-size: 16px;">Yes, we have the Facebook pixel installed</p>
+              </div> 
+              <div style="display: flex;">                        
+                <input type="radio" name="Q1" id="q-one">
+                <p style="padding-left: 15px; font-size: 16px;">No</p>
+              </div>
+            </div>
+            <div class="Q4">
+              <p style="padding-bottom: 32px;">Can users pay for products or services? </p>
+              <div style="display: flex; padding-bottom: 8px;">                        
+                <input type="radio" name="Q1" id="q-one">
+                <p style="padding-left: 15px; font-size: 16px;">Yes, users can pay for our products/services</p>
+              </div> 
+              <div style="display: flex;">                        
+                <input type="radio" name="Q1" id="q-one">
+                <p style="padding-left: 15px; font-size: 16px;">No, we do not sell anything or allow users to pay for products/services</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      <div class="additionalinfo-btn">
+        <span>
+          <button style="color: blue; cursor: pointer;" type="button">
+          <img style="padding-right: 8px; cursor: pointer;" src="assets/images/num1 filled.png" alt="icon">Continue</button> 
+        </span>
+        <button type="button">Continue</button>
+      </div>
+    </section>
+  </body>
+</html>
