@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="{% static 'termsgen/products and templates/js/script.js' %}" defer></script>
     <title>Products Page</title>
 </head>
 <body>
@@ -17,10 +18,23 @@
         <nav>
             <div class="nav-container">
                 <div class="logo">
-                    <img src="" alt="">
+                    <a href="">
+                        <img class="logo-image" src="{% static 'termsgen/products and templates/images/Secodary@3x.png' %}" alt="">
+                    </a>
                 </div>
+                
                 <div class="generate-about-contact">
-                    <a href=""><label for="generate">Generate</label></a>
+                    <div class="dropdown" data-dropdown>
+                        <button class="link" data-dropdown-button>Generate</button>
+                        <div class="dropdown-menu">
+                            <a href="">Privacy policy generator</a>
+                            <a href="">Terms and conditions generator</a>
+                            <a href="">Disclaimer generator</a>
+                            <a href="">Return and refund policy generator</a>
+                        </div>
+                        <img src="{% static 'termsgen/products and templates/images/Vectordropdown.png' %}" alt="">
+                    </div>
+                    
                     <!-- <select for="generate" id="generate">
                         <option value="terms and conditions">Terms and Conditions</option>
                         <option value="privacy policy">Privacy Policy</option>
@@ -30,8 +44,8 @@
                     <a href="">Contact us</a>
                 </div>
                 <div class="registration-buttons">
-                    <a href=""><button id="log-in">Log In</button></a>
-                    <a href=""><button id="sign-up">Sign Up</button></a>
+                    <button id="log-in">Log In</button>
+                    <button id="sign-up">Sign Up</button>
                 </div>
             </div>
         </nav>
@@ -84,11 +98,10 @@
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <div class="logo">
-                    <img src="" alt="">
+                <div>
+                    <img src="{% static 'termsgen\products and templates\images\FavIcon secondary@3x.png' %}" alt="">
                 </div>
-                <p class="policy">Copyright&#169 2022 Termsgen</p>
-                <p class="policy">All rights reserved</p>
+                <p class="policy">Copyright&#169 2022 Termsgen <br>All rights reserved</p>
             </div>
             <div class="footer-products">
                 <p class="footer-head">Products</p>
