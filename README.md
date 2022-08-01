@@ -136,7 +136,7 @@ __Augustine Gift__
 * Email - geeftaugustine@gmail.com
 
 __Mamudu Ene Comfort__
-* Github - https://github.com/CommyC4
+* Github - hhttps://github.com/CommyC4
 * Track - Product Design
 * Email - comfortedgideon@gmail.com
 
