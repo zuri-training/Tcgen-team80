@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webstyle.css">
+    <link rel="shortcut icon" type="image/png" href="icons/Fav Icon@3x.png">
+    <title>Website information</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar"> <!--side navigation-->
+        
+            <img class="logo" src="icons/Secodary.svg" alt="logo">
+            <ul>
+                <li><a href="#"> <img src="icons/dash_burger.png" alt="" class="sicon">Dashboard</a></li>
+                <li><a href="#" class="feat-btn"><img src="icons/policies.png" alt="" class="sicon">Policies<img src="icons/dropdown.png" alt="" class="drop"></a>
+                    <ul class="feat-show">
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Policies</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#" class="serv-btn"><img src="icons/settings.png" alt="" class="sicon">Settings<img src="icons/dropdown.png" alt="" class="drop"></a>
+                    <ul class="serv-show">
+                        <li><a href="#">Basic information</a></li>
+                        <li><a href="#">Website information</a></li>
+                    </ul>
+                    </li>
+                </ul>
+
+            <div class="logout">
+                <a href="#"><img src="icons/logout.png" alt="" class="sicon">Logout</a>
+            </div>
+
+
+        </div> <!--side navigation end-->
+
+        <div class="main"> <!--main-->
+
+            <div id="part">
+                <div class="search"> <!--search-->
+                    <form action="#">
+                        <input type="text" name="search" id="search" placeholder="search added website/app">
+                    </form>
+                </div> <!--search end-->
+
+                <div class="dashtitle"> <!--BASIC INFORMATION title-->
+                    <h1>WEBSITE INFORMATION</h1>
+                </div> <!--BASIC INFORMATION title end-->
+            </div>
+
+            <div class="sect">
+                <div class="formal">
+                    <form action="#">
+        
+                    <label for="wname">Name</label><br>
+                    <input type="text" id="webname" name="webname" placeholder="Enter Name"><br>
+
+                    <label for="cname">Site URL</label><br>
+                    <input type="url" id="url" name="url" placeholder="Enter Site URL"><br>
+        
+                    <input type="submit" value="Save">
+                    </form>
+                </div>
+
+                <div class="tips">
+                    <h2>Tips</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis dolores quas dolore adipisci consectetur ipsam minus placeat velit ducimus voluptatum sint id, blanditiis optio facilis vel fugit aliquid incidunt.</p>
+                </div>
+
+            </div>
+
+        </div><!--main end-->
+
+    </div>  <!--wrapper end-->
+  
+    <script>
+      $('.btn').click(function(){
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+      });
+        $('.feat-btn').click(function(){
+          $('nav ul .feat-show').toggleClass("show");
+          $('nav ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function(){
+          $('nav ul .serv-show').toggleClass("show1");
+          $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function(){
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+   </script>
+
+</body>
+</html>
