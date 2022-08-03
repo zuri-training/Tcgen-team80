@@ -24,10 +24,12 @@ body{
     justify-content: center;
     text-align: center;
     align-content: center;
-    position: -webkit-sticky;
+    /* position: -webkit-sticky; */
     position: sticky;
+    position: relative;
     color: white;
-    grid-area: side-bar;
+    z-index: 999;
+    /* grid-area: side-bar; */
 
 }
 
@@ -106,6 +108,7 @@ ul :nth-of-type(4) button{
     align-items: center;
     justify-content: center;
     position: sticky;
+    position: relative;
 
 }
 
