@@ -286,7 +286,7 @@ ul :nth-of-type(4) button{
 
 
 /* additional information page css is here*/
-.addiitionalinfo .content-area{
+.additionalinfo .content-area{
     position: relative;
     width: 100%;
     padding-left: 193px;
@@ -295,7 +295,7 @@ ul :nth-of-type(4) button{
     justify-content: space-between;
 }
 
-.addiitionalinfo .content-area .title{
+.additionalinfo .content-area .title{
     display: flex;
     justify-content: space-between;
     padding-top: 16px;
@@ -303,7 +303,7 @@ ul :nth-of-type(4) button{
     /* border-bottom: 1px solid; */
 }
 
-.addiitionalinfo .content-area .title button{
+.additionalinfo .content-area .title button{
     padding: 16px 32px;
     border-radius: 8px;
     border: 1px solid #195FEA;
@@ -314,7 +314,7 @@ ul :nth-of-type(4) button{
     /* margin-left: 20%; */
 }
 
-.addiitionalinfo .content-area .title button:hover{
+.additionalinfo .content-area .title button:hover{
     background: #195FEA;
     transition: all 0.5s ease;
     color: white;
