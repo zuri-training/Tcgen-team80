@@ -59,12 +59,14 @@ a{
 .footer-head{
     font-weight: 400;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #9F9F9F;
 }
 
 .policy{
+    margin-top: 2rem;
     font-weight: 400;
     font-size: 16px;
+    color: #FFFFFF;
 }
 
 li{
@@ -99,9 +101,17 @@ header{
 }
 
 .logo{
-    width: 124px;
-    height: 49px;
-    background-color: #888888;
+    position: relative;
+    width: 10%;
+    min-width: 10%;
+    max-height: 56px;
+}
+
+.logo-image{
+    position: absolute;
+    width: 100%;
+    min-width: 95%;
+    top: 30%;
 }
 
 .generate-about-contact{
@@ -112,6 +122,56 @@ header{
     flex-wrap: nowrap;
     margin-left: 120px;
     margin-right: 20px;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown img{
+    position: absolute;
+    top: 43%;
+    left: 110%;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: calc(100% + .5rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #00337B;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+    padding: 24px 40px;
+    border-radius: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-20px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    z-index: 100;
+}
+
+
+.dropdown.active > .link, .link:hover{
+    color: #FFFFFF
+}
+
+.dropdown.active > .link + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown.active img{
+    transform: rotate(180deg);
+}
+
+.link{
+    all: unset;
+    font-size: 24px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 .products{
@@ -154,6 +214,11 @@ header{
     background-color: #FFFFFF;
     border: 1px solid #888888;
     border-radius: 16px;
+    transition: 0.5s;
+}
+
+.product-img-div:hover{
+    border: 1px solid #0055CC;
 }
 
 .space{
@@ -215,13 +280,13 @@ button{
     background-color: #FFFFFF;
     font-weight: 500;
     font-size: 24px;
-    color: #2B80F7;
+    color: #00337B;
     padding: 12px 32px 12px 32px;
     cursor: pointer;
 }
 
 #log-in{
-    background-color: #2B80F7;
+    background-color: #00337B;
     border: 1px solid #FFFFFF;
     font-weight: 500;
     font-size: 16px;
