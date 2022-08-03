@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashstyle.css">
     <link rel="shortcut icon" type="image/png" href="icons/Fav Icon@3x.png">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -14,15 +15,17 @@
         
                 <img class="logo" src="icons/Secodary.svg" alt="logo">
                 <ul>
-                    <li><a href="#"> <img src="icons/dash_burger.png" alt="" class="sicon">Dashboard</a></li>
-                    <li><a href="#" class="feat-btn"><img src="icons/policies.png" alt="" class="sicon">Policies<img src="icons/dropdown.png" alt="" class="drop"></a>
-                    <ul class="feat-show">
-                        <li><a href="#">Policies</a></li>
-                        <li><a href="#">Policies</a></li>
+                    <li><a href="#"><img src="icons/dash_burger.png" alt="" class="sicon">Dashboard</a></li>
+                    <li><a href="#" class="feat-btn"><img src="icons/policies.png" alt="" class="sicon">Policies<img src="icons/dropdown.png" alt="" class="drop first"></a>
+                    <ul id="feat-show">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Return and refund</a></li>
                     </ul>
                     </li>
-                    <li><a href="#" class="serv-btn"><img src="icons/settings.png" alt="" class="sicon">Settings<img src="icons/dropdown.png" alt="" class="drop"></a>
-                    <ul class="serv-show">
+                    <li><a href="#" class="serv-btn"><img src="icons/settings.png" alt="" class="sicon">Settings<img src="icons/dropdown.png" alt="" class="drop second"></a>
+                    <ul id="serv-show">
                         <li><a href="#">Basic information</a></li>
                         <li><a href="#">Website information</a></li>
                     </ul>
@@ -38,6 +41,7 @@
         <div class="main"> <!--main-->
 
             <div id="part">
+
                 <div class="search"> <!--search-->
                     <form action="#">
                         <input type="text" name="search" id="search" placeholder="search added website/app">
@@ -47,6 +51,7 @@
                 <div class="dashtitle"> <!--BASIC INFORMATION title-->
                     <h1>DASHBOARD</h1>
                 </div> <!--BASIC INFORMATION title end-->
+                
             </div>
 
             <div class="generate"> <!--generate buttons below dashboard title-->
@@ -103,21 +108,19 @@
         </div>  <!--wrapper end-->
   
     <script>
-      $('.btn').click(function(){
-        $(this).toggleClass("click");
-        $('.sidebar').toggleClass("show");
+      $('.feat-btn').click(function(){
+        $('#feat-show').toggleClass("show");
+        $('.first').toggleClass("rotate");
       });
-        $('.feat-btn').click(function(){
-          $('nav ul .feat-show').toggleClass("show");
-          $('nav ul .first').toggleClass("rotate");
-        });
-        $('.serv-btn').click(function(){
-          $('nav ul .serv-show').toggleClass("show1");
-          $('nav ul .second').toggleClass("rotate");
-        });
-        $('nav ul li').click(function(){
-          $(this).addClass("active").siblings().removeClass("active");
-        });
+      $('.serv-btn').click(function(){
+        $('#serv-show').toggleClass("show1");
+        $('.second').toggleClass("rotate");
+      });
+
+      $('.wrapper .sidebar ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+
    </script>
 
 </body>
