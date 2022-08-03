@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="previewdoc.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Preview Details</title>
+  </head>
+  <body>
+    <header>
+      <!--logo is here-->
+      <img
+        class="logo"
+        width="120px"
+        height="44px"
+        src="assets/images/logo_blue.png" alt="site logo"
+      >
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>
+              <a href="/">
+                <select style="border: none; background: none; font-size: 24px;" id="country" name="country">
+                  <option selected disabled>Generate</option>
+                  <option value="AF">Afghanistan</option>
+                  <option value="AX">Aland Islands</option>
+                </select>
+              </a>
+            </li>
+          <li><a href="/">About Us</a></li>
+          <li><a href="/">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!--user profile is here-->
+      <div class="user">
+        <img id="avatar" src="/assets/images/avatar.jpg" alt="user-image" />
+        <p><bold>Dashboard</p></p>
+      </div>
+    </header> 
+
+    <main class="preview-doc">
+      <div>
+        <h1 style="font-size: 48px; padding-left: 80px; padding-top: 29px; padding-bottom: 29px;">Preview your document</h1>
+      </div>
+      <hr>
+
+      <!--progressive bar is here-->
+      <div class="progress-bar">
+        <ul>
+          <div class="first">
+            <li>
+              <a href="">1</a>
+              <hr class="horizontal">
+            </li> 
+            <p style="margin-left: -32%; padding-top: 10px;">Business Information</p>
+          </div>
+          <div class="second">
+            <li>
+              <a href="">2</a>
+              <hr class="horizontal">
+            </li> 
+            <p style="margin-left: -32%; padding-top: 10px;">Additional Information</p>
+          </div>
+          <div class="third">
+            <li>
+              <a href="">3</a>
+              <hr class="horizontal">
+            </li> 
+            <p style="margin-left: -20%; padding-top: 10px;">Security Details</p>
+          </div>
+          <div class="fourth">
+            <li>
+              <a href="">4</a>
+            </li> 
+            <p style="margin-left: -32%; padding-top: 10px;">Preview Document</p>
+          </div>
+        </ul>
+      </div>
+
+      <div class="the-document">
+        <h1>Your document is ready!</h1>
+        <div class="doc" style="background-color: white;">The contents of this frame is not accessible</div>
+        <div class="select-option">
+          <p style="font-size: 32px; text-align: center;"><bold>In what Language would you like to download your file?</bold></p>
+          <select name="" id="">
+            <option selected disabled>Select option</option>
+            <option value=""></option>
+          </select>
+        </div>
+        <div style="margin-top: 97px;">
+          <button style="margin-right: 24px;">Share</button>
+          <button style="margin-right: 24px;">Export</button>
+          <button>Embed</button>
+        </div>
+      </div>
+      <div class="span-btn" style="margin-top: 160px;">
+        <span>
+          <button style="color: blue; cursor: pointer; padding-top: 8px; padding-bottom: 8px; padding-left: 16px; padding-right: 16px; border-radius: 8px; border-color: #00337B; border: 1px solid;" type="button">
+          <img style="padding-right: 8px; cursor: pointer;" src="assets/images/num1 filled.png" alt="icon">Continue</button> 
+        </span>
+      </div>
+    </main>
+  </body>
+</html>
