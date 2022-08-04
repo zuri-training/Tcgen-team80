@@ -1,10 +1,13 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/termsgen/static/termsgen/contact us page/contact_us.css">
+    <link rel="stylesheet" href="{% static 'termsgen/contact us page/contact_us.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,17 +16,17 @@
 <body>
     <div class="header">
         <div class="logo">
-            <img class="image" src="/termsgen/static/termsgen/contact us page/assets/Primary.svg" alt="logo">
+            <img class="image" src="{% static 'termsgen/contact us page/assets/Primary.svg' %}" alt="logo">
         </div>
         <div class="nav">
             <nav class="increase">
                 <ul class="head">
-                    <li>Home</li>
-                        <li>Generate <select class="display" >
-                            <option value=""></option>                            
-                        </select></li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="">Generate</a><select class="display" >
+                            <option value=""></option>
+                        </select> </li>
+                    <li><a href="{% url 'about_us' %}">About us</a></li>
+                    <li><a href="{% url 'contact_us' %}">Contact us</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,7 +46,7 @@
                 </div>
                 <div class="msg">                    
                     <div class="imgText">
-                    <img src="/termsgen/static/termsgen/contact us page/assets/msg.svg" alt="message">
+                    <img src="{% static 'termsgen/contact us page/assets/msg.svg' %}" alt="message">
                         <h4>Chat with us</h3>
                     </div>
                     <p class="text">Our team is here to assist.</p>
@@ -52,23 +55,23 @@
                 </div>
                 <div class="location">
                     <div class="imgText-one">
-                        <img src="/termsgen/static/termsgen/contact us page/assets/location.svg" alt="location">
+                        <img src="{% static 'termsgen/contact us page/assets/location.svg' %}" alt="location">
                         <h4>Office</h3>
                     </div>
                     <p class="text">39,Ikeja GRA,Lagos State,Nigeria.</p>
                 </div>
                 <div class="phone">
                     <div class="imgText-two">
-                        <img src="/termsgen/static/termsgen/contact us page/assets/phone.svg" alt="phone">
+                        <img src="{% static 'termsgen/contact us page/assets/phone.svg' %}" alt="phone">
                         <h4>Phone</h3>
                     </div>
                     <p class="text">+(234) 810 000 0000</p>
                 </div>
                 <div class="icons">
-                    <img src="/termsgen/static/termsgen/contact us page/assets/facebook.svg" alt="facebook">
-                    <img src="/termsgen/static/termsgen/contact us page/assets/twitter.svg" alt="twitter">
-                    <img src="/termsgen/static/termsgen/contact us page/assets/linkedin.svg" alt="linkedin">
-                    <img src="/termsgen/static/termsgen/contact us page/assets/instagram.svg" alt="instagram">
+                    <img src="{% static 'termsgen/contact us page/assets/facebook.svg' %}" alt="facebook">
+                    <img src="{% static 'termsgen/contact us page/assets/twitter.svg' %}" alt="twitter">
+                    <img src="{% static 'termsgen/contact us page/assets/linkedin.svg' %}" alt="linkedin">
+                    <img src="{% static 'termsgen/contact us page/assets/instagram.svg' %}" alt="instagram">
                 </div>
             </div>
             <div class="container-right">
@@ -335,7 +338,5 @@
             </div>
         </div> 
     </main>    
-           
-    
 </body>
 </html>

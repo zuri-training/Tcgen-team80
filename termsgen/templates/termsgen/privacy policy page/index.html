@@ -1,8 +1,10 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <script src="app.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{% static 'termsgen/privacy policy page/styles.css' %}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +24,7 @@
         class="logo"
         width="120px"
         height="44px"
-        src="assets/images/logo_white.png"
+        src="{% static 'termsgen/privacy policy page/images/logo_white.png' %}"
         alt="site-logo"
         />
 
@@ -75,10 +77,10 @@
               </a>
             </li >
             <li class="navbar-item">
-              <a class="navbar-links" href="/">About Us</a>
+              <a class="navbar-links" href="{% url 'about_us' %}">About Us</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-links" href="/">Contact Us</a>
+              <a class="navbar-links" href="{% url 'contact_us' %}">Contact Us</a>
             </li>
           </ul>
 

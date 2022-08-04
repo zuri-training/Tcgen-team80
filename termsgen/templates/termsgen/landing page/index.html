@@ -1,10 +1,12 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'termsgen/landing page/style.css' %}">
 </head>
 <body>
  <section>
@@ -12,10 +14,10 @@
     <nav>
         <div id="nav-container">
         <div class="logo">
-        <img id="white-logo" src="Images/Terms-logo-white.png" alt="LOGO"></div>
+        <img id="white-logo" src="{% static 'termsgen/landing page/Terms-logo-white.png' %}" alt="LOGO"></div>
         <div class="nav-links">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
                 <div class="dropdown">
                 <li><a href="#">Generate
                 <i id="dropdown-btn" style="margin: 0 20px;" class="arrow down"></i></a></li>
@@ -24,8 +26,8 @@
                     <a href="#">Privacy Policy</a>
                     <a href="#">Return and refund</a>
                   </div></div>               
-                  <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
+                  <li><a href="{% url 'about_us' %}">About us</a></li>
+                <li><a href="{% url 'contact_us' %}">Contact us</a></li>
                 
             </ul></div>
         
@@ -49,7 +51,7 @@
                 <a href="#"><button id="start-btn">Get Started</button></a>
             </div>
             <div class="intro-img">
-                <img id="image1" src="Images/Group 1 (1).jpg" alt="image">
+                <img id="image1" src="{% static 'termsgen/landing page/Group 1 (1).jpg' %}" alt="image">
             </div>
         </div>
         </div>
@@ -59,13 +61,13 @@
             <div class="boxes">
             <div id="box1">
                 <div id="top-box">
-                <img id="icons" src="images/privacy-icon.png" alt="">
+                <img id="icons" src="{% static 'termsgen/landing page/privacy-icon.png' %}" alt="">
             <p><a href="">Privacy Policy</a></p></div>
             <div id="offer-text"><p>Legal agreement about the 
                 information you may collect from a user.</p></div></div>
             <div id="box2">
                 <div id="top-box">
-                <img id="icons" src="images/terms-icon.png" alt="">
+                <img id="icons" src="{% static 'termsgen/landing page/terms-icon.png' %}" alt="">
             <p><a href="">Terms And Conditions</a></p></div>
             <div id="offer-text"><p>Legal agreement about the 
                 information you may collect from a user.</p></div></div>
@@ -73,13 +75,13 @@
             <div class="box2-layer">
             <div id="box3">
                 <div id="top-box">
-                    <img id="icons" src="Images/disclaimer-icon.png" alt="">
+                    <img id="icons" src="{% static 'termsgen/landing page/disclaimer-icon.png' %}" alt="">
                 <p><a href="">Disclaimer</a></p></div>
                 <div id="offer-text"><p>Legal agreement about the 
                     information you may collect from a user.</p></div></div>
             <div id="box4">
                 <div id="top-box">
-                    <img id="icons" src="Images/refund-icon.png" alt="">
+                    <img id="icons" src="{% static 'termsgen/landing page/refund-icon.png' %}" alt="">
                 <p><a href="">Refund And Return Policy</a></p></div>
                 <div id="offer-text"><p>Legal agreement about the 
                     information you may collect from a user.</p></div></div>
@@ -91,7 +93,7 @@
             <h3>How it works</h3>
             <div id="top1">
             <div class="left-box">
-                <img src="Images/pana.png" alt="">
+                <img src="{% static 'termsgen/landing page/pana.png' %}" alt="">
             </div>
                 <div class="right-box">
                     <h6>Refund And Return Policy</h3>
@@ -107,13 +109,13 @@
                         information you may collect from a user.</p>
                 </div>
                     <div class="left-box2">
-                        <img src="images/Group 2 (1).jpg" alt="">
+                        <img src="{% static 'termsgen/landing page/Group 2 (1).jpg' %}" alt="">
                     </div>
                 </div>
 
                 <div id="top3">
                     <div class="left-box">
-                        <img src="Images/Group 4.jpg" alt="">
+                        <img src="{% static 'termsgen/landing page/Images/Group 4.jpg' %}" alt="">
                     </div>
                         <div class="right-box">
                             <h6>Refund And Return Policy</h3>
@@ -133,13 +135,13 @@
                         generator I’ve used.
                         I got 99% satisfaction.<br><strong>
                         _ Comfort</strong></p>
-                    <img src="images/Line 1.png" alt=""></div>
+                    <img src="{% static 'termsgen/landing page/images/Line 1.png' %}" alt=""></div>
                     <div class="text2"><p style="margin-left: 20px;">The site is super fast 
                         and easy to use. I got 
                         my policy generated 
                         in a couple of minutes.<br><strong>
                         _ Cici</strong></p>
-                        <img src="images/Line 1.png" alt=""></div>
+                        <img src="{% static 'termsgen/landing page/images/Line 1.png' %}" alt=""></div>
                 <div class="text3"><p style="margin-left: -20px;">The site is super fast 
                     and easy to use. I got 
                     my policy generated 
@@ -152,20 +154,20 @@
             <h6> Our Benefits</h6>
             <div class="lay5-boxes">
             <div id="b-box1">
-                <div id="lay5-img"><img src="Images/Vector (2).png" alt="Image"></div>
+                <div id="lay5-img"><img src="{% static 'termsgen/landing page/Images/Vector (2).png' %}" alt="Image"></div>
                 <p>Our attorneys have a combinned practice experience of 50+ Years. 
                     No amateur here.</p>
             </div>
             <div id="b-box2">
-                <div id="lay5-img"><img src="Images/card-slash.png" alt="Image"></div>
+                <div id="lay5-img"><img src="{% static 'termsgen/landing page/Images/card-slash.png' %}" alt="Image"></div>
                 <p>Our Policies are completely free to use. No hidden charges.</p>
             </div>
             <div id="b-box3">
-                <div id="lay5-img"><img src="Images/Group 8 (1).png" alt="Image"></div>
+                <div id="lay5-img"><img src="{% static 'termsgen/landing page/Images/card-slash.png' %}" alt="Image"></div>
                 <p>You can customize your policies to your specific needs. No generic stuff.</p>
             </div>
             <div id="b-box4">
-                <div id="lay5-img"><img src="Images/export.png" alt="Image"></div>
+                <div id="lay5-img"><img src="{% static 'termsgen/landing page/Images/export.png' %}" alt="Image"></div>
                 <p>Export your policies in any format of your choice. No holding back.</p>
             </div>
             </div>
@@ -179,7 +181,7 @@
     <footer>
         <div class="f-boxes">
         <div id="logo">
-            <img src="Images/Group 5.jpg" alt="LOGO">
+            <img src="{% static 'termsgen/landing page/Images/Group 5.jpg' %}" alt="LOGO">
             <p>Copyright &copy; 2022 Termsgen <br>All rights reserved.</p>
         </div>
         <div class="f-box">
