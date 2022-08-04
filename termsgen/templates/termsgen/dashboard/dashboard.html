@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashstyle.css">
-    <link rel="shortcut icon" type="image/png" href="icons/Fav Icon@3x.png">
+    <link rel="shortcut icon" type="image/png" href="icons/FavIcon secondary@3x.png">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="sidebar"> <!--side navigation-->
+        <section class="sidebar"> <!--side navigation-->
         
                 <img class="logo" src="icons/Secodary.svg" alt="logo">
                 <ul>
-                    <li><a href="#"><img src="icons/dash_burger.png" alt="" class="sicon">Dashboard</a></li>
+                    <li><a href="dashboard.html"><img src="icons/dash_burger.png" alt="" class="sicon">Dashboard</a></li>
                     <li><a href="#" class="feat-btn"><img src="icons/policies.png" alt="" class="sicon">Policies<img src="icons/dropdown.png" alt="" class="drop first"></a>
                     <ul id="feat-show">
                         <li><a href="#">Terms & Conditions</a></li>
@@ -26,8 +26,8 @@
                     </li>
                     <li><a href="#" class="serv-btn"><img src="icons/settings.png" alt="" class="sicon">Settings<img src="icons/dropdown.png" alt="" class="drop second"></a>
                     <ul id="serv-show">
-                        <li><a href="#">Basic information</a></li>
-                        <li><a href="#">Website information</a></li>
+                        <li><a href="basic_info.html">Basic information</a></li>
+                        <li><a href="web_info.html">Website information</a></li>
                     </ul>
                     </li>
                 </ul>
@@ -36,9 +36,9 @@
                 <a href="#"><img src="icons/logout.png" alt="" class="sicon">Logout</a>
             </div>
 
-        </div> <!--side navigation end-->
+        </section> <!--side navigation end-->
 
-        <div class="main"> <!--main-->
+        <section class="main"> <!--main-->
 
             <div id="part">
 
@@ -65,7 +65,7 @@
     
                 <div class="project"> <!--project 1-->
                     <div class="category">
-                    <h2>TERMS AND CONDITIONS</h2>
+                    <h2> <img src="icons/ts_cs.png" alt="" id="proj"> TERMS AND CONDITIONS</h2>
                     <p>www.sitename.com</p>
                     </div>
     
@@ -84,6 +84,7 @@
     
                 <div class="project"> <!--project 2-->
                     <div class="category">
+                    <img src="icons/priv_pol.png" alt="" id="proj"> 
                     <h2>PRIVACY POLICY</h2>
                     <p>www.sitename.com</p>
                     </div>
@@ -103,7 +104,7 @@
     
             </div><!--projects end-->
             
-        </div><!--main end-->
+        </section><!--main end-->
     
         </div>  <!--wrapper end-->
   
