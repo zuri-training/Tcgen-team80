@@ -1,1 +1,1 @@
-web: gunicorn <tcgen_80>.wsgi --log-file -
+web: gunicorn tcgen_80.wsgi --log-file -
