@@ -40,6 +40,11 @@ li {
   color: #0055cc;
 }
 
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .btn {
   font-family: "Poppins", sans-serif;
   width: 100px;
@@ -113,11 +118,14 @@ li {
   font-weight: lighter;
   padding-left: 5rem;
 }
+
 .iconImage {
   margin: 0%;
 }
+
 .imgText {
   display: flex;
+  margin-top: 30px;
   margin: 0;
 }
 .icons {

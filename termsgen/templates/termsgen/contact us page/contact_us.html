@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="header">
-        <img class="image" src="{% static 'termsgen/contact_us page/assets/Primary.svg' %}" alt="logo">
+        <img class="image" src="{% static 'termsgen/contact us page/assets/Primary.svg' %}" alt="logo">
         <div class="nav">
             <ul class="head">
                 <li><a href="{% url 'home' %}">Home</a></li>
@@ -35,13 +35,16 @@
     <main>
         <div class="contact-page">
           <div class="container">
-            <h4 class="ct-us">Contact Us</h4>
+            <div>
+              <h4 class="ct-us">Contact Us</h4>
             <p>
               We love to hear from you. Our <br />team is always here to chat.
             </p>
+            </div>
+            
             <div class="imgText">
               <img src="{% static 'termsgen/contact us page/assets/msg.svg' %}" alt="message">  
-              <img class="iconImage" src="/assets/msg.svg" alt="message" />
+              {% comment %} <img class="iconImage" src="{% static 'termsgen/contact us page/assets/msg.svg' %}" alt="message" /> {% endcomment %}
               <h4 class="headerFont4">Chat with us</h4>
             </div>
             <p class="paragraphText">
@@ -67,6 +70,7 @@
                 <img src="{% static 'termsgen/contact us page/assets/instagram.svg' %}" alt="instagram">
             </div>
           </div>
+          
           <div class="container-right">
             <h3>Level Up your brand</h3>
             <p>You can reach out anytime Via termsgen.io@yahoo.com</p>

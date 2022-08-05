@@ -28,8 +28,8 @@
                     </li>
                     <li><a href="#" class="serv-btn"><img src="{% static '/termsgen/dashboard/icons/settings.png' %}" alt="" class="sicon">Settings<img src="{% static '/termsgen/dashboard/icons/dropdown.png' %}" alt="" class="drop second"></a>
                     <ul id="serv-show">
-                        <li><a href="basic_info.html">Basic information</a></li>
-                        <li><a href="web_info.html">Website information</a></li>
+                        <li><a href="{% url 'basic_info' %}">Basic information</a></li>
+                        <li><a href="{% url 'web_info' %}">Website information</a></li>
                     </ul>
                     </li>
                 </ul>
