@@ -1,4 +1,17 @@
 env/
-db.sqlite3
+.sqlite3
 __pycache__/
 .vscode/
+.Python
+.idea/
+
+# Project asset folders
+media/
+# Database
+db.sqlite3
+# Editor directories and files
+.idea
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
