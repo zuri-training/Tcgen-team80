@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.nav{
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    position: fixed;
+    min-height: 100vh;
+    color: #D9D9D9;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    background: #00337B;
+}
+.logo{
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.line {
+    height: 50px;
+    width: 0%;
+    margin: 5px auto;
+    background: #D9D9D9;
+    border: 0.06cm solid  #D9D9D9;
+}
+
+         .page1,
+         .page2,
+         .page3,
+         .page4,
+         .page5{
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    margin: auto;
+     line-height: 25px;
+    border: 3px solid#D9D9D9;
+    border-radius: 50%;
+
+}
+.page1{
+    color: #00337B;
+    background: #D9D9D9;
+    box-shadow: 0px 0px 3px 3px #D9D9D9 ;
+    border:2px solid ;
+    animation: page 1.0s linear ;
+}
+@keyframes page{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.workbody{
+    width: 88%;
+    float: right;
+    /* background: #00337B; */
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    
+}
+
+.menu{
+    min-height: 57px;
+    background: rgba(204, 224, 253, 0.3);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 100%;
+    position: relative;
+}
+.menu .menunav{
+    margin: auto;
+    margin-left:  25px;
+    display:flex;
+    list-style: none;
+    gap: 6%;
+}
+.menunav li :hover{
+    background-color: rgba(25, 104, 221, 0.6);
+    color: gray;
+    padding: 5px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.menunav .dropdown:hover{
+    padding: 0%;
+    background: none;
+}
+.dropdw{
+    background: rgb(142, 150, 189);
+    display: none;
+    list-style: none;
+    position: absolute;
+    box-sizing: border-box;
+    top: 30px;
+    padding: 5px;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menunav .drop:hover .dropdw{
+    display: block;
+}
+.dropdw > li:hover{
+    background:   rgba(25, 104, 221);
+    color: gray;
+}
+.pagedetails{
+    width: 97%;
+    margin: auto;
+    position: relative;
+    
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 50px;
+    margin: auto;
+    position: relative;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+.details1,
+.details2{
+        width: 45%;
+        padding: 20px;
+}
+
+nav{
+        
+    position: relative;
+    /* justify-content: space-between; */
+    width: 96%;
+    margin: auto;
+    border: 2px solid rgba(25, 104, 221, 0.9);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: left;
+    overflow-x: auto;
+}
+table{
+    border-spacing: 15px 5px;
+    
+}
+nav label{
+    display: flex;
+    justify-content: space-between;
+}
+#country{
+    width: 100%;
+    border: 2px solid rgba(25, 104, 221, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+#date{
+    width: 90%;
+    font-weight: 600px;
+    font-size: 20px;
+    padding: 10px;
+    background: rgba(92, 80, 80, 0.2);
+    border-radius: 10px;
+    border: 2px solid rgba(25, 104, 221, 0.9);
+    margin-bottom: 30px;
+}
+small{
+    font-size: 16px;
+}
+label,
+ input{
+    cursor: pointer;
+}
+h1{
+    font-size: 35px;
+    width: 70%;
+
+}
+h4{
+    width: 70%;
+    margin-top: 30px;
+    font-size: 25px;
+
+}
+
+.preview{
+    padding: 5px 30px;
+    border-radius: 8px;
+    position: absolute;
+    right: 3%;
+    top: 4%;    
+    border:1px solid #2B80F7;
+    color: #2B80F7;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.continue{
+    padding: 10px 35px;
+    color: whitesmoke;
+    border-radius: 8px;
+    /* background: #00337B; */
+    border: 1px solid rgb(74, 90, 124);
+    float: right;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.detailbody{
+    position: relative;
+}
+.down{
+    width: 50%;
+    height: 140px;
+    padding-right: 30px;
+
+     position: relative;
+     float: right;
+     top: 60px;
+    
+    
+}
+p{
+    overflow-x: auto;
+}
+
+.disable1,
+.disable2,
+.disable3,
+.disable4{
+    display: none;
+    margin-top: 5px;
+    border: 2px solid rgba(25, 104, 221, 0.6);
+    padding: 10px;
+    border-radius: 10px ;
+    font-family: 'Poppins';
+    font-style: normal;
+    /* text-align: center; */
+    z-index: 1;
+
+}
+input[type="text"],
+input[type="url"]{
+    border: 2px solid gray;
+    border-radius: 3px;
+    cursor: auto;
+}
+.previewpage{
+    position: absolute;
+    width: 96%;
+    background: whitesmoke;
+    z-index: 1;
+    height: 190vh;
+    padding: 2%;
+    margin: auto;
+    top: 20px;
+    overflow: auto;
+    border: 2px solid #2B80F7;
+    box-shadow:0px 0px 6px 5px  #00337B;
+    display: none;
+}
+.close{
+    width: 10%;
+    border: 3px solid #2B80F7;
+    border-radius: 5px;
+    padding: 5px;
+    position: fixed;
+    left: 80%;
+    z-index: 1;
+}
+.ul{
+    width: 100%;
+    /* border: 3px solid  #00337B; */
+    position: relative
+}
+.previewpage ul{
+    width: 94%;
+    margin-left: 5%;
+    /* float: right; */
+    
+}
+
+@media (max-width:600px){
+
+    body{
+        max-width: 100%;
+    }
+    .details{
+        display: block;
+        width: 96%;
+        margin: auto;
+    }
+    .details1,
+    .details2{
+        width: 96%;
+        padding: 0%;
+    }
+    h1{
+        font-size: xx-large;
+    }
+    h4{
+        
+        font-size: larger;
+    }
+   .menu{
+    font-size: 18px;
+   }
+   .menunav{
+    font-size: 15px;
+   }
+   .menunav img{
+    width: 15%;
+   }
+   .workbody{
+    width: 85%;
+   }
+   .nav{
+    width: 15%;
+    font-size: 12px;
+   }
+   
+   .logo{
+    margin-bottom: 18px;
+    width: 96%;
+    margin-left: 1%;
+   }
+   .preview{
+    padding: 5px;
+    min-width: 20%;
+    font-size: 13px;
+   }
+   button{
+    font-size: 10px;
+   }
+}
