@@ -10,5 +10,6 @@ urlpatterns = [
     path("dashboard/", views.dashboard, name="dashboard"),
     path("basic-info/", views.basic_info, name="basic_info"),
     path("web-info/", views.web_info, name="web_info"),
-    path("privacy/", views.privacy, name="privacy")
+    path("privacy/", views.privacy, name="privacy"),
+    path("return-refund/", views.return_and_refund, name="return_refund")
 ]
