@@ -1,8 +1,10 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <script src="app.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{% static 'termsgen/privacy policy page/styles.css' %}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +24,7 @@
         class="logo"
         width="120px"
         height="44px"
-        src="assets/images/logo_white.png"
+        src="{% static 'termsgen/privacy policy page/images/logo_white.png' %}"
         alt="site-logo"
         />
 
@@ -63,10 +65,10 @@
         <div class="navbar-container">
           <ul class="navbar-menu">
             <li class="navbar-item">
-              <a class="navbar-links" href="/">Home</a>
+              <a class="navbar-links" href="{% url 'home' %}">Home</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-links" href="/">
+              <a class="navbar-links" href="{% url 'products' %}">
                 <select style="font-size: 24px; border: none; background: none;" id="country" name="country">
                   <option selected disabled>Generate</option>
                   <option value="AF">Afghanistan</option>
@@ -75,10 +77,10 @@
               </a>
             </li >
             <li class="navbar-item">
-              <a class="navbar-links" href="/">About Us</a>
+              <a class="navbar-links" href="{% url 'about_us' %}">About Us</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-links" href="/">Contact Us</a>
+              <a class="navbar-links" href="{% url 'contact_us' %}">Contact Us</a>
             </li>
           </ul>
 
@@ -149,7 +151,7 @@
                 <label style="font-size: 24px;">Your Country</label>
                 <div style="margin-top: 20px; border: 1px solid; height: 56px; width: 580px; border-radius: 8px; padding-left: 8px; padding-right: 8px; display: flex; position: relative; justify-content: space-between; align-items: center;">
                     <p>Select your preferred date</p> 
-                    <img width="20px" height="20px" src="assets/images/calendar.svg" alt="calendar">                
+                    <img width="20px" height="20px" src="{% static 'termsgen/privacy policy page/images/calendar.svg' %}" alt="calendar">                
                 </div>
               </div>
               <div class="row2">

@@ -1,0 +1,217 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'termsgen/terms and condition/p1-business-info.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <title>Business Information</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- sidebar section containing logo and progress bar -->
+
+        <section class="sidebar">
+            <div class="logobox">
+                <img src="{% static 'termsgen/terms and condition/icons & images/Secodary@3x.png' %}" alt="termsgen-logo" class="logo">
+            </div>
+
+            <div class="progress-bar">
+
+                <div class="list">
+                    <div class="sidebar-icons">
+                        <a class=" anchors" href="#">
+                            <p class="num1">1</p>
+                        </a>
+                        <p>Business Information</p>
+                    </div>
+    
+                    <div>
+                        <hr class="vert">
+                    </div>
+                    
+                    <div class="sidebar-icons">
+                        <a class="anchors" href="#">
+                            <p class="num">2</p>
+                        </a>
+                        <p>Additional Information</p>
+                    </div>
+                    
+                    <div>
+                        <hr class="vert">
+                    </div>
+    
+                    <div class="sidebar-icons">
+                        <a class="anchors" href="#">
+                            <p class="num">3</p>
+                        </a>
+                        <p>Security Details</p>
+                    </div>
+                    
+                    <div>
+                        <hr class="vert">
+                    </div>
+    
+                    <div class="sidebar-icons">
+                        <a class="anchors" href="#">
+                            <p class="num">4</p>
+                        </a>
+                        <p>Preview Document</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Main section containing navbar and content -->
+
+        <section class="main">
+            <div class="navbar">
+                <nav>               
+                    <div class="navtabs">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Generate</a><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 24 24" fill="black" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-profile">
+                        <div class="ellipse">G</div>
+                        <div class="dashboard">
+                            <p>Dashboard</p>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="main-content">
+                <div class="top">
+                    <div class="biz-info">
+                        <h1>Enter Business Information</h1>
+                        <div class="preview-btn">
+                            <a href="#">preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+
+                    <div class="heading">
+                        <p>Tell us about your business</p>
+                    </div>
+                    <div class="Q">
+                        <div class="column">
+                            <div class="questions">
+                                <p class="qs">What platform would  this privacy policy be used?</p>
+                                <div class="platform">
+                                    <div class="Q-ops"> <!-- Q-ops: Question Options -->
+                                        <div>
+                                            <img src="./Women create a website using a laptop and a desktop computer.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <p class="option">Website</p>
+                                            <p class="descriptn" style="font-size: 1.17vw;">Privacy policy for a website</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <label for="web">
+                                        <input type="checkbox" id="web" style=" width:20px; height: 20px">
+                                    </label>                                
+                                </div>
+
+                                <div class="platform">
+                                    <div class="Q-ops">
+                                        <div class="img">
+                                            <img src="./Online ordering pizza in a mobile application.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <p class="option">App</p>
+                                            <p class="descriptn" style="font-size: 1.17vw;">Privacy policy for a website</p>
+                                        </div>
+                                    </div>                               
+
+                                    <label for="app">
+                                        <input type="checkbox" id="app" style=" width:20px; height: 20px">
+                                    </label>                                
+                                </div>
+
+                                <div class="select-btn">
+                                    <p class="qs">Your Country</p>
+                                    <div>
+                                        <select id="country" name="country">
+                                            <option selected disabled>select country</option>
+                                            <option value="AF">Afghanistan</option>
+                                            <option value="AX">Aland Islands</option>
+                                            <option value="AL">Albania</option>
+                                            <option value="DZ">Algeria</option>
+                                            <option value="AS">American Samoa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="questions">
+                                <div class="select-btn">
+                                    <p class="qs">Policy effect date</p>
+                                    <div>
+                                        <label for="date">
+                                            <input type="date" id="date" placeholder="select your preffered date">
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <p class="qs">How would you classify your entity</p>
+                                <div class="platform">
+                                    <div class="Q-ops"> <!-- Q-ops: Question Options -->
+                                        <div>
+                                            <img src="profile picture of person in glasses and orange shirt c.png" alt="boy with glasses in an orange t-shirt">
+                                        </div>
+                                        <div class="text">
+                                            <p class="option">Individual</p>
+                                            <p class="descriptn" style="font-size: 1.17vw;">i.e. a private worker</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <label for="web">
+                                        <input type="checkbox" id="web" style=" width:20px; height: 20px">
+                                    </label>                                
+                                </div>
+
+                                <div class="platform">
+                                    <div class="Q-ops">
+                                        <div>
+                                            <img src="big bank building c.png" alt="a bank building">
+                                        </div>
+                                        <div class="text">
+                                            <p class="option">Business</p>
+                                            <p class="descriptn" style="font-size: 1.17vw;">e.g. Limited Liability company, corporation, etc.</p>
+                                        </div>
+                                    </div>                               
+
+                                    <label for="app">
+                                        <input type="checkbox" id="app" style=" width:20px; height: 20px">
+                                    </label>                                
+                                </div>
+                                <div class="next-btn">
+                                    <a href="p2-additional-info.html">Next</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -18,16 +18,18 @@
         <nav>
             <div class="nav-container">
                 <div class="logo">
-                    <a href="">
-                        <img class="logo-image" src="{% static 'termsgen/products and templates/images/Secodary@3x.png' %}" alt="">
+                    <a href="{% url 'home' %}">
+                        <img class="logo-image" src="{% static 'termsgen/products and templates/images/Primary@3x.png' %}" alt="">
                     </a>
                 </div>
                 
                 <div class="generate-about-contact">
+                    <a href="{% url 'home' %}">Home</a>
+                    
                     <div class="dropdown" data-dropdown>
-                        <button class="link" data-dropdown-button>Generate</button>
+                        <button class="link" data-dropdown-button><a href="">Generate</a></button>
                         <div class="dropdown-menu">
-                            <a href="">Privacy policy generator</a>
+                            <a href="{% url 'privacy' %}">Privacy policy generator</a>
                             <a href="">Terms and conditions generator</a>
                             <a href="">Disclaimer generator</a>
                             <a href="">Return and refund policy generator</a>
@@ -40,8 +42,8 @@
                         <option value="privacy policy">Privacy Policy</option>
                         <option value="return and refund">Return and Refund Policy</option>
                     </select> -->
-                    <a href="">About us</a>
-                    <a href="">Contact us</a>
+                    <a href="{% url 'about_us' %}">About us</a>
+                    <a href="{% url 'contact_us' %}">Contact us</a>
                 </div>
                 <div class="registration-buttons">
                     <button id="log-in">Log In</button>
