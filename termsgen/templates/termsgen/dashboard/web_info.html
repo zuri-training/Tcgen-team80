@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{% static 'termsgen/dashboard/webstyle.css' %}">
     <link rel="shortcut icon" type="image/png" href="icons/FavIcon secondary@3x.png">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="{% static 'termsgen/dashboard/js/script.js' %}" defer></script>
     <title>Website information</title>
 </head>
 <body>
@@ -77,20 +78,6 @@
         </section><!--main end-->
 
     </div>  <!--wrapper end-->
-  
-    <script>
-        $('.feat-btn').click(function(){
-          $('#feat-show').toggleClass("show");
-          $('.first').toggleClass("rotate");
-        });
-        $('.serv-btn').click(function(){
-          $('#serv-show').toggleClass("show1");
-          $('.second').toggleClass("rotate");
-        });
-        $('.wrapper .sidebar ul li').click(function(){
-            $(this).addClass("active").siblings().removeClass("active");
-          });
-     </script>
 
 </body>
 </html>

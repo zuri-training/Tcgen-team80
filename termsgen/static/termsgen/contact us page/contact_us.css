@@ -1,6 +1,12 @@
+<<<<<<< HEAD
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+=======
 *{
   font-family: 'Poppins', sans-serif;
   margin:auto;
+>>>>>>> c0d3b09f02397c7f8bca08314921d82a5c9f344a
   padding: 0;
  
 }
@@ -186,6 +192,12 @@ input{
   border-radius: 8px;
 }
 
+<<<<<<< HEAD
+@media only screen and (max-width: 600px) {
+  body {
+     background-color: red;
+  }
+=======
 
 
 
@@ -209,6 +221,7 @@ input{
 /* @media only screen and (max-width:600px){ */
  
   
+>>>>>>> c0d3b09f02397c7f8bca08314921d82a5c9f344a
   /*LEFT SIDE MAIN*/
 /* .contact-page{ 
   width: 100%;
