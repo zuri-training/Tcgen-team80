@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    
+}
+
+.sidebar{
+    width: 11.24%;
+    background-color: #00337B;
+
+}
+
+.logobox{    
+    padding: 1rem;
+    z-index: 999;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* styling for the NAVBAR starts here */
+
+.navbar{
+    /* height: 7.74%; */
+    background-color: #DCEBFF;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+.navtabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;    
+
+}
+
+.navtabs ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+}
+
+nav ul li a{
+    color: #0055CC;
+    text-decoration: none;
+    font-size: 1.32vw;
+    font-weight: 500;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.ellipse{
+    width: 30px;
+    height: 30px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0055CC;
+    font-weight: 600;
+}
+
+.dashboard p{
+    color: #0055CC;
+    font-size: 1.32vw;
+    font-weight: 600;
+}
+
+/* styling for the progress bar starts here */
+
+.list{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 18px;
+}
+
+.sidebar-icons{
+    cursor: pointer;
+    padding: 0 29.5px; 
+}
+
+.sidebar-icons  .anchors{
+    text-decoration: none;    
+    padding: 0px 13px;
+}
+
+.sidebar-icons  .anchors .inactive{
+    border: 1px solid white;
+    color: white;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    margin-left: 42px;
+    position: relative;
+    margin: 0 49.5px;
+    padding: 0px 12px;
+}
+
+.sidebar-icons  .anchors .active{
+    background-color: #F9F6EE;
+    color: #00337B;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    margin-left: 42px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 49.5px;
+    padding: 3px 12px;
+}
+
+.anchors p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-icons p{
+    color: white;
+    font-weight: 600;
+    font-size: 1.17vw;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.vert{
+    transform: rotate(90deg);
+    width: 40px;
+    margin: 28px 0 11px;
+    /* padding: 0 72px; */
+}
+
+ /* Styling for the MAIN-CONTENT section starts here */
+
+.main{
+    width: 88.76%;
+    background-color: #FFF9EB;
+}
+
+/* styling for the header of the main section */
+
+.top{
+    width: 100%;    
+    border-bottom: 1px solid #969696;
+
+}
+
+ .biz-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10% 1rem 1rem;
+}
+
+.biz-info h1{
+    font-size: 2.34vw;
+    font-weight: 600;
+}
+
+.preview-btn{
+    text-align: center;
+    border: 1px solid #2B80F7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 28px;
+}
+
+.preview-btn a{
+    text-decoration: none;
+    color: #2B80F7;
+    font-size: 0.88vw;
+    font-weight: 500;
+}
+
+/* styling for the main content section containing questions */
+
+.bottom{
+    width: 100%;
+    padding: 0 1rem 1rem 1.2rem
+}
+
+.heading p{
+    font-size: 1.76vw;
+    font-weight: 500;
+    padding: 1.5rem 0;
+}
+
+
+.Q{
+    display: flex;
+    gap: 10%;
+
+}
+
+.column{
+    width: 48%;
+    margin-bottom: 90px;
+}
+
+
+.questions{
+    margin-bottom: 48px;
+}
+
+.questions h3, .ignore{
+    font-size: 1.37vw;
+    margin-bottom: 24px;
+}
+
+.questions label{
+    font-size: 1.17vw;
+    margin-bottom: 16px;
+
+}
+
+.radio{
+    width: 20px;
+    height: 20px;
+}
+
+.back-btn{
+    background-color: #CCE0FD;
+    border: 1px solid #CCE0FD;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.back-btn a{
+    text-decoration: none;
+    color: #2B80F7;
+    font-weight: 500;
+    font-size: 1.17vw;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.next-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #0055CC;
+    border-radius: 8px;
+    padding: 1.125rem 2rem;
+}
+
+.next-btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.17vw;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 57px 0;
+}
+

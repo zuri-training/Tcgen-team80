@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href={% static "/termsgen/static/termsgen/contact us page/contact_us.css" %}> -->
     <link rel="stylesheet" href="{% static 'termsgen/contact us page/contact_us.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +16,11 @@
 </head>
 <body>
     <div class="header">
-        <img class="image" src="{% static 'termsgen/contact_us page/assets/Primary.svg' %}" alt="logo">
+        <img class="image" src="{% static 'termsgen/contact us page/assets/Primary.svg' %}" alt="logo">
         <div class="nav">
             <ul class="head">
                 <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="">Generate</a><select class="display" >
-                            <option value=""></option>
-                        </select> 
-                </li>
+                <li><a href="">Generate</a></li>
                     <li><a href="{% url 'about_us' %}">About us</a></li>
                     <li><a href="{% url 'contact_us' %}">Contact us</a></li>
             </ul>
@@ -35,13 +33,16 @@
     <main>
         <div class="contact-page">
           <div class="container">
-            <h4 class="ct-us">Contact Us</h4>
+            <div>
+              <h4 class="ct-us">Contact Us</h4>
             <p>
               We love to hear from you. Our <br />team is always here to chat.
             </p>
+            </div>
+            
             <div class="imgText">
               <img src="{% static 'termsgen/contact us page/assets/msg.svg' %}" alt="message">  
-              <img class="iconImage" src="/assets/msg.svg" alt="message" />
+              {% comment %} <img class="iconImage" src="{% static 'termsgen/contact us page/assets/msg.svg' %}" alt="message" /> {% endcomment %}
               <h4 class="headerFont4">Chat with us</h4>
             </div>
             <p class="paragraphText">
@@ -67,6 +68,7 @@
                 <img src="{% static 'termsgen/contact us page/assets/instagram.svg' %}" alt="instagram">
             </div>
           </div>
+          
           <div class="container-right">
             <h3>Level Up your brand</h3>
             <p>You can reach out anytime Via termsgen.io@yahoo.com</p>

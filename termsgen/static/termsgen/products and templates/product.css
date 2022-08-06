@@ -5,6 +5,7 @@
 ===============*/
 body{
     margin: 0;
+    background-color: #F9F6EE;
 }
 ul{
     list-style: none;
@@ -50,8 +51,8 @@ p{
 }
 
 a{
-    font-size: 24px;
-    color: #FFFFFF;
+    font-size: 1rem;
+    color: #2B80F7;
     text-decoration: none;
     white-space: nowrap;
 }
@@ -86,15 +87,18 @@ li{
     layout
 ============ */
 header{
-    background-color: #00337B;
-    ;
-    height: 498px;
+    background-color: #DCEBFF;
+    /* height: 498px; */
 }
 
+nav{
+    background-color: #DCEBFF;
+}
 
 .nav-container{
     display: flex;
-    padding-top: 50px;
+    padding-top: 1em;
+    padding-bottom: 1em;
     margin-left: 80px;
     margin-right: 80px;
     justify-content: space-between;
@@ -103,7 +107,7 @@ header{
 .logo{
     position: relative;
     width: 10%;
-    min-width: 10%;
+    /* min-width: 10%; */
     max-height: 56px;
 }
 
@@ -116,12 +120,12 @@ header{
 
 .generate-about-contact{
     display: flex;
-    width: 35%;
+    width: 45%;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    margin-left: 120px;
-    margin-right: 20px;
+    /* margin-left: 120px; */
+    /* margin-right: 20px; */
 }
 
 .dropdown{
@@ -222,7 +226,7 @@ header{
 }
 
 .space{
-    height: 1300px;
+    height: 1700px;
 }
 
 footer{
@@ -277,20 +281,20 @@ button{
 }
 
 #sign-up{
-    background-color: #FFFFFF;
+    background-color: #2B80F7;
     font-weight: 500;
-    font-size: 24px;
-    color: #00337B;
+    font-size: 1rem;
+    color: white;
     padding: 12px 32px 12px 32px;
     cursor: pointer;
 }
 
 #log-in{
-    background-color: #00337B;
-    border: 1px solid #FFFFFF;
+    background-color: #DCEBFF;
+    border: 1px solid #2B80F7;
     font-weight: 500;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #2B80F7;
     cursor: pointer;
 }
 

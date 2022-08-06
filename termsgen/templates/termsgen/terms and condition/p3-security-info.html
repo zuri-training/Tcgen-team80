@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="p3-security-info.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <title>Business Information</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- sidebar section containing logo and progress bar -->
+
+        <section class="sidebar">
+            <div class="logobox">
+                <img src="Secodary@3x.png" alt="termsgen-logo" class="logo">
+            </div>
+
+            <div class="progress-bar">
+
+                <div class="list">
+                    <div class="sidebar-icons">
+                        <a class=" anchors" href="#">
+                            <p class="inactive">1</p>
+                        </a>
+                        <p>Business Information</p>
+                    </div>
+    
+                    <div>
+                        <hr class="vert">
+                    </div>
+                    
+                    <div class="sidebar-icons">
+                        <a class="anchors" href="#">
+                            <p class="inactive">2</p>
+                        </a>
+                        <p>Additional Information</p>
+                    </div>
+                    
+                    <div>
+                        <hr class="vert">
+                    </div>
+    
+                    <div class="sidebar-icons">
+                        <a class="anchors" href="#">
+                            <p class="active">3</p>
+                        </a>
+                        <p>Security Details</p>
+                    </div>
+                    
+                    <div>
+                        <hr class="vert">
+                    </div>
+    
+                    <div class="sidebar-icons">
+                        <a class="anchors" href="#">
+                            <p class="inactive">4</p>
+                        </a>
+                        <p>Preview Document</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Main section containing navbar and content -->
+
+        <section class="main">
+            <div class="navbar">
+                <nav>               
+                    <div class="navtabs">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Generate</a><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 24 24" fill="black" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-profile">
+                        <div class="ellipse">G</div>
+                        <div class="dashboard">
+                            <p>Dashboard</p>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="main-content">
+                <div class="top">
+                    <div class="biz-info">
+                        <h1>Enter Security Details</h1>
+                        <div class="preview-btn">
+                            <a href="#">preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+
+                    <div class="heading">
+                        <p>What other information do you require from users?</p>
+                    </div>
+                    <div class="Q">
+                        <div class="column">
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;"> Which of the following social media login platforms do you utilize?</h3>
+                                <p class="ignore">(Ignore if not applicable)</p>
+    
+                                <input type="checkbox" id="Q1-fbl" name="Q1" value="Facebook" class="radio">
+                                <label for="Q1-fbl">Facebook login.</label><br>
+    
+                                <input type="checkbox" id="Q1-gl" name="Q1" value="Google" class="radio">
+                                <label for="Q1-gl">Google login.</label><br>
+    
+                                <input type="checkbox" id="Q1-tl" name="Q1" value="Twitter" class="radio">
+                                <label for="Q1-tl">Twitter login.</label><br>
+    
+                                <input type="checkbox" id="Q1-ll" name="Q1" value="LinkedIn" class="radio">
+                                <label for="Q1-ll">LinkedIn login.</label><br>
+                                
+                                <input type="checkbox" id="Q1-ghl" name="Q1" value="Github" class="radio">
+                                <label for="Q1-ghl">Github login.</label>
+                            </div>
+    
+                            <div class="questions">
+                                <h3>Are users under the age of 13 allowed to access your website/app?</h3>
+                                <input type="radio" id="Q2-yes" name="Q2" value="Yes" class="radio">
+                                <label for="Q2-yes">Yes.</label><br>
+                                <input type="radio" id="Q2-no" name="Q2" class="radio" value="No">
+                                <label for="Q2-no">No.</label>
+                            </div>
+    
+                            <div class="questions">
+                                <h3>Does your app/website require users to make payments online?</h3>
+                                <input type="radio" id="Q3-yes" name="Q3" value="Yes" class="radio">
+                                <label for="Q3-yes">Yes.</label><br>
+                                <input type="radio" id="Q3-no" name="Q3" class="radio" value="No">
+                                <label for="Q3-no">No.</label>
+                            </div>
+    
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">How do you run your payment plans?</h3>
+                                <p class="ignore">(Ignore if not applicable)</p>
+                                <input type="radio" id="Q4-onetime" name="Q4" value="one-time" class="radio">
+                                <label for="Q4-onetime">One-time payment</label><br>
+                                <input type="radio" id="Q4-recurring" name="Q4" class="radio" value="recurring">
+                                <label for="Q4-no">Recurring payment.</label><br>
+                                <input type="radio" id="Q4-both" name="Q4" class="radio" value="both">
+                                <label for="Q4-both">Both.</label>
+                            </div>
+                        </div>
+    
+                        <div class="column">
+                            <div class="questions">
+                                <h3>How can users contact you for any questions, if any?</h3>
+    
+                                <input type="checkbox" id="Q5-email" name="Q5-email" value="Yes" class="radio">
+                                <label for="Q5-email">By Email</label><br>
+    
+                                <input type="checkbox" id="Q5-phone" name="Q5-phone" class="radio" value="No">
+                                <label for="Q5-phone">By phone number.</label><br>
+    
+                                <input type="checkbox" id="Q5-website" name="Q5-website" class="radio" value="No">
+                                <label for="Q5-website">By visiting a page on your website.</label><br>
+    
+                                <input type="checkbox" id="Q5-postmail" name="Q5-postmail" class="radio" value="No">
+                                <label for="Q5-postmail">By sending post mail.</label>                            
+                            </div>
+    
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Does your website link to any other websites that you do not own?</h3>
+                                <p class="ignore">(Ignore if not applicable)</p>
+                                <input type="radio" id="Q6-yes" name="Q6" value="Yes" class="radio">
+                                <label for="Q6-yes">Yes.</label><br>
+                                <input type="radio" id="Q6-no" name="Q6" class="radio" value="No">
+                                <label for="Q6-no">No.</label>
+                            </div>
+    
+                            <div class="questions">
+                                <h3>Do you have third-party advertisement on your website?</h3>
+                                <input type="radio" id="Q7-yes" name="Q7" value="Yes" class="radio">
+                                <label for="Q7-yes">Yes.</label><br>
+                                <input type="radio" id="Q7-no" name="Q7" class="radio">
+                                <label for="Q7-no" value="No">No.</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="buttons">
+                        <div class="back-btn">
+                            <a href="p2-additional-info.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#2B80F7" stroke="#2B80F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>Back</a>
+                        </div>
+    
+                        <div class="next-btn">
+                            <a href="p4-preview-page.html">Continue</a>
+                        </div>
+                    </div>
+
+                </div>                    
+            </div>
+        </section>
+
+
+
+    </div>
+</body>
+
+</html>

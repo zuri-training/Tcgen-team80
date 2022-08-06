@@ -9,32 +9,33 @@
     <link rel="stylesheet" href="{% static 'termsgen/landing page/style.css' %}">
 </head>
 <body>
- <section>
+<section>
     <div class="hero-container">
     <nav>
         <div id="nav-container">
         <div class="logo">
-        <img id="white-logo" src="{% static 'termsgen/landing page/Terms-logo-white.png' %}" alt="LOGO"></div>
+        <img id="white-logo" src="{% static 'termsgen/landing page/Images/Primary@3x.png' %}" alt="LOGO"></div>
         <div class="nav-links">
             <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
+                <li ><a class="nav-text" href="{% url 'home' %}">Home</a></li>
                 <div class="dropdown">
-                <li><a href="#">Generate
-                <i id="dropdown-btn" style="margin: 0 20px;" class="arrow down"></i></a></li>
+                <li ><a class="nav-text" href="{% url 'products' %}">Generate
+                <i id="dropdown-btn" style="margin: 0 20px;" class="arrow-down"></i></a></li>
                 <div class="dropdown-content">
                     <a href="#">Terms and Condition</a>
-                    <a href="#">Privacy Policy</a>
+                    <a href="{% url 'privacy' %}">Privacy Policy</a>
                     <a href="#">Return and refund</a>
                   </div></div>               
-                  <li><a href="{% url 'about_us' %}">About us</a></li>
-                <li><a href="{% url 'contact_us' %}">Contact us</a></li>
-                
-            </ul></div>
+                  <li ><a class="nav-text" href="{% url 'about_us' %}">About us</a></li>
+                <li><a class="nav-text"href="{% url 'contact_us' %}">Contact us</a></li>
+            </ul>
+        </div>
         
    
         <div class="action-button">
             <a href="#"><button id="login">Log in</button></a>
-            <a href="#"><button id="sign-up">Sign up</button></a></div>
+            <a href="#"><button id="sign-up">Sign Up</button></a>
+        </div>
         </div>
     </nav>
  
@@ -51,7 +52,7 @@
                 <a href="#"><button id="start-btn">Get Started</button></a>
             </div>
             <div class="intro-img">
-                <img id="image1" src="{% static 'termsgen/landing page/Group 1 (1).jpg' %}" alt="image">
+                <img id="image1" src="{% static 'termsgen/landing page/Images/Group 1 (1).jpg' %}" alt="image">
             </div>
         </div>
         </div>
@@ -59,59 +60,80 @@
         <div id="layer2">
             <h3>What We Offer </h3>
             <div class="boxes">
-            <div id="box1">
-                <div id="top-box">
-                <img id="icons" src="{% static 'termsgen/landing page/privacy-icon.png' %}" alt="">
-            <p><a href="">Privacy Policy</a></p></div>
-            <div id="offer-text"><p>Legal agreement about the 
-                information you may collect from a user.</p></div></div>
-            <div id="box2">
-                <div id="top-box">
-                <img id="icons" src="{% static 'termsgen/landing page/terms-icon.png' %}" alt="">
-            <p><a href="">Terms And Conditions</a></p></div>
-            <div id="offer-text"><p>Legal agreement about the 
-                information you may collect from a user.</p></div></div>
+                <div id="box1">
+                    <div id="top-box">
+                        <img id="icons" src="{% static 'termsgen/landing page/Images/privacy-icon.png' %}" alt="">
+                        <p><a href="">Privacy Policy</a></p>
+                    </div>
+                    <div id="offer-text">
+                        <p>Legal agreement about the 
+                            information you may collect from a user.
+                        </p>
+                    </div>
+                </div>
+                <div id="box2">
+                    <div id="top-box">
+                        <img id="icons" src="{% static 'termsgen/landing page/Images/terms-icon.png' %}" alt="">
+                        <p><a href="">Terms And Conditions</a></p>
+                    </div>
+                    <div id="offer-text">
+                        <p>Legal agreement about the 
+                            information you may collect from a user.</p>
+                    </div>
+                </div>
             </div>
             <div class="box2-layer">
-            <div id="box3">
-                <div id="top-box">
-                    <img id="icons" src="{% static 'termsgen/landing page/disclaimer-icon.png' %}" alt="">
-                <p><a href="">Disclaimer</a></p></div>
-                <div id="offer-text"><p>Legal agreement about the 
-                    information you may collect from a user.</p></div></div>
-            <div id="box4">
-                <div id="top-box">
-                    <img id="icons" src="{% static 'termsgen/landing page/refund-icon.png' %}" alt="">
-                <p><a href="">Refund And Return Policy</a></p></div>
-                <div id="offer-text"><p>Legal agreement about the 
-                    information you may collect from a user.</p></div></div>
-        </div>
+                <div id="box3">
+                    <div id="top-box">
+                        <img id="icons" src="{% static 'termsgen/landing page/Images/disclaimer-icon.png' %}" alt="">
+                        <p><a href="">Disclaimer</a></p>
+                    </div>
+                    <div id="offer-text">
+                        <p>Legal agreement about the 
+                        information you may collect from a user.
+                        </p>
+                    </div>
+                </div>
+                <div id="box4">
+                    <div id="top-box">
+                        <img id="icons" src="{% static 'termsgen/landing page/Images/refund-icon.png' %}" alt="">
+                        <p><a href="">Refund And Return Policy</a></p>
+                    </div>
+                    <div id="offer-text">
+                        <p>Legal agreement about the 
+                            information you may collect from a user.
+                        </p>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
 
         <div id="layer3">
             <h3>How it works</h3>
-            <div id="top1">
-            <div class="left-box">
-                <img src="{% static 'termsgen/landing page/pana.png' %}" alt="">
-            </div>
-                <div class="right-box">
-                    <h6>Refund And Return Policy</h3>
-                    <p>Legal agreement about the 
-                        information you may collect from a user.</p>
-                </div>
-            </div>
-
-            <div id="top2">
-                <div class="right-box2">
-                    <h6>Refund And Return Policy</h3>
-                    <p>Legal agreement about the 
-                        information you may collect from a user.</p>
-                </div>
-                    <div class="left-box2">
-                        <img src="{% static 'termsgen/landing page/Group 2 (1).jpg' %}" alt="">
+            <div class="cards">
+                <div id="top1">
+                    <div class="left-box">
+                        <img src="{% static 'termsgen/landing page/Images/pana.png' %}" alt="">
+                    </div>
+                    <div class="right-box">
+                        <h6>Refund And Return Policy</h3>
+                        <p>Legal agreement about the 
+                            information you may collect from a user.
+                        </p>
                     </div>
                 </div>
+
+                <div id="top2">
+                    <div class="right-box2">
+                        <h6>Refund And Return Policy</h3>
+                        <p>Legal agreement about the 
+                            information you may collect from a user.</p>
+                    </div>
+                        <div class="left-box2">
+                            <img src="{% static 'termsgen/landing page/Images/Group 2 (1).jpg' %}" alt="">
+                        </div>
+                    </div>
 
                 <div id="top3">
                     <div class="left-box">
@@ -122,9 +144,11 @@
                             <p>Legal agreement about the 
                                 information you may collect from a user.</p>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
+            
         
 
         <div id="layer4">
@@ -135,13 +159,13 @@
                         generator I’ve used.
                         I got 99% satisfaction.<br><strong>
                         _ Comfort</strong></p>
-                    <img src="{% static 'termsgen/landing page/images/Line 1.png' %}" alt=""></div>
+                    <img src="{% static 'termsgen/landing page/Images/Line 1.png' %}" alt=""></div>
                     <div class="text2"><p style="margin-left: 20px;">The site is super fast 
                         and easy to use. I got 
                         my policy generated 
                         in a couple of minutes.<br><strong>
                         _ Cici</strong></p>
-                        <img src="{% static 'termsgen/landing page/images/Line 1.png' %}" alt=""></div>
+                        <img src="{% static 'termsgen/landing page/Images/Line 1.png' %}" alt=""></div>
                 <div class="text3"><p style="margin-left: -20px;">The site is super fast 
                     and easy to use. I got 
                     my policy generated 
@@ -171,9 +195,14 @@
                 <p>Export your policies in any format of your choice. No holding back.</p>
             </div>
             </div>
-           <div id="cta"> 
-            <p>Ready to generate your policy?</p>
-           <div id="cta-btn"><a href=""><button id="start-btn">Get Started</button></a></div>
+            <div class="cta-div">
+                <div id="cta"> 
+                    <p>Ready to generate your policy?</p>
+                <div id="cta-btn">
+                    <a href=""><button id="start-btn">Get Started</button></a>
+                </div>
+            </div>
+           
         </div>
          </div>
     </main>
