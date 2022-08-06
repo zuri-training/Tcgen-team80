@@ -1,6 +1,6 @@
 * {
   font-family: "Poppins", sans-serif;
-  margin: auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -190,7 +190,7 @@ input {
 
 @media only screen and (max-width: 600px) {
   body {
-    /* background-color: red; */
+     background-color: red;
   }
   /*LEFT SIDE MAIN*/
   
