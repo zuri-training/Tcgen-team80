@@ -19,8 +19,11 @@ body{
   justify-content: space-between;
   background: #F9FBFF;
 }
-.image{
+img .image{
   margin-top: 1.5em;
+  margin-left: 2em;
+  /* padding-left: 5rem; */
+  background: red;
   height: 40px;
 }
 
@@ -48,7 +51,6 @@ a{
   border-radius: 8px ;
   border: 1.5px solid #0055CC;
   background:  #F9FBFF;
-
   color:  #00337B;
   font-weight: 500;
   font-size: 16px;
@@ -94,12 +96,14 @@ h4.ct-us{
   color: #D9D9D9;
   line-height: 30px;
 }
+.lt-img{
+  margin: 0%;
+}
 .headerFont4{
   color: #D9D9D9;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 22px;
   margin-left:12.5%;
-  line-height: 2em;
 }
 .paragraphText{
   font-weight: 400;
@@ -107,7 +111,7 @@ h4.ct-us{
   margin-top: 0%;
   margin-left: 17%;
   font-size: 20px;
-  line-height: 36px;
+  margin-bottom: 2em;
 }
 .iconImage{
   margin: 0%;
@@ -122,7 +126,7 @@ h4.ct-us{
   display: flex;
   float: left;
   gap: 80px;
-  padding-top: 30%;
+  margin-top: 40%;
 
 } 
 
@@ -156,7 +160,6 @@ label{
 }
 input{
   padding-inline-start: 8px;
-  /* position: relative; */
   border: 2px solid #717171;
   border-radius: 8px;
   width: 45%;
