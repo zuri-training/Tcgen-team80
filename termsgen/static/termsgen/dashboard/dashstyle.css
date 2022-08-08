@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: #F9F6EE;
+    background-color: #F9FBFF;
 }
 
 .wrapper{
@@ -37,7 +37,7 @@ body{
 }
 
 .wrapper .sidebar h2{
-    color: white;
+    color: #F9FBFF;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -48,14 +48,14 @@ body{
 }
 
 .wrapper .sidebar ul li:hover {
-    background-color: white;
+    background-color: #F9FBFF;
     border-right: 10px solid #0066F5;
     transition: all 0.2s ease;
     font-weight: 500;
 }
 
 .wrapper .sidebar ul li a{
-    color: white;
+    color: #F9FBFF;
     display: block;
     position: relative;
     padding: 15px;
@@ -68,7 +68,7 @@ body{
 /*active navigation*/
 
 .wrapper .sidebar ul li.active a{
-    background-color: white;
+    background-color: #F9FBFF;
     border-right: 10px solid #0066F5;
     transition: all 0.2s ease;
     font-weight: 500;
@@ -81,12 +81,12 @@ body{
 
 .wrapper .sidebar ul li.active ul li a{
     color:black;
-    background-color: white;
+    background-color: #F9FBFF;
     border-right-color: transparent;
 }
 
 .wrapper .sidebar ul ul li a:hover{
-    background-color: white !important;
+    background-color: #F9FBFF !important;
     color: #00337B !important;
 }
 
@@ -123,12 +123,12 @@ body{
 
 #feat-show{
     padding-left: 50px;
-    background-color: white;
+    background-color: #F9FBFF;
 }
 
 #serv-show{
     padding-left: 50px;
-    background-color: white;
+    background-color: #F9FBFF;
 }
 
 #feat-show.show{
@@ -168,7 +168,7 @@ body{
 }
 
 .wrapper .sidebar .logout:hover {
-    background-color: white;
+    background-color: #F9FBFF;
     border-right: 10px solid #0066F5;
     transition: all 0.2s ease;
     font-weight: 500;
@@ -193,7 +193,7 @@ body{
 /*search*/
 
 .wrapper .main .search form{
-    background-color: #FFF9EB;
+    background-color: #F9FBFF;
     padding: 10px 300px 10px 300px;
 }
 
@@ -227,7 +227,7 @@ body{
     margin-bottom: 5px;
     margin-left: 24px;
     margin-right: 24px;
-    background-color: #F9F6EE;
+    background-color: #F9FBFF;
     width: 90%;
     position: relative;
     border-bottom: 1px solid #999999;
@@ -254,7 +254,7 @@ body{
     letter-spacing: 0em;
     text-align: center;
     color:#2B80F7;
-    background-color: #F9F6EE;
+    background-color: #F9FBFF;
     border: 1px solid #2B80F7;
     border-radius: 8px;
     padding: 15px 15px;
@@ -270,12 +270,12 @@ body{
     padding: 20px 30px;
     width: 90%;
     border: none;
-    background-color:#FFF9EB;
+    background-color:#F9FBFF;
     margin-bottom: 50px;
 }
 
 .wrapper .main .projectz .project{
-    background-color: #FFF9EB;
+    background-color: #F9FBFF;
     border: 1px solid #2B80F7;
     padding: 30px 20px;
     margin-top: 20px;
@@ -326,7 +326,7 @@ body{
 /*Projects buttons*/
 
 #shed1{
-    background-color: #FFF9EB;
+    background-color: #F9FBFF;
     color: #0055CC;
     padding: 15px 30px;
     border: 1px solid #0055CC;
@@ -340,7 +340,7 @@ body{
 }
 
 #shed2{
-    background-color: #FFF9EB;
+    background-color: #F9FBFF;
     color: #0055CC;
     padding: 15px 30px;
     border: 1px solid #0055CC;

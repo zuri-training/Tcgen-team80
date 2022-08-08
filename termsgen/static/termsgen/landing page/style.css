@@ -14,7 +14,7 @@
         width: 100vw;
         height: 100%;
         margin: auto;
-        background-color: #F9F6EE;
+        background-color: #F9FBFF;
         font-family: 'Poppins', 'Lato';
     }
 
@@ -23,7 +23,7 @@
         width: 100vw;
         height: 72px;
         /* justify-content: space-between; */
-        background-color: #DCEBFF;
+        background-color: #F9FBFF;
         padding-top: 13px; 
     }
 
