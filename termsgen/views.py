@@ -47,3 +47,15 @@ def terms_and_conditions(request):
 
 def terms_and_conditions_2(request):
     return render(request, "termsgen/terms and condition/p2-additional-info.html")
+
+def terms_and_conditions_3(request):
+    return render(request, "termsgen/terms and condition/p3-security-info.html")
+
+def terms_and_conditions_4(request):
+    return render(request, "termsgen/terms and condition/p4-preview-page.html")
+
+def terms_and_conditions_5(request):
+    return render(request, "termsgen/terms and condition/p3-success-info.html")
+
+def terms_and_conditions_6(request):
+    return render(request, "termsgen/terms and condition/p4-overlay-page.html")
