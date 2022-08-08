@@ -25,13 +25,14 @@ img .image{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 24px;
+  color: #0055CC;
 }
 li{
   margin-right:8rem;
 }
 a{
   text-decoration: none;
-  color:#0055CC;
+  /* color:#0055CC; */
 }
 .nav-buttons{
   display: flex;
@@ -130,10 +131,13 @@ h1 {
   margin-left: 4vw;
 }
 p {
-  font-weight: 300;
+  /* font-weight: 300;
   font-size: 24px;
-  color: #151515;
+  color: #151515; */
 }
+
+
+
 
 /* FOOTER */
 
