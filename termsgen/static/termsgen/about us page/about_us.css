@@ -14,30 +14,35 @@
     height: 75px;
     background: #F9FBFF;
     opacity: 0.8;
-
+  
     
-}
-.image{
+  }
+  .image{
     margin-top: 1em;
     height: 40px;
-}
-
-ul{
+    margin-left: 5vw;
+  }
+  
+  ul{
     display: flex;
     list-style: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 100%;
-}
-li{
+  }
+  li{
     margin-right:8rem;
     color:#0055CC;
-}
-.nav-buttons{
+  }
+  a{
+    text-decoration: none;
+    color: #0055CC;
+  }
+  .nav-buttons{
    width: 15%;
-}
-.btn{
+  }
+  .btn{
     font-family: 'Poppins', sans-serif;
     width: 100px;
     height: 48px;
@@ -50,13 +55,13 @@ li{
     cursor: pointer;
     right: 60px;
     position: relative;
-}
-
-.btn-two{
+  }
+  
+  .btn-two{
     width: 150px;
     height: 48px;
-    background: #0055CC;
-    border: 2px  solid  #0055CC;
+    background: #0055CC;;
+    border: 2px  solid  #0055CC;;
     border-radius: 8px;
     font-weight: 500;
     font-size: 16px;
@@ -64,10 +69,8 @@ li{
     right: 40px;
     position: relative;
     cursor: pointer; 
-} 
-
-
-
+  } 
+  
 
 /* MAIN */
 
