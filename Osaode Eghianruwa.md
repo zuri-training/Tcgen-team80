@@ -5,4 +5,4 @@
 
 **CONTRIBUTIONS / WORK DONE**
 
-Input work done here - _input link(s) here_
+Work done - link(s) here
