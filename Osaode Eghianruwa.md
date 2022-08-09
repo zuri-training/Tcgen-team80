@@ -15,6 +15,6 @@ https://github.com/zuri-training/Tcgen-team80/blob/main/termsgen/views.py
 First presentation video presenter - https://github.com/zuri-training/Tcgen-team80/issues/2
 https://drive.google.com/file/d/1ijArLihM9CI1gs3jc0rurFxPRfMoKBaq/view
 
-Backend registration and login authentication - 
+Backend registration and login authentication - https://github.com/zuri-training/Tcgen-team80/issues/39
 
 
