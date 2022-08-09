@@ -77,10 +77,10 @@
                 <nav>               
                     <div class="navtabs">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Generate</a><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 24 24" fill="black" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span></li>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Contact Us</a></li>
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'products' %}">Generate</a></li>
+                            <li><a href="{% url 'about_us' %}">About Us</a></li>
+                            <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="user-profile">
@@ -112,7 +112,7 @@
                                 <div class="platform">
                                     <div class="Q-ops"> <!-- Q-ops: Question Options -->
                                         <div>
-                                            <img src="./Women create a website using a laptop and a desktop computer.png" alt="">
+                                            <img src="{% static 'termsgen/terms and condition/icons & images/Women create a website using a laptop and a desktop computer.png' %}" alt="">
                                         </div>
                                         <div class="text">
                                             <p class="option">Website</p>
@@ -128,7 +128,7 @@
                                 <div class="platform">
                                     <div class="Q-ops">
                                         <div class="img">
-                                            <img src="./Online ordering pizza in a mobile application.png" alt="">
+                                            <img src="{% static 'termsgen/terms and condition/icons & images/Online ordering pizza in a mobile application.png' %}" alt="">
                                         </div>
                                         <div class="text">
                                             <p class="option">App</p>
@@ -172,7 +172,7 @@
                                 <div class="platform">
                                     <div class="Q-ops"> <!-- Q-ops: Question Options -->
                                         <div>
-                                            <img src="profile picture of person in glasses and orange shirt c.png" alt="boy with glasses in an orange t-shirt">
+                                            <img src="{% static 'termsgen/terms and condition/icons & images/profile picture of person in glasses and orange shirt c.png' %}" alt="boy with glasses in an orange t-shirt">
                                         </div>
                                         <div class="text">
                                             <p class="option">Individual</p>
@@ -188,7 +188,7 @@
                                 <div class="platform">
                                     <div class="Q-ops">
                                         <div>
-                                            <img src="big bank building c.png" alt="a bank building">
+                                            <img src="{% static 'termsgen/terms and condition/icons & images/big bank building c.png' %}" alt="a bank building">
                                         </div>
                                         <div class="text">
                                             <p class="option">Business</p>
@@ -201,13 +201,11 @@
                                     </label>                                
                                 </div>
                                 <div class="next-btn">
-                                    <a href="p2-additional-info.html">Next</a>
+                                    <a href="{% url 'terms_conditions_2' %}">Next</a>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             </div>

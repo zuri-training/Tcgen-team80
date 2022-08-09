@@ -31,28 +31,28 @@
         <!--sidebar progress-list is here-->
         <ul>
           <li>
-            <a href="/index.html" id="first-el">
+            <a href="{% url 'privacy' %}" id="first-el">
               <button  type="button" id="businessinfo-btn">1</button>
               <p style="color: white;">Business Information</p>
             </a>
           </li>
           <hr class="vert" />
           <li>
-            <a href="/additionalinfo.html" id="second-el">
+            <a href="{% url 'privacy_2' %}" id="second-el">
               <button type="button" id="additionalinfo-btn" onclick="openBusiness()"><bold>2</bold></button>
               <p style="color: white;">Additional Information</p>
             </a>
           </li>
           <hr class="vert" />
           <li>
-            <a href="/security.html" id="third-el">
+            <a href="{% url 'privacy_3' %}" id="third-el">
               <button type="button" id="security-btn"><bold>3</bold></button>
               <p style="color: white;">Security Details</p>
             </a>
           </li>
           <hr class="vert" />
           <li>
-            <a href="previewdoc.html" id="fourth-el">
+            <a href="{% url 'privacy_4' %}" id="fourth-el">
               <button type="button" id="preview-btn"><bold>4</bold></button>
               <p style="color: white;">Preview Document</p>
             </a>
@@ -62,7 +62,7 @@
       <header>
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
             <li>
                 <a href="/">
                   <select style="border: none; background: none; font-size: 24px;" id="country" name="country">
@@ -72,8 +72,8 @@
                   </select>
                 </a>
               </li>
-            <li><a href="/">About Us</a></li>
-            <li><a href="/">Contact Us</a></li>
+            <li><a href="{% url 'about_us' %}">About Us</a></li>
+            <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
           </ul>
         </nav>
 
