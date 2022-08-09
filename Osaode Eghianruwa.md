@@ -1,8 +1,15 @@
-# YOUR NAME HERE
+# OSAODE EGHIANRUWA
 
-### Student ID: I4GSJHSJFSFJ <<<edit this
-(do not delete the # above. Ensure you delete this bracket and the message in this entire line after reading)
+### Student ID: I4G011367CLY
 
 **CONTRIBUTIONS / WORK DONE**
 
-Work done - link(s) here
+Assistant team lead for developers
+
+Dashboard front end development - link(s) here
+
+First presentation video presentation - 
+
+Backend registration and login authentication -
+
+
