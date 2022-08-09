@@ -1,6 +1,6 @@
 # YOUR NAME HERE
-(do not delete the #. delete this bracket and this message after reading)
+(do not delete the # above. delete this bracket and the message in this entire line after reading)
 
 **CONTRIBUTIONS / WORK DONE**
 
-[GIT] (https://github.com/zuri-training/Tcgen-team80)
+Input work done here - _input link(s) here_
