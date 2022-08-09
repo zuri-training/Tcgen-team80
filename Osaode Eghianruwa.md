@@ -6,11 +6,12 @@
 
 Assistant team lead for developers
 
-Dashboard front end development - link(s) here
+Dashboard front end development - https://github.com/zuri-training/Tcgen-team80/issues/22
+https://github.com/zuri-training/Tcgen-team80/tree/main/termsgen/templates/termsgen/dashboard
 
-Created Django views for web app -
+Created Django views for web app - https://github.com/zuri-training/Tcgen-team80/blob/main/termsgen/views.py
 
-First presentation video presentation - 
+First presentation video presentation - https://github.com/zuri-training/Tcgen-team80/issues/2
 
 Backend registration and login authentication -
 
