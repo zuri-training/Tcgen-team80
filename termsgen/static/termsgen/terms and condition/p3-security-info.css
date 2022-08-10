@@ -8,7 +8,6 @@
 .container{
     position: relative;
     width: 100%;
-    display: flex;
     /* flex-direction: column; */
     
 }
@@ -20,7 +19,8 @@
 }
 
 .logobox{    
-    padding: 1rem;
+    width: 125px;
+    margin: 1rem;
     z-index: 999;
 }
 
@@ -34,8 +34,9 @@
 /* styling for the NAVBAR starts here */
 
 .navbar{
+    width: 100%;
     /* height: 7.74%; */
-    background-color: #DCEBFF;
+    background-color: #F9FBFF;
 }
 
 nav{
@@ -66,6 +67,25 @@ nav ul li a{
     font-weight: 500;
 }
 
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #5599F8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+.dropdown{
+    width: 15px;
+    margin-left: 10px;
+}
+
 .user-profile{
     display: flex;
     align-items: center;
@@ -74,14 +94,14 @@ nav ul li a{
 }
 
 .ellipse{
-    width: 30px;
-    height: 30px;
-    background-color: #D9D9D9;
+    width: 40px;
+    height: 40px;
+    background-color: #0055CC;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0055CC;
+    color: #fff;
     font-weight: 600;
 }
 
@@ -146,7 +166,7 @@ nav ul li a{
 
 .sidebar-icons p{
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.17vw;
     text-align: center;
     padding: 0 25px;
@@ -162,8 +182,12 @@ nav ul li a{
  /* Styling for the MAIN-CONTENT section starts here */
 
 .main{
+    display: flex;
+    /* background-color: #FFF9EB; */
+}
+
+.main-content{
     width: 88.76%;
-    background-color: #FFF9EB;
 }
 
 /* styling for the header of the main section */
@@ -178,7 +202,8 @@ nav ul li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 10% 1rem 1rem;
+    padding: 1rem 3rem 1rem 1rem;
+    background-color: #ECF0F3;
 }
 
 .biz-info h1{
@@ -188,19 +213,79 @@ nav ul li a{
 
 .preview-btn{
     text-align: center;
-    border: 1px solid #2B80F7;
+    border: 1px solid #0055CC;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 28px;
+    transition: 500ms;
+}
+
+.preview-btn:hover{
+    background-color: #CCE0FD;
+    box-shadow: 0px 4px 4px rgba(159, 156, 156, 0.31);
+}
+
+.preview-btn:active{
+   border: 3px solid #2B80F7;
 }
 
 .preview-btn a{
     text-decoration: none;
-    color: #2B80F7;
+    color: #00337B;
     font-size: 0.88vw;
     font-weight: 500;
+}
+
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.5);
+    overflow: auto; /* Enable scroll if needed */
+}
+  
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    /* margin-top: 30px; */
+    
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 295px;
+    font-size: 60px;
+    color: #000;
+  }
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
 
 /* styling for the main content section containing questions */
@@ -250,7 +335,7 @@ nav ul li a{
 }
 
 .back-btn{
-    background-color: #CCE0FD;
+    /* background-color: #CCE0FD; */
     border: 1px solid #CCE0FD;
     border-radius: 8px;
     display: flex;
@@ -258,6 +343,13 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.back-btn:hover{
+    background-color: #CCE0FD;
+    box-shadow: 0px 4px 4px rgba(159, 156, 156, 0.31);
 }
 
 .back-btn a{
@@ -280,6 +372,12 @@ nav ul li a{
     background: #0055CC;
     border-radius: 8px;
     padding: 1.125rem 2rem;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.next-btn:hover{
+    box-shadow: 0px 4px 4px rgba(31, 31, 31, 0.35);
 }
 
 .next-btn a{

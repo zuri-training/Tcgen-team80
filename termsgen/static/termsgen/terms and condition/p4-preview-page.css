@@ -27,7 +27,7 @@
 .navbar{
     width: 100%;
     /* height: 7.74%; */
-    background-color: #00337B;
+    background-color: #F9FBFF;;
 }
 
 nav{
@@ -35,6 +35,20 @@ nav{
     justify-content: space-around;
     align-items: center;
     z-index: 999;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #5599F8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
 }
 
 .navtabs{
@@ -52,10 +66,15 @@ nav{
 }
 
 nav ul li a{
-    color: white;
+    color: #0055CC;
     text-decoration: none;
     font-size: 1.32vw;
     font-weight: 500;
+}
+
+.dropdown{
+    width: 15px;
+    margin-left: 10px;
 }
 
 .user-profile{
@@ -66,14 +85,14 @@ nav ul li a{
 }
 
 .ellipse{
-    width: 30px;
-    height: 30px;
-    background-color: #DCEBFF;
+    width: 40px;
+    height: 40px;
+    background-color: #0055CC;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0055CC;
+    color: white;
     font-weight: 600;
 }
 
@@ -89,8 +108,8 @@ nav ul li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 10% 1rem 4.5rem;
-    border-bottom: 1px solid #969696;
+    padding: 1rem 10% 1rem 7.5rem;
+    background-color: #ECF0F3;
 }
 
 .biz-info h1{
@@ -146,18 +165,28 @@ nav ul li a{
     align-items: center;
     justify-content: center;
     background-color: white;
-    color: black;
+    color: #00337B;
 }
 
 .circle4{
     width: 3vw;
     height: 3vw;
     border-radius: 50px;
-    background-color: black;
+    background-color: #0055CC;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+.text{
+    font-weight: 600;
+    color: #968686;
+}
+
+.text4{
+    font-weight: 600;
+    color: #0055CC;
 }
 
 .p{
@@ -199,26 +228,104 @@ nav ul li a{
 select{
     width: 21.875rem;
     height: 3.5rem;
+    border: 1px solid #2B80F7;
+    font-size: 1.17vw;
+    text-decoration: none;;
     border-radius: 8px;
+    color: #2B80F7;
 }
 
-.download-options{
+.options{
     display: flex;
-    gap: 88px;
+    gap: 20px;
     padding-bottom: 88px;
 
 }
 
-.options{
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(0,0,0); */
+    background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    /* text-align: center; */
+    margin-top: 30px;
+  }
+  
+  .overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    } */
+
+.opt{
+    border: 1px solid #2B80F7;
+    border-radius: 0.5rem;
+    /* background-color: #0055CC; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 2rem;
+    transition: 500ms;
+}
+
+.opt:hover{
+    background-color: #CCE0FD;
+    box-shadow: 0px 4px 4px rgba(159, 156, 156, 0.31);
+}
+
+.opt a{
+    color: #2B80F7;
+    font-size: 1.17vw;
+    text-decoration: none;
+}
+
+.download-opt{
     border-radius: 0.5rem;
     background-color: #0055CC;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     padding: 1rem 2rem;
+    transition: 500ms;
 }
 
-.options a{
+.download-opt:hover{
+    box-shadow: 0px 4px 4px rgba(31, 31, 31, 0.35);
+    background: #0044A3;
+}
+
+.download-opt a{
     color: white;
     font-size: 1.17vw;
     text-decoration: none;
@@ -228,7 +335,6 @@ select{
 
 .back-btn{
     width: 8.125rem;
-    background-color: #CCE0FD;
     border: 1px solid #CCE0FD;
     border-radius: 8px;
     display: flex;
@@ -237,6 +343,13 @@ select{
     align-items: center;
     padding: 0.8rem 2rem;
     margin: 0 0 10rem 4.5rem;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.back-btn:hover{
+    background-color: #CCE0FD;
+    box-shadow: 0px 4px 4px rgba(159, 156, 156, 0.31);
 }
 
 .back-btn a{
@@ -250,4 +363,3 @@ select{
     align-items: center;
     gap: 0.5rem;
 }
-

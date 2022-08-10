@@ -27,7 +27,7 @@
 .navbar{
     width: 100%;
     /* height: 7.74%; */
-    background-color: #00337B;
+    background-color: #F9FBFF;
 }
 
 nav{
@@ -52,10 +52,29 @@ nav{
 }
 
 nav ul li a{
-    color: white;
+    color: #0055CC;
     text-decoration: none;
     font-size: 1.32vw;
     font-weight: 500;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #5599F8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+.dropdown{
+    width: 15px;
+    margin-left: 10px;
 }
 
 .user-profile{
@@ -66,14 +85,14 @@ nav ul li a{
 }
 
 .ellipse{
-    width: 30px;
-    height: 30px;
-    background-color: #DCEBFF;
+    width: 40px;
+    height: 40px;
+    background-color: #0055CC;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0055CC;
+    color: white;
     font-weight: 600;
 }
 
@@ -89,16 +108,15 @@ nav ul li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 10% 1rem 7rem;
+    padding: 1rem 10% 1rem 7.5rem;
     border-bottom: 1px solid #969696;
 }
 
 .biz-info h1{
     font-size: 1.76vw;
     font-weight: 600;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
 }
-
 
 .main-content{
     display: flex;
@@ -107,7 +125,7 @@ nav ul li a{
     align-items: center;
 }
 
-/* progress bar */
+/* progress bar styling starts here*/
 
 .bar{
     margin: 50px auto;
@@ -146,18 +164,28 @@ nav ul li a{
     align-items: center;
     justify-content: center;
     background-color: white;
-    color: black;
+    color: #00337B;
 }
 
 .circle4{
     width: 3vw;
     height: 3vw;
     border-radius: 50px;
-    background-color: black;
+    background-color: #0055CC;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+.text{
+    font-weight: 600;
+    color: #968686;
+}
+
+.text4{
+    font-weight: 600;
+    color: #0055CC;
 }
 
 .p{

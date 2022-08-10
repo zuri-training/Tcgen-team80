@@ -5,7 +5,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: rgba(0,0,0, 0.9);
+}
+
 .container{
+    background-color: white;
     width: 44vw;
     height: 44vw;
     margin: 5rem auto;
@@ -42,6 +47,7 @@ img{
 }
 
 .bottom{
+    /* background-color: white; */
     position: relative;
     top: -12%;
     display: flex;

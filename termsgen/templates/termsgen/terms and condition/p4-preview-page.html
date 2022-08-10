@@ -19,22 +19,22 @@
         <section class="navbar">
             <nav>
                 <div class="logobox">
-                    <img src="Secodary@3x.png" alt="termsgen-logo" class="logo">
+                    <img src="Primary@3x.png" alt="termsgen-logo" class="logo">
                 </div>
                 
                 <div class="navtabs">
                     <ul>
                         <li><a href="">Home</a></li>
-                        <li><a href="">Generate</a><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span></li>
+                        <li><a href="">Generate</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="user-profile">
                     <div class="ellipse">G</div>
-                    <div class="dashboard">
+                    <!-- <div class="dashboard">
                         <p>Dashboard</p>
-                    </div>
+                    </div> -->
                 </div>
             </nav>
         </section>
@@ -49,38 +49,44 @@
             <div class="main-content">
 
                 <!-- progress bar starts here -->
-                <hr class="line">
 
-                <div class="bar">
-                    <div class="num1">
-                        <div class="num">
-                            <div class="circle p"><h2>1</h2></div>
+                <div class="progress-bar">
+                        <hr class="line">
+
+                    <div class="bar">
+                        <div class="num1">
+                            <div class="num">
+                                <div class="circle p"><h2>1</h2></div>
+                            </div>
+                            <div class="text">Business Information</div>
                         </div>
-                        <div class="text">Business Information</div>
+
+                        <div class="num1">
+                            
+                            <div class="num">
+                                <div class="circle p"><h2>2</h2></div>
+                            </div>
+                            <div class="text">Additional Information</div>
+                        </div>
+
+                        <div class="num1">
+                            <div class="num">
+                                <div class="circle p"><h2>3</h2></div>
+                            </div>
+                            <div class="text">Security Details</div>
+                        </div>
+
+                        <div class="num1">
+                            <div class="num">
+                                <div class="circle4 p"><h2>4</h2></div>
+                            </div>
+                            <div class="text4">Preview Document</div>
+                        </div>                    
                     </div>
 
-                    <div class="num1">
-                        
-                        <div class="num">
-                            <div class="circle p"><h2>2</h2></div>
-                        </div>
-                        <div class="text">Additional Information</div>
-                    </div>
 
-                    <div class="num1">
-                        <div class="num">
-                            <div class="circle p"><h2>3</h2></div>
-                        </div>
-                        <div class="text">Security Details</div>
-                    </div>
-
-                    <div class="num1">
-                        <div class="num">
-                            <div class="circle4 p"><h2>4</h2></div>
-                        </div>
-                        <div class="text">Preview Document</div>
-                    </div>                    
                 </div>
+                
                 <!-- progress bar stops here-->
 
                 <div class="message">
@@ -94,25 +100,31 @@
 
                     <div class="select-btn">
                             <select id="country" name="country">
-                                <option selected >English(United States)</option>
-                                <option value="AF">Afghanistan</option>
-                                <option value="AX">Aland Islands</option>
-                                <option value="AL">Albania</option>
-                                <option value="DZ">Algeria</option>
-                                <option value="AS">American Samoa</option>
+                                <option selected value="English">English(United States)</option>
+                                <option value="French">Francais</option>
+                                <option value="Spanish">Espanol</option>
+                                <option value="Italian">Italian</option>
                             </select>
                         </div>
                 </div>
 
-                <div class="download-options">
-                    <div class="options">
-                        <a href="#"><p>Share</p></a>
+                <div class="options">
+
+                    <div class="opt">
+                        <img src="./export.png" alt="">
+                        <a href="./p6-export-overlay.html"><p>Export</p></a>
                     </div>
-                    <div class="options">
-                        <a href=""><p>Export</p></a>
+                    <div class="opt">
+                        <img src="./share icon.png" alt="">
+                        <a href="p6-export-overlay.html"><p>Share</p></a>
                     </div>
-                    <div class="options">
-                        <a href=""><p>Embed</p></a>
+                    <div class="opt">
+                        <img src="./embed icon.png" alt="">
+                        <a href="p5-success-page.html"><p>Embed</p></a>
+                    </div>
+                    <div class="download-opt">
+                        <img src="./download icon.png" alt="">
+                        <a href="p5-success-page.html"><p>Download</p></a>
                     </div>
                 </div>
             </div> 
@@ -124,6 +136,7 @@
             </div>
         </section>
     </div>
+    
 </body>
 
 </html>

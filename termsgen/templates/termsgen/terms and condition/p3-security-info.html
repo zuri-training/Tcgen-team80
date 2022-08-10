@@ -16,12 +16,38 @@
 
         <!-- sidebar section containing logo and progress bar -->
 
-        <section class="sidebar">
-            <div class="logobox">
-                <img src="Secodary@3x.png" alt="termsgen-logo" class="logo">
-            </div>
+        <section class="navigation-bar">
+            
+            <div class="navbar">
+                <nav>  
+                    <div class="logobox">
+                        <img src="Primary@3x.png" alt="termsgen-logo" class="logo">
+                    </div>
+                     
+                    <div class="navtabs">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Generate</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-profile">
+                        <div class="ellipse">G</div>
+                        <!-- <div class="dashboard">
+                            <p>Dashboard</p>
+                        </div> -->
+                    </div>
+                </nav>
+            </div>            
+        </section>
 
-            <div class="progress-bar">
+
+        <!-- Main section containing navbar and content -->
+
+        <section class="main">
+
+            <div class="sidebar">
 
                 <div class="list">
                     <div class="sidebar-icons">
@@ -65,37 +91,20 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-
-        <!-- Main section containing navbar and content -->
-
-        <section class="main">
-            <div class="navbar">
-                <nav>               
-                    <div class="navtabs">
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Generate</a><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 24 24" fill="black" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span></li>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="user-profile">
-                        <div class="ellipse">G</div>
-                        <div class="dashboard">
-                            <p>Dashboard</p>
-                        </div>
-                    </div>
-                </nav>
-            </div>
 
             <div class="main-content">
                 <div class="top">
                     <div class="biz-info">
                         <h1>Enter Security Details</h1>
-                        <div class="preview-btn">
+                        <div class="preview-btn" style="cursor:pointer" onclick="openNav()">
                             <a href="#">preview</a>
+                        </div>
+                    </div>
+
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                          <img src="./Terms Of Use.png" alt="template preview">
                         </div>
                     </div>
                 </div>
@@ -204,10 +213,16 @@
                 </div>                    
             </div>
         </section>
-
-
-
     </div>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
