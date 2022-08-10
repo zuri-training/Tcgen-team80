@@ -10,5 +10,5 @@ https://github.com/zuri-training/Tcgen-team80/tree/fn_Gift_Augustine/terms_and_c
 Worked on an algorithm for the generation of a working template for the product pages. - https://github.com/zuri-training/Tcgen-team80/issues/51
 
 Link to Github issues:
-https://github.com/zuri-training/Tcgen-team80/issues/51#issue-1334040425
+https://github.com/zuri-training/Tcgen-team80/issues/51
 https://github.com/zuri-training/Tcgen-team80/issues/26
