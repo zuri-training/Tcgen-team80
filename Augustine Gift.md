@@ -8,3 +8,7 @@ Front-end development of the terms and conditions product pages. - https://githu
 https://github.com/zuri-training/Tcgen-team80/tree/fn_Gift_Augustine/terms_and_conditions/termsgen/static/termsgen/terms%20and%20condition
 
 Worked on an algorithm for the generation of a working template for the product pages. - https://github.com/zuri-training/Tcgen-team80/issues/51
+
+Link to Github issues:
+https://github.com/zuri-training/Tcgen-team80/issues/51#issue-1334040425
+https://github.com/zuri-training/Tcgen-team80/issues/26
