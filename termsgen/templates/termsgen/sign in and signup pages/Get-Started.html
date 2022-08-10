@@ -1,0 +1,137 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'termsgen/sign in and signup pages/style.css' %}">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="{% static 'termsgen/sign in and signup pages/style2.css'%}">
+	<title>Sign Up Form</title>
+	<title>Sign Up Form</title>
+</head>
+<body>
+	<header>
+        <nav>
+            <div class="nav-container">
+                <div>
+                    <a href="">
+                    <img class="logo" src="Primary@3x.png" alt="logo">
+                    </a>
+                </div>
+				<div class="home-generate-about-contact">
+					<a href="">Home</a>
+                    <a href="">Generate</a><select></select>
+                    <a href="">About us</a>
+                    <a href="">Contact us</a>
+                </div>
+                <div class="registration-buttons">
+                    <a href="Sign-In.html"><button id="log-in">Sign In</button></a>
+                    <a href="Get-Started.html"><button id="sign-up">Get Started</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+	<div class="container">
+		<div class="head">
+        <h2 class="title">Get Started</h2>
+		<p>Register now to start generating your compliance documents.</p>
+        </div>
+		<form method="POST" action="" class="login active">
+			{% csrf_token %}
+			<div class="form-group">
+				<label for="name">Username</label>
+				<div class="input-group">
+					{{form.username}}
+					<i class='bx bx-envelope'></i>
+				</div>
+			<div class="form-group">
+				<label for="email">Email Address</label>
+				<div class="input-group">
+					{{form.email}}
+					<i class='bx bx-envelope'></i>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<div class="input-group">
+					{{form.password1}}
+					<i class='bx bx-lock-alt' ></i>
+				</div>
+				<span class="help-text">At least 8 characters</span>
+			</div>
+			<P>By signing up I agree to the <a href="">Terms and conditions</a> and <a class="pivacy"
+                href="">Privacy
+                Policy</a></P>
+
+            <div><input class="btn-submit" type="submit" value="Sign at"></div>
+                    <p class="or">Or</p>
+            <div><button class="btn-submit"><a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#"><img src="https://img.icons8.com/color/16/000000/google-logo.png"></a>  Sign up with Google </a></button></div>
+            <p class="acct">Already have an account? <a href="Sign-In.html">Sign In</a></p>
+		</form>
+		
+	</div>
+
+	<script>
+		var form_fields = document.getElementsByTagName('input')
+		form_fields[1].placeholder='Enter username';
+		form_fields[2].placeholder='Enter email address';
+		form_fields[3].placeholder='Enter password';
+
+		for (var field in form_fields){
+			form_fields[field].className == ' form-control'
+		}
+
+	</script>
+</head>
+<body>
+	<div class="body-container">
+		<header>
+			<nav>
+				<div class="nav-container">
+					<div class="logox">
+						<a href="">
+						<img class="logo" src="{% static 'termsgen/sign in and signup pages/image/Primary@3x'%}" alt="logo">
+						</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div class="head">
+			<h2 class="title">Get Started</h2>
+			<p class="sub">Register now to start generating your compliance documents.</p>
+			</div>
+			<form action="#" class="login active">
+				<div class="inner">
+					<div class="form-group">
+						<label for="email">Email Address</label>
+						<div class="input-group">
+							<input type="email" id="email" placeholder="Enter email address">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<div class="input-group">
+							<input type="password" pattern=".{8,}" id="password" placeholder="Enter password">
+							<i class='bx bx-lock-alt' ></i>
+						</div>
+					</div>
+					<P class="tnc">By signing up I agree to the <a href="">Terms and conditions</a> and <a href="">Privacy
+						Policy</a></P>
+
+					<div> <button class="btn-submit">Sign Up</button></div>
+							<p class="or">Or</p>
+					<div><button class="btn-submit" id="two"><a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#"><img src="https://img.icons8.com/color/16/000000/google-logo.png"></a>  Sign up with Google </a></button></div>
+					<p class="acct">Already have an account? <a href="Sign-In.html">Sign In</a></p>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+</body>
+</html>

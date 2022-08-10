@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<link rel="stylesheet" href="{% static 'termsgen/sign in and signup pages/style2.css'%}">
+	<title>Sign Up Form</title>
+	<style>
+		.form-two{
+			height: 240px;
+			margin: auto;
+			margin-top: 70px;
+			border-radius: 20px;
+			position: relative;
+		}
+		.inner-two {
+			width: 70%;
+			margin: 30px auto;
+		}
+
+		@media (max-width: 400px) {
+
+			.form-two {
+				width: 380px;
+			}
+			
+		}
+	</style>
+</head>
+
+<body>
+	<div class="body-container">
+		<header>
+			<nav>
+				<div class="nav-container">
+					<div class="logox">
+						<a href="">
+						<img class="logo" src="{% static 'termsgen/sign in and signup pages/image/Primary@3x'%}" alt="logo">
+						</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="container">
+			<h2 class="title">Forgot your password?</h2>
+			<p class="sub">Enter email address to recover password</p>
+			<form action="#" class="form-two">
+				<div class="inner-two">
+					<div class="form-group">
+						<label for="email">Email Address</label>
+						<div class="input-group">
+							<input type="email" id="email" placeholder="Enter email address" >
+						</div>
+						<button type="submit" class="btn-submit">Recover Password</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
