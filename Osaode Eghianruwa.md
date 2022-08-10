@@ -9,6 +9,7 @@ Assistant team lead for developers
 **Dashboard front end development** - https://github.com/zuri-training/Tcgen-team80/issues/22
 
 https://github.com/zuri-training/Tcgen-team80/tree/main/termsgen/templates/termsgen/dashboard
+
 https://github.com/zuri-training/Tcgen-team80/tree/main/termsgen/static/termsgen/dashboard
 
 **Created Django views for web app** - https://github.com/zuri-training/Tcgen-team80/issues/38
