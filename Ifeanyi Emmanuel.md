@@ -1,8 +1,9 @@
-# YOUR NAME HERE
+# ODIWE IFEANYI EMMANUEL
 
-### Student ID: I4GSJHSJFSFJ <<<edit this
-(do not delete the # above. Ensure you delete this bracket and the message in this entire line after reading)
+### Student ID: II4G003719CQU
 
 **CONTRIBUTIONS / WORK DONE**
 
-Work done - link(s) here
+Sign up page - https://github.com/zuri-training/Tcgen-team80/blob/main/termsgen/templates/termsgen/sign%20in%20and%20signup%20pages/Get-Started.html
+Sign in page - https://github.com/zuri-training/Tcgen-team80/blob/main/termsgen/templates/termsgen/sign%20in%20and%20signup%20pages/Sign-In.html
+Forgot password page - https://github.com/zuri-training/Tcgen-team80/blob/main/termsgen/templates/termsgen/sign%20in%20and%20signup%20pages/forgot.html
