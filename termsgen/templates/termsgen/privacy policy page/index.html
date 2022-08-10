@@ -1,0 +1,191 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="{% static 'termsgen/privacy policy page/styles.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Business Information</title>
+  </head>
+  <body>
+    <div class="sticky-el">
+
+      <!--side bar is here-->
+      <div class="side-bar" id="side-bar">
+
+        <!--LOGO is here-->
+        <img
+        class="logo"
+        width="120px"
+        height="44px"
+        src="{% static 'termsgen/privacy policy page/images/logo_white.png' %}"
+        alt="site-logo"
+        />
+
+        <!--sidebar progress-list is here-->
+        <ul class="navbar-menu">
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="/index.html" id="first-el">
+              <button  type="button" id="businessinfo-btn">1</button>
+              <p style="color: white;">Business Information</p>
+            </a>
+          </li>
+          <hr class="vert" />
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="/additionalinfo.html" id="second-el">
+              <button type="button" id="additionalinfo-btn" onclick="openBusiness()"><bold>2</bold></button>
+              <p style="color: white;">Additional Information</p>
+            </a>
+          </li>
+          <hr class="vert" />
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="/security.html" id="third-el">
+              <button type="button" id="security-btn"><bold>3</bold></button>
+              <p style="color: white;">Security Details</p>
+            </a>
+          </li>
+          <hr class="vert" />
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="/previewdoc.html" id="fourth-el">
+              <button type="button" id="preview-btn"><bold>4</bold></button>
+              <p style="color: white;">Preview Document</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- navbar is here -->
+      <nav class="navbar">
+        <div class="navbar-container">
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a class="navbar-links" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-links" href="{% url 'products' %}">
+                <select style="font-size: 24px; border: none; background: none;" id="country" name="country">
+                  <option selected disabled>Generate</option>
+                  <option value="AF">Afghanistan</option>
+                  <option value="AX">Aland Islands</option>
+                </select>
+              </a>
+            </li >
+            <li class="navbar-item">
+              <a class="navbar-links" href="{% url 'about_us' %}">About Us</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-links" href="{% url 'contact_us' %}">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- user profile is here -->
+          <div class="user">
+            <img id="avatar" src="/assets/images/avatar.jpg" alt="user-image" />
+            <p style="padding-left: 8px;"><bold>Dashboard</p></p>
+          </div>
+        </div>
+      </navbar> 
+    </div>
+
+    <section class="page">
+      <div class="content-area">
+        <div class="title">
+          <h1 style="font-size: 48px;" >Enter Business Information</h1>
+          <button type="button">Preview</button>
+        </div>
+        <hr/>
+
+        <div class="page-content">
+          <h3 style="font-size: 32px;">Tell us about your business</h3>
+          <div class="row">
+            <div class="col-1">
+              <div class="row1">
+                <p style="font-size: 24px;">What platform would this privacy policy be used?</p>
+                <div class="app">
+                  <div style="border: 0.05rem solid; padding: 8px; align-content: center; justify-content: space-between; " class="app">
+                    <div class="title">
+                      <img style="padding-right: 8px;" width="50px" height="50px" src="assets/images/mobile_icon.svg" alt="Mobile icon">
+                      <div>
+                        <h3>App</h3>
+                        <p>Privacy policy for an app</p>
+                      </div>
+                    </div>
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <div class="website">
+                  <div style="border: 0.05rem solid; padding: 8px; align-content: center; justify-content: space-between; " class="app">
+                    <div class="title">
+                      <img style="padding-right: 8px;" width="50px" height="50px" src="assets/images/website.svg" alt="Mobile icon">
+                      <div>
+                        <h3>Website</h3>
+                        <p>Privacy policy for website</p>
+                      </div>
+                    </div>
+                    <input type="checkbox">
+                  </div>
+                </div>
+              </div>
+              <div class="row2">
+                <label style="font-size: 24px; ">Your Country</label>
+                <div style="margin-top: 20px" class="selectn-btn">
+                  <select style="height: 56px; width: 580px; border-radius: 8px; padding-left: 8px; padding-right: 8px;" id="country" name="country">
+                    <option selected disabled>select country</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AX">Aland Islands</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AS">American Samoa</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="row1">
+                <label style="font-size: 24px;">Your Country</label>
+                <div style="margin-top: 20px; border: 1px solid; height: 56px; width: 580px; border-radius: 8px; padding-left: 8px; padding-right: 8px; display: flex; position: relative; justify-content: space-between; align-items: center;">
+                    <p>Select your preferred date</p> 
+                    <img width="20px" height="20px" src="{% static 'termsgen/privacy policy page/images/calendar.svg' %}" alt="calendar">                
+                </div>
+              </div>
+              <div class="row2">
+                <p style="font-size: 24px;">How would you classify your entity?</p>
+                <div>
+                  <div class="individual" style="border: 0.05rem solid; padding: 8px; align-content: center; justify-content: space-between; " class="app">
+                    <div class="title">
+                      <img style="padding-right: 8px;" width="50px" height="50px" src="assets/images/individual.svg" alt="individual icon">
+                      <div>
+                        <h3>Individual</h3>
+                        <p>i.e a freelancer</p>
+                      </div>
+                    </div>
+                      <input type="checkbox">
+                  </div>
+                </div>
+                <div>
+                  <div class="business" style="border: 0.05rem solid; padding: 8px; align-content: center; justify-content: space-between; " class="app">
+                      <div class="title">
+                        <img style="padding-right: 8px;" width="50px" height="50px" src="assets/images/business.svg" alt="business icon">
+                        <div>
+                          <h3>Business</h3>
+                          <p>e.g Limited Liability Company, Corporation, etc.</p>
+                        </div>
+                      </div>
+                      <input type="checkbox">
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <button type="button">Continue</button>
+      </div>
+    </section>
+  </body>
+</html>

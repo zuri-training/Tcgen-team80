@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    /* background: red; */
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    background-color: #00337B;
+    padding-top: 30px;
+    justify-content: space-between;
+    line-height: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    position: relative;
+    
+}
+.menu a{
+    text-decoration: none;
+    color: #F9F6EE;
+}
+.menu a:hover{
+    background-color: lightgray;
+}
+.menunav .drop:hover .dropdw{
+    display: block;
+}
+.logo{
+    width: 20%;
+    /* border: 2px solid black; */
+}
+.menu img{
+    max-width: 100%;
+}
+
+.menunav{
+    width: 60%;
+    /* border: 2px solid black; */
+    display: flex;
+    list-style: none;
+    gap:5%;
+    color:#F9F6EE;
+}
+.dropdw{
+    background: rgb(142, 150, 189);
+    display: none;
+    list-style: none;
+    position: absolute;
+    box-sizing: border-box;
+    top: 50px;
+    padding: 5px;
+    min-width: 100px;
+    text-align: left;
+    padding: 10px;
+    line-height: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.pagename{
+    padding: 10px;
+}
+.pagename{
+    border-bottom: 2px solid #969696;
+}
+.pagenum{
+    display: flex;
+    gap: 10px;
+    max-width: max-content;
+    min-width:min-content;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    /* border: 3px solid green; */
+    /* overflow-x: auto; */
+}
+.line{
+    width:80%;
+    margin-top: 15px;
+    /* margin-left: 59px; */
+    position: absolute;
+    margin-left: 10%;
+    border-top: 2px solid black;
+    z-index: -1;
+  
+}
+h3{ 
+    width: 25px ;
+    height: 25px;
+    border: 2px solid #151515;
+    line-height: 25px;
+    border-radius: 50%;
+    margin: auto;
+    background: #F9F6EE;
+    color: #151515;
+    
+
+
+}
+.page{
+    text-align: center;
+   
+    
+}
+.v h3{
+    color: #F9F6EE;
+    background: #0055CC;
+    border: 1px solid #F9F6EE;
+    box-shadow: 0px 0px 4px 2px #0055CC;
+    animation: page 1.0s linear ;
+}
+@keyframes page{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.done{
+    width:70%;
+    height: 400px;
+    margin: 40px auto;
+}
+.onlybody a img{
+    width:250px;
+}

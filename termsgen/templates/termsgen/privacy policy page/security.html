@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="security.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Security Details</title>
+  </head>
+  <body>
+    <div class="sticky-el">
+
+      <!--side bar is here-->
+      <div class="side-bar" id="side-bar">
+
+        <!--LOGO is here-->
+        <img
+        class="logo"
+        width="120px"
+        height="44px"
+        src="assets/images/logo_white.png"
+        alt="site-logo"
+        />
+
+        <!--sidebar progress-list is here-->
+        <ul>
+          <li>
+            <a href="/index.html" id="first-el">
+              <button  type="button" id="businessinfo-btn">1</button>
+              <p style="color: white;">Business Information</p>
+            </a>
+          </li>
+          <hr class="vert" />
+          <li>
+            <a href="/additionalinfo.html" id="second-el">
+              <button type="button" id="additionalinfo-btn" onclick="openBusiness()"><bold>2</bold></button>
+              <p style="color: white;">Additional Information</p>
+            </a>
+          </li>
+          <hr class="vert" />
+          <li>
+            <a href="/security.html" id="third-el">
+              <button type="button" id="security-btn"><bold>3</bold></button>
+              <p style="color: white;">Security Details</p>
+            </a>
+          </li>
+          <hr class="vert" />
+          <li>
+            <a href="previewdoc.html" id="fourth-el">
+              <button type="button" id="preview-btn"><bold>4</bold></button>
+              <p style="color: white;">Preview Document</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li>
+                <a href="/">
+                  <select style="border: none; background: none; font-size: 24px;" id="country" name="country">
+                    <option selected disabled>Generate</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AX">Aland Islands</option>
+                  </select>
+                </a>
+              </li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!--user profile is here-->
+        <div class="user">
+          <img id="avatar" src="/assets/images/avatar.jpg" alt="user-image" />
+          <p><bold>Dashboard</p></p>
+        </div>
+      </header> 
+    </div>
+
+    <section class="security">
+      <div class="content-area">
+        <div class="title">
+          <h1 style="font-size: 48px;">Enter Security Details</h1>
+          <button type="button">Preview</button>
+        </div>
+        <hr/>
+
+        <div class="content">
+          <h3 style="font-size: 32px;">Please let us in on some vital information</h3>
+          <div class="column">
+            <div class="col-1">
+              <div class="Q1">
+                <p style="padding-bottom: 8px;">Which of the following social media login platforms do you utilize?</p> 
+                <p style="font-size: 20px; padding-bottom: 32px;">Ignore if not applicable</p>   
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Facebook login </p>
+                </div> 
+                <div style="display: flex;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Google login</p>
+                </div>  
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">LinkedIn login </p>
+                </div> 
+                <div style="display: flex;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Github login</p>
+                </div>                 
+              </div>
+              <div class="Q2">
+                <p style="padding-bottom: 32px;">Are users under the age of 13 allowed to access your website/app?</p>
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Yes</p>
+                </div> 
+                <div style="display: flex;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">No </p>
+                </div>
+              </div>
+              <div class="Q3">
+                <p style="padding-bottom: 32px;">Does your app/website require users to make payments online?</p>    
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Yes</p>
+                </div> 
+                <div style="display: flex;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">No</p>
+                </div>
+              </div>
+              <div class="Q4">
+                <p style="padding-bottom: 8px;">How do you run your payment plans? </p>
+                <p style="font-size: 20px; padding-bottom: 32px">Ignore if not applicable</p>
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">One time payment</p>
+                </div> 
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="radio" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Recurring payment</p>
+                </div>
+                  <div style="display: flex;">                        
+                    <input type="radio" name="Q1" id="q-one">
+                    <p style="padding-left: 15px; font-size: 16px;">Both</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="Q1">
+                <p style="padding-bottom: 32px;">How can users get in touch with you?</p>
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Via phone call</p>
+                </div> 
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Via Email</p>
+                </div> 
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Device camera</p>
+                </div> 
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Geolocation</p>
+                </div>  
+                <div style="display: flex;">                        
+                  <input type="" name="Q1" id="q-one" placeholder="Add more...">
+                </div>                    
+              </div>
+              <div class="Q2">
+                <p style="padding-bottom: 32px;">Which of these services do your website/app require access to?</p>
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Contact</p>
+                </div> 
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Photo gallery</p>
+                </div>
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Device camera</p>
+                </div> 
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Geolocation</p>
+                </div>
+                <div style="display: flex;">                        
+                  <input type="" name="Q1" id="q-one" placeholder="Add more...">
+                </div>
+              </div>
+              <div class="Q3">
+                <p style="padding-bottom: 32px;">What platforms does your website/app use to process payments?</p>
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                  <p style="padding-left: 15px; font-size: 16px;">Flutterwave</p>
+                </div> 
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                    <p style="padding-left: 15px; font-size: 16px;">Paypal</p>
+                </div>
+                <div style="display: flex; padding-bottom: 8px;">                        
+                  <input type="checkbox" name="Q1" id="q-one">
+                    <p style="padding-left: 15px; font-size: 16px;">Paystack</p>
+                </div>
+                <div style="display: flex;">                        
+                  <input type="" name="Q1" id="q-one" placeholder="Add more...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="security-btn">
+          <span>
+            <button style="color: blue; cursor: pointer;" type="button">
+            <img style="padding-right: 8px; cursor: pointer;" src="assets/images/num1 filled.png" alt="icon">Continue</button> 
+          </span>
+          <button type="button">Continue</button>
+        </div>
+    </section>
+  </body>
+</html>

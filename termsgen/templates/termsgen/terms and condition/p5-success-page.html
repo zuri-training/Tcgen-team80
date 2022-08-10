@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,10 +7,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="p5-success-page.css">
+    <link rel="stylesheet" href="{% static 'termsgen\terms and condition\p5-success-page.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>Business Information</title>
+    <title>success</title>
 </head>
 
 <body>
@@ -19,7 +21,7 @@
         <section class="navbar">
             <nav>
                 <div class="logobox">
-                    <img src="Primary@3x.png" alt="termsgen-logo" class="logo">
+                    <img src="{% static 'termsgen\terms and condition\icons & images\Primary@3x.png' %}" alt="termsgen-logo" class="logo">
                 </div>
                 
                 <div class="navtabs">
@@ -91,7 +93,7 @@
                 <!-- main page with success message -->
 
                 <div class="success-icon">
-                    <img src="./success-icon with shadow.png" alt="">
+                    <img src="{% static 'termsgen\terms and condition\icons & images\success-icon with shadow.png' %}" alt="">
                 </div>
                 <div class="message">
                     Your File has been downloaded Succesfully!

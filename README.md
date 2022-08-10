@@ -155,7 +155,7 @@ __Melissa Omede__
 
 __Mayowa Afolabi__
 * Github - https://github.com/mayorks
-* Track - Fullstack
+* Track - Product Design
 
 __Evelyn Nwaeze__
 * Github - https://github.com/casenora

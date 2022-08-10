@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="p1-business-info.css">
+    <link rel="stylesheet" href="{% static 'termsgen\terms and condition\p1-business-info.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
@@ -22,7 +24,7 @@
             <div class="navbar">
                 <nav>
                     <div class="logobox">
-                        <img src="Primary@3x.png" alt="termsgen-logo" class="logo">
+                        <img src="{% static 'termsgen\terms and condition\icons & images\Primary@3x.png' %}" alt="termsgen-logo" class="logo">
                     </div>              
                     <div class="navtabs">
                         <ul>
@@ -105,7 +107,7 @@
                     <div id="myNav" class="overlay">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <div class="overlay-content">
-                          <img src="./Terms Of Use.png" alt="template preview">
+                          <img src="{% static 'termsgen\terms and condition\icons & images\Terms Of Use.png' %}" alt="template preview">
                         </div>
                     </div>
                 </div>
@@ -122,7 +124,7 @@
                                 <div class="platform">
                                     <div class="Q-ops"> <!-- Q-ops: Question Options -->
                                         <div class="img">
-                                            <img src="./Online ordering pizza in a mobile application c.png" alt="">
+                                            <img src="{% static 'termsgen\terms and condition\icons & images\Online ordering pizza in a mobile application c.png' %}" alt="">
                                         </div>
                                         <div class="text">
                                             <p class="option">App</p>
@@ -144,7 +146,7 @@
                                 <div class="platform">
                                     <div class="Q-ops">
                                         <div>
-                                            <img src="./Women create a website using a laptop and a desktop computer c.png" alt="">
+                                            <img src="{% static 'termsgen\terms and condition\icons & images\Women create a website using a laptop and a desktop computer c.png' %}" alt="">
                                         </div>
                                         <div class="text">
                                             <p class="option">Website</p>
@@ -435,7 +437,7 @@
                                 <div class="platform">
                                     <div class="Q-ops"> <!-- Q-ops: Question Options -->
                                         <div>
-                                            <img src="profile picture of person in glasses and orange shirt c.png" alt="boy with glasses in an orange t-shirt">
+                                            <img src="{% static 'termsgen\terms and condition\icons & images\profile picture of person in glasses and orange shirt c.png' %}" alt="boy with glasses in an orange t-shirt">
                                         </div>
                                         <div class="text">
                                             <p class="option">Individual</p>
@@ -451,7 +453,7 @@
                                 <div class="platform">
                                     <div class="Q-ops">
                                         <div>
-                                            <img src="big bank building c.png" alt="a bank building">
+                                            <img src="{% static 'termsgen\terms and condition\icons & images\big bank building c.png' %}" alt="a bank building">
                                         </div>
                                         <div class="text">
                                             <p class="option">Business</p>
@@ -464,7 +466,7 @@
                                     </label>                                
                                 </div>
                                 <div class="next-btn">
-                                    <a href="p2-additional-info.html">Next</a>
+                                    <a href="{% url 'terms_conditions_2' %}">Next</a>
                                 </div>
                                 
                             </div>

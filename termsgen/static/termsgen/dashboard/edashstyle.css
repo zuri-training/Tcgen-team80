@@ -47,17 +47,6 @@ body{
     cursor: pointer;
 }
 
-.wrapper .sidebar ul li a{
-    color: white;
-    display: block;
-    position: relative;
-    padding: 15px;
-}
-
-.wrapper .sidebar ul li a .fa-solid{
-    width: 30px;
-}
-
 .wrapper .sidebar ul li:hover {
     background-color: white;
     border-right: 10px solid #0066F5;
@@ -65,13 +54,40 @@ body{
     font-weight: 500;
 }
 
-.wrapper .sidebar ul li:active {
-    background-color: white;
-    border-right: 10px solid #0066F5;
+.wrapper .sidebar ul li a{
+    color: white;
+    display: block;
+    position: relative;
+    padding: 15px;
 }
 
 .wrapper .sidebar ul li:hover a {
     color: black;
+}
+
+/*active navigation*/
+
+.wrapper .sidebar ul li.active a{
+    background-color: white;
+    border-right: 10px solid #0066F5;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    color: black;
+}
+
+.wrapper .sidebar ul li.active a img {
+    filter: invert(90%) sepia(86%) saturate(2480%) hue-rotate(206deg) brightness(95%) contrast(102%);
+}
+
+.wrapper .sidebar ul li.active ul li a{
+    color:black;
+    background-color: white;
+    border-right-color: transparent;
+}
+
+.wrapper .sidebar ul ul li a:hover{
+    background-color: white !important;
+    color: #00337B !important;
 }
 
 /*side nav icons*/
@@ -94,14 +110,6 @@ body{
     display: none;
 }
 
-.wrapper .sidebar ul ul .feat-show.show{
-    display: block;
-}
-
-.wrapper .sidebar ul ul .serv-show.show1{
-    display: block;
-}
-
 .wrapper .sidebar ul ul li{
     line-height: 10px;
 }
@@ -113,6 +121,24 @@ body{
 
 /*drop downs*/
 
+#feat-show{
+    padding-left: 50px;
+    background-color: white;
+}
+
+#serv-show{
+    padding-left: 50px;
+    background-color: white;
+}
+
+#feat-show.show{
+    display: block;
+}
+
+#serv-show.show1{
+    display: block;
+}
+
 .wrapper .sidebar ul li a .drop{
     position: absolute;
     top: 50%;
@@ -121,10 +147,10 @@ body{
     font-size: 18px;
     width: 15px;
     height: 15px;
-    transition: transform 0.2s;
+    transition: transform 0.4s;
 }
 
-.wrapper .sidebar ul li a:hover .drop{
+.wrapper .sidebar ul li a .drop.rotate{
     transform: translateY(-50%) rotate(-180deg);
 }
 
@@ -159,7 +185,7 @@ body{
 /*MAIN SECTION*/
 
 .wrapper .main{
-    margin-left: 270px;
+    margin-left: 20%;
     width: 80%;
     display:block;
 }
@@ -251,14 +277,6 @@ body{
     border: none;
     background-color:#FFF9EB;
     margin-bottom: 50px;
-}
-
-.wrapper .main .projectz .project{
-    background-color: #FFF9EB;
-    border: 1px solid #2B80F7;
-    padding: 30px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
 }
 
 .wrapper .main .projectz .project .meta .sicon1{

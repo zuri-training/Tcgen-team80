@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="p2-additional-info.css">
+    <link rel="stylesheet" href="{% static 'termsgen\terms and condition\p2-additional-info.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
     <title>Business Information</title>
@@ -20,7 +22,7 @@
             <div class="navbar">
                 <nav>
                     <div class="logobox">
-                        <img src="Primary@3x.png" alt="termsgen-logo" class="logo">
+                        <img src="{% static 'termsgen\terms and condition\icons & images\Primary@3x.png' %}" alt="termsgen-logo" class="logo">
                     </div>            
                     <div class="navtabs">
                         <ul>
@@ -97,7 +99,7 @@
                     <div id="myNav" class="overlay">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <div class="overlay-content">
-                          <img src="./Terms Of Use.png" alt="template preview">
+                          <img src="{% static 'termsgen\terms and condition\icons & images\Terms Of Use.png' %}" alt="template preview">
                         </div>
                     </div>
                 </div>
@@ -180,12 +182,12 @@
     
                     <div class="buttons">
                         <div class="back-btn">
-                            <a href="p1-business-info.html">
+                            <a href="{% url 'terms_conditions' %}">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#2B80F7" stroke="#2B80F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>Back</a>
                         </div>
     
                         <div class="next-btn">
-                            <a href="p3-security-info.html">Continue</a>
+                            <a href="{% url 'terms_conditions_3' %}">Continue</a>
                         </div>
                     </div>
 
