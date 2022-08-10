@@ -1,8 +1,9 @@
-# YOUR NAME HERE
+# INCREASE UWADIALE
 
-### Student ID: I4GSJHSJFSFJ <<<edit this
-(do not delete the # above. Ensure you delete this bracket and the message in this entire line after reading)
+### Student ID: I4G027966UJ6
 
 **CONTRIBUTIONS / WORK DONE**
 
-Work done - link(s) here
+Database Integration - https://github.com/zuri-training/Tcgen-team80/issues/40
+
+Contact us and About us Pages - https://github.com/zuri-training/Tcgen-team80/issues/20
