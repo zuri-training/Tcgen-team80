@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
+from .models import *
+
 
 def index(request):
     return render(request, "termsgen/landing page/index.html")
@@ -15,14 +17,12 @@ def dashboard(request):
 def basic_info(request):
     form = UserCreationForm()
     if request.method == 'POST':
-          form = UserCreationForm(request.POST)
+          form = UserCreationForm(request.POST) 
           if form.is_valid():
             form.save  
+
     context = {'forms':form}
-
-
-
-    return render(request, "termsgen/dashboard/basic_info.html")
+    return render(request, "termsgen/dashboard/basic_info.html",context)
     
 def web_info(request):
     return render(request, "termsgen/dashboard/web_info.html")

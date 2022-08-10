@@ -7,7 +7,7 @@ from django.db import models
 # Create your models here.
 
 class database(models.Model):
-    Bussiness_name = models.CharField(max_length = 23, null=True)
+    Company_name = models.CharField(max_length = 23, null=True)
     email_Address = models.CharField(max_length = 23 , null=True)
     phone_number = models.CharField(max_length = 23,  null=True)
     fax_number = models.CharField(max_length=23, null=True)
@@ -20,4 +20,4 @@ class database(models.Model):
 
 
     def __str__(self):
-        return self.Bussiness_name
+        return self.Company_name
