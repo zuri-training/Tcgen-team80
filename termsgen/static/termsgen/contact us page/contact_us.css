@@ -200,20 +200,20 @@ input{
 
 
 
-/* @media only screen and (max-width:480px){ */
-/* body{ */
+@media (max-width:480px){
+body{ 
   
-/* } */
+}  
   
 /*LEFT SIDE MAIN*/
-/* .contact-page{ 
+.contact-page{ 
   width: 100%;
   height: 50%;
   background: #FFFFFF;
   color: #FFF9EB;
-  position: relative;
+  /* position: relative; */
   display: flex;
-  flex-direction: column-reverse; 
+  flex-direction: column; 
 }
 .contact{
   display: none;
@@ -268,7 +268,7 @@ span{
 
 
 /*RIGHT SIDE with Media query*/
-/* 
+
 .container-right{
   margin-top: 3%;
 
@@ -305,4 +305,4 @@ button.button{
   align-items: center;
   margin-left: 25%;
 }
-} */
+} 
