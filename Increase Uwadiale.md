@@ -6,3 +6,7 @@
 **CONTRIBUTIONS / WORK DONE**
 
 Work done - link(s) here
+
+Database Integration - https://github.com/zuri-training/Tcgen-team80/issues/40
+
+Contact us and About us Pages - https://github.com/zuri-training/Tcgen-team80/issues/20
