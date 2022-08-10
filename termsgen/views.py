@@ -31,7 +31,7 @@ def products(request):
 def dashboard(request):
     products = Product.objects.all()
 
-    return render(request, "termsgen/dashboard/edashboard.html", {'products':products})
+    return render(request, "termsgen/dashboard/dashboard.html", {'products':products})
 
 def basic_info(request):
     return render(request, "termsgen/dashboard/basic_info.html")
