@@ -1,8 +1,14 @@
-# YOUR NAME HERE
+# IKPEMBE, GIFT AUGUSTINE
 
-### Student ID: I4GSJHSJFSFJ <<<edit this
-(do not delete the # above. Ensure you delete this bracket and the message in this entire line after reading)
+### Student ID: I4G0216580D4
 
 **CONTRIBUTIONS / WORK DONE**
 
-Work done - link(s) here
+Front-end development of the terms and conditions product pages. - https://github.com/zuri-training/Tcgen-team80/tree/fn_Gift_Augustine/terms_and_conditions/termsgen/templates/termsgen/terms%20and%20condition.
+https://github.com/zuri-training/Tcgen-team80/tree/fn_Gift_Augustine/terms_and_conditions/termsgen/static/termsgen/terms%20and%20condition
+
+Worked on an algorithm for the generation of a working template for the product pages. - https://github.com/zuri-training/Tcgen-team80/issues/51
+
+Link to Github issues:
+https://github.com/zuri-training/Tcgen-team80/issues/51
+https://github.com/zuri-training/Tcgen-team80/issues/26
