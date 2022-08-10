@@ -1,8 +1,22 @@
-# YOUR NAME HERE
+# KOLAWOLE ESTHER ANUOLUWAPO
 
-### Student ID: I4GSJHSJFSFJ <<<edit this
-(do not delete the # above. Ensure you delete this bracket and the message in this entire line after reading)
+### Student ID: I4G007327EVZ
+
 
 **CONTRIBUTIONS / WORK DONE**
 
-Work done - link(s) here
+★ I created the Wireframes and Lo-fi of the Disclaimer page (Desktop View) using grays
+
+autolayouts, images, text etc.
+
+★ I also created the Mobile View pages for the responsiveness
+
+★ In addition, I designed the language bar for the pages
+
+★ Also, I designed the Success Page and edits were made by other designers
+
+
+
+
+
+This is the link to the Figma File: https://bit.ly/3CazJJh
