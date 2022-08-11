@@ -12,7 +12,7 @@
         width: 100vw;
         height: 100%;
         margin: auto;
-        background-color: #F9F6EE;
+        background-color: #F9FBFF;
         font-family: 'Poppins', 'Lato';
     }
 
@@ -497,22 +497,3 @@ git
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-
-  @media screen and (max-device-width: 750px) {
-   
-    nav {
-        position: static;
-        width: 100vw;
-        height: 200px;
-        background-color: #3e8e41;
-    }
-
-    nav li {
-        width: 30%;
-    }
-
-    main{
-        flex-direction: column;
-    }
-  }
