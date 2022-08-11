@@ -1,8 +1,10 @@
-# YOUR NAME HERE
+# BARIDOMAKA POP-YORNWIN
 
-### Student ID: I4GSJHSJFSFJ <<<edit this
-(do not delete the # above. Ensure you delete this bracket and the message in this entire line after reading)
+### Student ID: I4G033465MZ1 
+
 
 **CONTRIBUTIONS / WORK DONE**
 
-Work done - link(s) here
+Work done - 
+ Worked on Database Schema
+  Back end: Database: https://github.com/Domaka/Tcgen-team80/tree/database

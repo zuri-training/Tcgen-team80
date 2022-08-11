@@ -34,8 +34,15 @@ def dashboard(request):
     return render(request, "termsgen/dashboard/dashboard.html", {'products':products})
 
 def basic_info(request):
-    return render(request, "termsgen/dashboard/basic_info.html")
+    form = UserCreationForm()
+    if request.method == 'POST':
+          form = UserCreationForm(request.POST) 
+          if form.is_valid():
+            form.save  
 
+    context = {'forms':form}
+    return render(request, "termsgen/dashboard/basic_info.html",context)
+    
 def web_info(request):
     return render(request, "termsgen/dashboard/web_info.html")
 
