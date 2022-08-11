@@ -58,7 +58,9 @@
 
             <div class="sect">
                 <div class="formal">
-                    <form action="#">
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        {{form.as_p}}
         
                     <label for="cname">Company Name</label><br>
                     <input type="text" id="cname" name="cname" placeholder="Enter company name"><br>
@@ -341,7 +343,7 @@
                     <label for="Phone">Zip or Postal Code</label><br>
                     <input type="text" id="Zip" name="Zip" placeholder="Enter Zip or Postal Code"><br>
         
-                    <input type="submit" value="Save">
+                    <input type="submit" value="Save" name="Create User">
                     </form>
                 </div>
 
