@@ -1,19 +1,18 @@
 {% load static %}
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'termsgen/contact us page/contact_us.css' %}">
+    <link rel="stylesheet" href="{% static 'termsgen/contact us page/contact.css'%}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Contact Us</title>
 </head>
 <body>
+<<<<<<< Updated upstream
     <div class="header">
         <img class="image" src="{% static 'termsgen/contact us page/assets/Primary.svg' %}" alt="logo">
         <div class="nav">
@@ -28,6 +27,27 @@
             <button class="btn">Sign In</button>
             <button class="btn-two">Get Started</button>
         </div>
+=======
+  <div class="header">
+    <figure class="logo">
+        <img class="image" src="{% static 'termsgen/contact us page/assets/Primary.svg'%}" alt="logo">
+        <img src="{% static 'termsgen/contact us page/assets/Primary white1.svg'%}" alt="white" class="white">
+    </figure>
+    <div class="nav">
+        <ul class="head">
+            <li><a href="">Home</a></li>
+            <li><a href="#">Generate</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    <figure><img src="{% static 'termsgen/contact us page/assets/Frame 6379.svg'%}" alt="burger" id="burger"></figure>
+    </div>
+    <div class="nav-buttons">
+        <a href="#" class="btn">Sign In</a>
+        <a href="#"class="btn-two">Get Started</a>
+    </div>
+</div>
+>>>>>>> Stashed changes
     </div>
     <main>
         <div class="contact-page">
@@ -40,31 +60,36 @@
             </div>
             
             <div class="imgText">
-              <img class="lt-img" src="{% static 'termsgen/contact us page/assets/msg.svg' %}" alt="message">  
-              {% comment %} <img class="iconImage" src="{% static 'termsgen/contact us page/assets/msg.svg' %}" alt="message" /> {% endcomment %}
+             
+             <img class="iconImage" src="{% static 'termsgen/contact us page/assets/msg.svg'%}" alt="message" />
+             <img class="iconimage nine"  src="{% static 'termsgen/contact us page/assets/iPhone 11 Pro/Frame 6380.svg'%}" alt="message">
               <h4 class="headerFont4">Chat with us</h4>
             </div>
             <p class="paragraphText">
-              Our team is here to assist. termsgen.io@yahoo.com
+              <p>Our team is here to assist</p>.
+              <a href="mailto:termsgen.io@yahoo.com" class="mail">termsgen.io@yahoo.com</a>
             </p>
   
             <div class="imgText">
-                <img class="lt-img" src="{% static 'termsgen/contact us page/assets/location.svg' %}" alt="location">
+                <img class="lt-img" src="{% static 'termsgen/contact us page/assets/location.svg'%}" alt="location">
+                <img class="lt-img nine" src="{% static 'termsgen/contact us page/assets/iPhone 11 Pro/Frame 6381.svg'%}" alt="">
                 <h4 class="headerFont4">Office</h4>
             </div>
-            <p class="paragraphText">39,Ikeja GRA,Lagos State,Nigeria.</p>
+           
+            <address class="paragraphText address">  39,Ikeja GRA,Lagos State,Nigeria.</address>
   
             <div class="imgText">
-                <img class="lt-img" src="{% static 'termsgen/contact us page/assets/phone.svg' %}" alt="phone">
+                <img class="lt-img" src="/assets/phone.svg" alt="phone">
+                <img class="lt-img nine"  src="{% static 'termsgen/contact us page/assets/iPhone 11 Pro/Frame 6382.svg'%}" alt="phone" srcset="">
                 <h4 class="headerFont4">Phone</h4>
             </div>
-            <p class="paragraphText">+(234) 810 000 0000</p>
+            <a href="tel:+2348100000000" class="paragraphText">+(234) 810 000 0000</a>
   
             <div class="icons">
-                <img src="{% static 'termsgen/contact us page/assets/facebook.svg' %}" alt="facebook">
-                <img src="{% static 'termsgen/contact us page/assets/twitter.svg' %}" alt="twitter">
-                <img src="{% static 'termsgen/contact us page/assets/linkedin.svg' %}" alt="linkedin">
-                <img src="{% static 'termsgen/contact us page/assets/instagram.svg' %}" alt="instagram">
+                <img src="{% static 'termsgen/contact us page/assets/facebook.svg'%}" alt="facebook">
+                <img src="{% static 'termsgen/contact us page/assets/twitter.svg'%}" alt="twitter">
+                <img src="{% static 'termsgen/contact us page/assets/linkedin.svg'%}" alt="linkedin">
+                <img src="{% static 'termsgen/contact us page/assets/instagram.svg'%}" alt="instagram">
             </div>
           </div>
           
@@ -73,25 +98,30 @@
             <p>You can reach out anytime Via termsgen.io@yahoo.com</p>
             <div class="layer">
               <label for="name">Name</label>
-              <input type="text" required />
+              <br>
+              <input type="text" id="name" required />
             </div>
             <div class="layer">
               <label for="email">Email Address</label>
-              <input type="text" required />
+              <input type="email" id="email" required />
             </div>
             <div class="layer">
               <label for="phone">Phone Number</label>
   
-              <input type="text" required />
+              <input type="tel" id="phone" required />
             </div>
   
             <div class="opt-layer">
               <label for="text">How can we help?</label>
-              <input type="text" />
+              <br>
+              <textarea type="textarea" id="text" rows="4" cols="50" > 
+
+              </textarea>
             </div>
-            <button class="button">Send</button>
+            <button type="submit" class="button">Send</button>
           </div>
         </div>
-      </main>
+    </main>
+      <script src="{% static 'termsgen/contact us page/burger.js'%}"></script>
 </body>
 </html>
