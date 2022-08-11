@@ -1,18 +1,37 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.forms import inlineformset_factory
 from django.contrib.auth.forms import UserCreationForm
+
 # Create your views here.
 from .models import *
-
+from  .forms import CreateUserForm
 
 def index(request):
     return render(request, "termsgen/landing page/index.html")
 
+def getstarted(request):
+    form = CreateUserForm()
+
+    if request.method == 'POST':
+        form = CreateUserForm(request.POST)
+        if form.is_valid():
+            form.save()
+
+    context = {'form': form}
+    return render(request, "termsgen/sign in and signup pages/Get-Started.html", context)
+
+def signin(request):
+    context = {}
+    return render(request, "termsgen/sign in and signup pages/Sign-In.html", context)
+    
 def products(request):
-    return render(request, "termsgen/products and templates/product.html")
+    return render(request, "termsgen/products and templates/product.html",)
 
 def dashboard(request):
-    return render(request, "termsgen/dashboard/dashboard.html")
+    products = Product.objects.all()
+
+    return render(request, "termsgen/dashboard/dashboard.html", {'products':products})
 
 def basic_info(request):
     form = UserCreationForm()

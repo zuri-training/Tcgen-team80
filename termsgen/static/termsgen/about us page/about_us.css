@@ -19,20 +19,21 @@ img .image{
   height: 40px;
 }
 
-.head{
+ul.head{
   display: flex;
   list-style: none;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 24px;
-  color: #0055CC;
+  /* color: #0055CC; */
 }
 li{
   margin-right:8rem;
 }
 a{
   text-decoration: none;
-  /* color:#0055CC; */
+  /* color: red; */
+  color:#0055CC;
 }
 .nav-buttons{
   display: flex;
@@ -44,6 +45,7 @@ a{
   border-radius: 8px ;
   border: 1.5px solid #0055CC;
   background:  #F9FBFF;
+  /* color: red; */
   color:  #00337B;
   font-weight: 500;
   font-size: 16px;
@@ -65,50 +67,54 @@ a{
 
 
 /* MAIN */
-
+div.main{
+  margin: 5%;
+}
 .link {
   font-weight: 700;
   font-size: 50px;
-  margin-top: 1em;
   display: flex;
   text-align: center;
   margin-bottom: 1.5em;
 }
-a {
+.about {
   text-decoration: none;
   color: #001431;
+  margin-top: 0%;
 }
 .one {
-  width: 100vw;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 25em;
-}
-.left {
-  width: 55vw;
-}
-.right {
-  width: 45vw;
+  flex-direction: row;
+  /* margin:10% 0% 15% 0%; */
+  width: 100%;
 }
 span {
   font-weight: 600;
   font-size: 64px;
   line-height: 2em;
   color: #0066f5;
+  margin: 0%;
 }
 p {
+  margin: 0%;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 2em;
-  color: #151515;
+  color: #4F759B;
+
 }
 
 .two {
   display: flex;
-  width: 100%;
-  margin-bottom: 25em;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  /* gap: 2%; */
+  margin:15% 5% 15% 5%;
 }
-
+.left-layer img{
+  margin-left: 5%;
+}
 h1 {
   font-weight: 600;
   font-size: 44px;
@@ -120,21 +126,7 @@ h1 {
   line-height: 2em;
 }
 
-.leftImg {
-  width: 45vw;
-}
-.rightImg {
-  width: 55vw;
-}
-.thirdImg {
-  width: 45vw;
-  margin-left: 4vw;
-}
-p {
-  /* font-weight: 300;
-  font-size: 24px;
-  color: #151515; */
-}
+
 
 
 
@@ -145,7 +137,7 @@ p {
   display: flex;
   justify-content: space-between;
   background-color: #00337b;
-  width: 100vw;
+  /* width: 100v; */
   height: 50vh;
 }
 .footer-logo {
