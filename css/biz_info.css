@@ -1,0 +1,438 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline;
+    padding-right: 40px;
+    color: #00337B;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #00337B;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.navbar {
+    margin: auto;
+    padding-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dashboard {
+    text-align: right;
+    margin-top: -42px;
+}
+
+.dashboard ul li {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    list-style-type: none;
+}
+
+main {
+    background: #F9FBFF;
+    display: flex;
+    margin: auto;
+}
+
+.sidebar {
+    background-color: #00337B;
+    padding: 0 30px 0 30px;
+    text-align: center;
+}
+
+/*Progress bar*/
+.progress {
+    margin-top: 100px;
+}
+
+.one p {
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: white;
+    color: blue;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.one h6 {
+    color: #D9D9D9;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.one h1 {
+    line-height: 15px;
+    color: #968686;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.two p {
+    border: 1px solid white;
+    border-radius: 100%;
+    color: #D9D9D9;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.two h6 {
+    color: #D9D9D9;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.two h1 {
+    line-height: 15px;
+    color: #968686;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.three p {
+    border: 1px solid white;
+    border-radius: 100%;
+    color: #D9D9D9;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.three h6 {
+    color: #D9D9D9;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.three h1 {
+    line-height: 15px;
+    color: #968686;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.four p {
+    border: 1px solid white;
+    border-radius: 100%;
+    color: #D9D9D9;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.four h6 {
+    color: #D9D9D9;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+.top {
+    padding: 20px;
+    padding-right: 0;
+    display: flex;
+    margin-top: 63px;
+    justify-content: space-between;
+    background-color: #EAE9E9;
+}
+
+.top h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.top button {
+    margin: 0;
+    width: 184px;
+    height: 48px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border-radius: 8px;
+    color: #2B80F7;
+    background: #FFFFFF;
+    border: 1px solid #407BFF;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+}
+
+.bottom p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.bottom h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.tell {
+    margin-top: 36px;
+}
+
+.inner {
+    display: flex;
+    margin-top: 63px;
+}
+
+.inner .image {
+    width: 50px;
+    margin-top: 15px;
+    margin-right: 22px;
+}
+
+.inner .image img {
+    width: 100%;
+}
+
+.left {
+    margin-right: 139px;
+}
+
+.left select {
+    border: 1px solid;
+    width: 415px;
+    border-radius: 8px;
+    padding: 10px 11px 10px 11px;
+    margin: 10px 0 0 0;
+}
+
+.left option {
+    color: #5F5F5F;
+}
+
+/*Website box*/
+#web {
+    border: 1px solid #5F5F5F;
+    border-radius: 8px;
+    display: flex;
+    padding: 10px;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+
+#web p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#web h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.web-text .web-left {
+    display: flex;
+}
+
+.web-left .text {
+    margin-top: 10px;
+}
+
+.web-box {
+    margin-top: 25px;
+}
+
+/*App box*/
+.app {
+    border: 1px solid #5F5F5F;
+    border-radius: 8px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.app-box {
+    margin-top: 25px;
+}
+
+.app h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.app p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.app-text .app-left {
+    display: flex;
+}
+
+.app-left .text {
+    margin-top: 10px;
+}
+
+.Date input {
+    width: 400px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.Date p {
+    margin-bottom: 10px;
+}
+
+.right .write {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+/*Individual box*/
+.individual {
+    border: 1px solid #5F5F5F;
+    border-radius: 8px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.individual-box {
+    margin-top: 25px;
+}
+
+.individual h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.individual p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.individual-left .text {
+    margin-top: 10px;
+}
+
+.individual-text .individual-left {
+    display: flex;
+}
+
+/*Business box*/
+.business {
+    border: 1px solid #5F5F5F;
+    border-radius: 8px;
+    display: flex;
+    margin-top: 16px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.business h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.business p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.business-text .business-left {
+    display: flex;
+}
+
+.business-left .text {
+    margin-top: 10px;
+}
+
+.business-box {
+    margin-top: 25px;
+}
+
+button {
+    margin-top: 46.5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    width: 184px;
+    height: 48px;
+    border: #0055CC;
+    border-radius: 8px;
+    margin-bottom: 80px;
+    float: right;
+    background-color: #0055CC;
+}
+
+button:hover {
+    background-color: #0055CC;
+}
+
+button a {
+    text-decoration: none;
+    color: #D9D9D9;
+}
