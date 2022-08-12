@@ -35,7 +35,7 @@
 
 .navbar{
     /* height: 7.74%; */
-    background-color: #DCEBFF;
+    background-color: #F9FBFF;
 }
 
 nav{
@@ -76,7 +76,7 @@ nav ul li a{
 .ellipse{
     width: 30px;
     height: 30px;
-    background-color: #D9D9D9;
+    background-color: #F9FBFF;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -125,7 +125,7 @@ nav ul li a{
 }
 
 .sidebar-icons  .anchors .active{
-    background-color: #F9F6EE;
+    background-color: #F9FBFF;
     color: #00337B;
     width: 3vw;
     height: 3vw;
@@ -163,7 +163,7 @@ nav ul li a{
 
 .main{
     width: 88.76%;
-    background-color: #FFF9EB;
+    background-color: #F9FBFF;
 }
 
 /* styling for the header of the main section */

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'termsgen/dashboard/edashstyle.css' %}">
-    <link rel="shortcut icon" type="image/png" href="icons/FavIcon secondary@3x.png">
+    <link rel="shortcut icon" type="image/png" href="{% static 'termsgen/dashboard/icons/FavIcon secondary@3x.png' %}">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="{% static 'termsgen/dashboard/js/script.js' %}" defer></script>
     <title>Dashboard</title>
@@ -36,7 +36,7 @@
                 </ul>
 
             <div class="logout">
-                <a href="#"><img src="{% static 'termsgen/dashboard/icons/logout.png' %}" alt="" class="sicon">Logout</a>
+                <a href="{% url 'logout' %}"><img src="{% static 'termsgen/dashboard/icons/logout.png' %}" alt="" class="sicon">Logout</a>
             </div>
 
         </section> <!--side navigation end-->
@@ -62,8 +62,24 @@
                 <a class="butz" href="#">Return & Refund Policy<img src="{% static '/termsgen/dashboard/icons/generate.png' %}" alt="" id="genicon"></a>
             </div> <!--generate buttons below dashboard title END-->
     
-            <div class="projectz"></div><!--projects end-->
-            
+            <div class="projectz">
+                <table class="table">
+                    <tr>
+                        <th>Products</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+
+                    {% for i in products %}
+                        <tr>
+                            <td>{{i.name}}</td>
+                            <td>{{i.category}}</td>
+                            <td>{{i.price}}</td>
+                        </tr>
+                    {% endfor %}
+
+                </table>
+            </div><!--projects end-->
         </section><!--main end-->
     
         </div>  <!--wrapper end-->

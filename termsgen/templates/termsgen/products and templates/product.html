@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="{% static 'termsgen/products and templates/js/script.js' %}" defer></script>
+    <script src="{% static 'termsgen/products and templates/js/product.js' %}"></script>
     <title>Products Page</title>
 </head>
 <body>
@@ -25,23 +25,7 @@
                 
                 <div class="generate-about-contact">
                     <a href="{% url 'home' %}">Home</a>
-                    
-                    <div class="dropdown" data-dropdown>
-                        <button class="link" data-dropdown-button><a href="">Generate</a></button>
-                        <div class="dropdown-menu">
-                            <a href="{% url 'privacy' %}">Privacy policy generator</a>
-                            <a href="">Terms and conditions generator</a>
-                            <a href="">Disclaimer generator</a>
-                            <a href="">Return and refund policy generator</a>
-                        </div>
-                        <img src="{% static 'termsgen/products and templates/images/Vectordropdown.png' %}" alt="">
-                    </div>
-                    
-                    <!-- <select for="generate" id="generate">
-                        <option value="terms and conditions">Terms and Conditions</option>
-                        <option value="privacy policy">Privacy Policy</option>
-                        <option value="return and refund">Return and Refund Policy</option>
-                    </select> -->
+                    <a href="{% url 'products' %}">Generate</a>
                     <a href="{% url 'about_us' %}">About us</a>
                     <a href="{% url 'contact_us' %}">Contact us</a>
                 </div>
@@ -67,6 +51,11 @@
             <div class="product">
                 <div class="product-img-div">
                     <img src="{% static 'termsgen/products and templates/images/t and c icon.png' %}" alt="">
+                    <a class="product-link" href="">
+                        <button class="product-link-btn">Generate</button>
+                        Generate 
+                        <img src="{% static 'termsgen\products and templates\images\Vectorright arrow.png' %}" alt="">
+                    </a>
                 </div>
                 <h3>Terms and Conditions Generator</h3>
                 <p>Generate free terms and conditions statement to protect your business</p>
@@ -74,6 +63,10 @@
             <div class="product">
                 <div class="product-img-div">
                     <img src="{% static 'termsgen/products and templates/images/privacy policy icon.png' %}" alt="">
+                    <a class="product-link" href="">
+                        Generate 
+                        <img src="{% static 'termsgen\products and templates\images\Vectorright arrow.png' %}" alt="">
+                    </a>
                 </div>
                 <h3>Privacy Policy Generator</h3>
                 <p>Generate privacy policy statement for your website at zero cost</p>
@@ -81,6 +74,10 @@
             <div class="product">
                 <div class="product-img-div">
                     <img src="{% static 'termsgen/products and templates/images/re and re icon.png' %}" alt="">
+                    <a class="product-link" href="">
+                        Generate 
+                        <img src="{% static 'termsgen\products and templates\images\Vectorright arrow.png' %}" alt="">
+                    </a>
                 </div>
                 <h3>Return and Refund Generator</h3>
                 <p>Generate free return and refund policy to use for your e-commerce business</p>
@@ -88,10 +85,53 @@
             <div class="product">
                 <div class="product-img-div">
                     <img src="{% static 'termsgen/products and templates/images/disclaimer icon.png' %}" alt="">
+                    <a class="product-link" href="">
+                        Generate 
+                        <img src="{% static 'termsgen\products and templates\images\Vectorright arrow.png' %}" alt="">
+                    </a>                    
                 </div>
                 <h3>Disclaimer Generator</h3>
                 <p>Generate free legal disclaimer statements to use for your business</p>
             </div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="content">
+                <div class="topic">
+                    Privacy Policy
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est a nobis nesciunt 
+                    nihil cupiditate animi nam totam dolore hic qui rem suscipit, corporis nemo, 
+                    natus voluptas delectus voluptatibus nostrum porro iure maxime esse assumenda 
+                    neque! Sit quod error impedit, recusandae soluta nemo quaerat ratione. Labore 
+                    quis dolorem ut omnis maiores! <br><br>
+                    
+                    Ad recusandae explicabo at tempora doloribus 
+                    itaque repudiandae quos earum commodi laborum rem repellat, voluptatem soluta 
+                    saepe vero voluptate incidunt exercitationem nisi reprehenderit cupiditate eaque 
+                    consectetur? Rerum quisquam harum, sint similique illum hic possimus blanditiis 
+                    voluptatum culpa officiis nobis ad nisi eum impedit velit dolores libero dolor 
+                    voluptatibus repudiandae labore.<br><br>
+    
+                    Ad recusandae explicabo at tempora doloribus 
+                    itaque repudiandae quos earum commodi laborum rem repellat, voluptatem soluta 
+                    saepe vero voluptate incidunt exercitationem nisi reprehenderit cupiditate eaque 
+                    consectetur? Rerum quisquam harum, sint similique illum hic possimus blanditiis 
+                    voluptatum culpa officiis nobis ad nisi eum impedit velit dolores libero dolor 
+                    voluptatibus repudiandae labore.<br><br>
+    
+                    Ad recusandae explicabo at tempora doloribus 
+                    itaque repudiandae quos earum commodi laborum rem repellat, voluptatem soluta 
+                    saepe vero voluptate incidunt exercitationem nisi reprehenderit cupiditate eaque 
+                    consectetur? Rerum quisquam harum, sint similique illum hic possimus blanditiis 
+                    voluptatum culpa officiis nobis ad nisi eum impedit velit dolores libero dolor 
+                    voluptatibus repudiandae labore.<br><br>
+                </div>
+            </div>
+            <div class="modal-button">
+                <button class="m-button">Customize your policy</button>
             </div>
         </div>
     </section>

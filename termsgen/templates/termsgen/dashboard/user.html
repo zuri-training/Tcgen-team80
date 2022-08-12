@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'termsgen/dashboard/edashstyle.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'termsgen/dashboard/icons/FavIcon secondary@3x.png' %}">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="{% static 'termsgen/dashboard/js/script.js' %}" defer></script>
+    <title>User Profile</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="sidebar"> <!--side navigation-->
+        
+                <img class="logo" src="{% static 'termsgen/dashboard/icons/Secodary.svg' %}" alt="logo">
+                <ul>
+                    <li><a href="{% url 'dashboard' %}"><img src="{% static 'termsgen/dashboard/icons/dash_burger.png' %}" alt="" class="sicon">Dashboard</a></li>
+                    <li><a href="#" class="feat-btn"><img src="{% static 'termsgen/dashboard/icons/policies.png' %}" alt="" class="sicon">Policies<img src="{% static '/termsgen/dashboard/icons/dropdown.png' %}" alt="" class="drop first"></a>
+                    <ul id="feat-show">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Return and refund</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#" class="serv-btn"><img src="{% static 'termsgen/dashboard/icons/settings.png' %}" alt="" class="sicon">Settings<img src="{% static '/termsgen/dashboard/icons/dropdown.png' %}" alt="" class="drop second"></a>
+                    <ul id="serv-show">
+                        <li><a href="basic_info.html">Basic information</a></li>
+                        <li><a href="web_info.html">Website information</a></li>
+                    </ul>
+                    </li>
+                </ul>
+
+            <div class="logout">
+                <a href="{% url 'logout' %}"><img src="{% static 'termsgen/dashboard/icons/logout.png' %}" alt="" class="sicon">Logout</a>
+            </div>
+
+        </section> <!--side navigation end-->
+
+        <section class="main"> <!--main-->
+
+            <div id="part">
+                <div class="search"> <!--search-->
+                    <form action="#">
+                        <input type="text" name="search" id="search" placeholder="search added website/app">
+                    </form>
+                </div> <!--search end-->
+
+                <div class="dashtitle"> <!--BASIC INFORMATION title-->
+                    <h1>DASHBOARD</h1>
+                </div> <!--BASIC INFORMATION title end-->
+            </div>
+
+            <div class="generate"> <!--generate buttons below dashboard title-->
+                <a class="butz" href="#">Terms & conditions<img src="{% static '/termsgen/dashboard/icons/generate.png' %}" alt="" id="genicon"></a>
+                <a class="butz" href="#">Privacy Policy<img src="{% static '/termsgen/dashboard/icons/generate.png' %}" alt="" id="genicon"></a>
+                <a class="butz" href="#">Disclaimer<img src="{% static '/termsgen/dashboard/icons/generate.png' %}" alt="" id="genicon"></a>
+                <a class="butz" href="#">Return & Refund Policy<img src="{% static '/termsgen/dashboard/icons/generate.png' %}" alt="" id="genicon"></a>
+            </div> <!--generate buttons below dashboard title END-->
+    
+            <div class="projectz">
+                <table class="table">
+                    <tr>
+                        <th>Products</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+
+                    {% for i in products %}
+                        <tr>
+                            <td>{{i.name}}</td>
+                            <td>{{i.category}}</td>
+                            <td>{{i.price}}</td>
+                        </tr>
+                    {% endfor %}
+
+                </table>
+            </div><!--projects end-->
+        </section><!--main end-->
+    
+        </div>  <!--wrapper end-->
+
+</body>
+</html>

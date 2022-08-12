@@ -1,4 +1,4 @@
-<!-- {% load static %} -->
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,10 +19,10 @@
         <div class="nav">
             <ul class="head">
                 <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="">Generate</a></li>
-                    <li><a href="{% url 'about_us' %}">About us</a></li>
-                    <li><a href="{% url 'contact_us' %}">Contact us</a></li>
-                </ul>
+                <li><a href="{% url 'products' %}">Generate</a></li>
+                <li><a href="{% url 'about_us' %}">About us</a></li>
+                <li><a href="{% url 'contact_us' %}">Contact us</a></li>
+            </ul>
         </div>
         <div class="nav-buttons">
             <button class="btn">Sign In</button>
@@ -31,7 +31,7 @@
     </div>
     <div class="main">
         <div class="link">
-            <a href="#">ABOUT US</a>
+            <a class="about" href="#">ABOUT US</a>
         </div>
         <div class="one">
             <div class="left">

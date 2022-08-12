@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: #F9F6EE;
+    background-color: #F9FBFF;
 }
 
 .wrapper{
@@ -95,8 +95,8 @@ body{
 .wrapper .sidebar .sicon{
     width: 20px;
     height: 20px;
-    margin-right: 26px;
-    margin-left: 30px;
+    margin-right: 10%;
+    margin-left: 15%;
     top: 3px;
     position:relative;
 }
@@ -193,8 +193,9 @@ body{
 /*search*/
 
 .wrapper .main .search form{
-    background-color: #FFF9EB;
+    background-color: #F9FBFF;
     padding: 10px 300px 10px 300px;
+    box-shadow: 0px 2px 16px 0px #C7DEFF;
 }
 
 .wrapper .main .search form input{
@@ -203,7 +204,7 @@ body{
     padding: 10px 10px 10px 20px;
     border: 1px solid #dadada;
     border-radius: 8px;
-    margin: 8px 0;
+    margin: 1% 0;
 }
 
 ::placeholder{
@@ -217,17 +218,19 @@ body{
 .wrapper .main .dashtitle h1{
     font-size: 42px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 10px;
     letter-spacing: 0em;
     text-align: left;
+    color: #00337B;
 }
 
 .wrapper .main .dashtitle {
     padding: 24px 0px;
-    margin-bottom: 5px;
-    margin-left: 24px;
-    margin-right: 24px;
-    background-color: #F9F6EE;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: none;
     width: 90%;
     position: relative;
     border-bottom: 1px solid #999999;
@@ -244,7 +247,7 @@ body{
 }
 
 .wrapper .main .generate{
-    margin-top: 35px;
+    margin-top: 4%;
 }
 
 .wrapper .main .generate .butz{
@@ -254,41 +257,47 @@ body{
     letter-spacing: 0em;
     text-align: center;
     color:#2B80F7;
-    background-color: #F9F6EE;
+    background-color: #F9FBFF;
     border: 1px solid #2B80F7;
     border-radius: 8px;
     padding: 15px 15px;
-    margin-left: 24px;
+    margin-left: 2%;
 }
 
 /*Projects*/
 
 .wrapper .main .projectz{
-    margin-top: 30px;
-    margin-left: 24px;
+    margin-top: 3%;
+    margin-left: 2%;
     border-radius: 5px;
     padding: 20px 30px;
     width: 90%;
     border: none;
-    background-color:#FFF9EB;
-    margin-bottom: 50px;
+    background-color:#F0F5FF;
+    margin-bottom: 10%;
 }
 
 .wrapper .main .projectz .project{
-    background-color: #FFF9EB;
+    background-color:#F0F5FF;
     border: 1px solid #2B80F7;
     padding: 30px 20px;
-    margin-top: 20px;
+    margin-top: 3%;
     border-radius: 5px;
+}
+
+.wrapper .main .projectz .project p {
+    margin-bottom: 2%;
 }
 
 #proj{
     width: 35px;
     height: 35px;
-    display:inline-flex;
+    display: block;
 }
 
-
+.wrapper .main .projectz .project .meta{
+    padding: 10px 5px;
+}
 
 .wrapper .main .projectz .project .meta .sicon1{
     width: 22px;
@@ -309,7 +318,7 @@ body{
 /*preview and delete*/
 
 #prevdel1{
-    margin-right: 30px;
+    margin-right: 2%;
     color: #14AE5C;
     font-size: 16px;
     font-weight: 500;
@@ -317,7 +326,7 @@ body{
 }
 
 #prevdel2{
-    margin-right: 30px;
+    margin-right: 2%;
     color: #ED1B24;
     font-size: 16px;
     font-weight: 500;
@@ -325,13 +334,17 @@ body{
 
 /*Projects buttons*/
 
+#SED{
+    margin-left: 50%;
+    position: relative;
+}
+
 #shed1{
-    background-color: #FFF9EB;
+    background-color: #F0F5FF;
     color: #0055CC;
     padding: 15px 30px;
     border: 1px solid #0055CC;
     border-radius: 8px;
-    margin-left: 180px;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -340,12 +353,12 @@ body{
 }
 
 #shed2{
-    background-color: #FFF9EB;
+    background-color: #F0F5FF;
     color: #0055CC;
     padding: 15px 30px;
     border: 1px solid #0055CC;
     border-radius: 8px;
-    margin-left: 20px;
+    margin-left: 4%;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -359,7 +372,7 @@ body{
     padding: 15px 30px;
     border: 1px solid #0055CC;
     border-radius: 8px;
-    margin-left: 20px;
+    margin-left: 4%;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;

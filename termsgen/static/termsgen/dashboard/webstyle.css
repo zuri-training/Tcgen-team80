@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: #F9F6EE;
+    background-color: #F9FBFF;
 }
 
 .wrapper{
@@ -95,8 +95,8 @@ body{
 .wrapper .sidebar .sicon{
     width: 20px;
     height: 20px;
-    margin-right: 26px;
-    margin-left: 35px;
+    margin-right: 10%;
+    margin-left: 15%;
     top: 3px;
     position:relative;
 }
@@ -157,7 +157,7 @@ body{
 /*logout button*/
 
 .wrapper .sidebar .logout{
-    margin-top: 250px;
+    margin-top: 50%;
     cursor: pointer;
 }
 
@@ -193,8 +193,9 @@ body{
 /*search*/
 
 .wrapper .main .search form{
-    background-color: #FFF9EB;
+    background-color: #F9FBFF;
     padding: 10px 300px 10px 300px;
+    box-shadow: 0px 2px 16px 0px #C7DEFF;
 }
 
 .wrapper .main .search form input{
@@ -203,30 +204,33 @@ body{
     padding: 10px 10px 10px 20px;
     border: 1px solid #dadada;
     border-radius: 8px;
+    margin: 1% 0;
+}
+
+::placeholder{
+    color: rgba(113, 113, 113, 0.5);
 }
 
 /*user icon*/
-
-.wrapper .main .search .user{
-    margin-left: 20px;
-}
 
 /*dash title*/
 
 .wrapper .main .dashtitle h1{
     font-size: 42px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 10px;
     letter-spacing: 0em;
     text-align: left;
+    color: #00337B;
 }
 
 .wrapper .main .dashtitle {
     padding: 24px 0px;
-    margin-bottom: 5px;
-    margin-left: 24px;
-    margin-right: 24px;
-    background-color: #F9F6EE;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: none;
     width: 90%;
     position: relative;
     border-bottom: 1px solid #999999;
@@ -281,7 +285,7 @@ input[type=submit]:hover {
     margin-right: 80px;
     height: 300px;
     padding: 24px;
-    background-color: #FFF9EB;
+    background-color:#F0F5FF;
 }
 
 .wrapper .main .sect .tips h2{
@@ -297,7 +301,7 @@ input[type=submit]:hover {
     padding: 24px;
     margin-right: 24px;
     margin-left: 24px;
-    background-color: #FFF9EB;
+    background-color:#F0F5FF;
     margin-bottom: 70px;
 }
 
