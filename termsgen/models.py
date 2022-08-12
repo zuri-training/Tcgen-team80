@@ -21,3 +21,12 @@ class database(models.Model):
 
     def __str__(self):
         return self.Company_name
+
+
+class signUp(models.Model):
+    email_Address = models.EmailField()
+    password = models.CharField(max_length=8, null=True)
+
+
+    # def_str_(self):
+    # return self.e

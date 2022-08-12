@@ -1,8 +1,5 @@
 {% load static %}
-<<<<<<< HEAD
 
-=======
->>>>>>> a134af59c99677352d79ce93fb740cd59ad69ae4
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +30,11 @@
 			<h2 class="title">Welcome back</h2>
 			<p class="sub">Sign in to continue to your account.</p>
 			</div>
-			<form action="#" class="login active">
+			<!-- INCREASE -->
+			<form method="POST" action="#" class="login active">
+				
+					{% csrf_token %}
+					<!-- {{form.as_p}} -->
 				<div class="inner">
 					<div class="form-group">
 						<label for="email">Email Address</label>
