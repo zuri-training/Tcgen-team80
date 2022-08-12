@@ -5,7 +5,7 @@ from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
 from .models import *
-from  .forms import CreateUserForm
+from .forms import CreateUserForm
 
 def index(request):
     return render(request, "termsgen/landing page/index.html")
@@ -22,7 +22,16 @@ def getstarted(request):
     return render(request, "termsgen/sign in and signup pages/Get-Started.html", context)
 
 def signin(request):
-    context = {}
+    # INCREASE
+    form = CreateUserForm()
+
+    if request.method == 'POST':
+        form = CreateUserForm(request.POST)
+        if form.is_valid():
+            form.save()
+
+    context = {'form': form}
+    
     return render(request, "termsgen/sign in and signup pages/Sign-In.html", context)
     
 def products(request):
