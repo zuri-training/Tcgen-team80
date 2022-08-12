@@ -289,5 +289,8 @@ input {
     }
 }
 
-
-
+/*Flash message on login*/
+#messages{
+    text-align: center;
+    color:#001431;
+}

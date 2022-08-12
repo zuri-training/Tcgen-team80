@@ -19,6 +19,9 @@ urlpatterns = [
 
     path("get-started/", views.getstarted, name="getstarted"),
     path("sign-in/", views.signin, name="signin"),
+    path("logout/", views.logoutUser, name="logout"),
+    path("forgot/", views.forgot, name="forgot"),
+    path("user/", views.userPage, name="userpage"),
 
     path("terms-and-conditions-additional-info/", views.terms_and_conditions_2, name="terms_conditions_2"),
     path("terms-and-conditions-security-info", views.terms_and_conditions_3, name="terms_conditions_3"),
