@@ -6,7 +6,7 @@ from django.db import models
 
 # Create your models here.
 
-class database(models.Model):
+class basic(models.Model):
     Company_name = models.CharField(max_length = 23, null=True)
     email_Address = models.CharField(max_length = 23 , null=True)
     phone_number = models.CharField(max_length = 23,  null=True)
@@ -21,3 +21,12 @@ class database(models.Model):
 
     def __str__(self):
         return self.Company_name
+
+
+class signup(models.Model):
+    USERNAME = models.CharField(max_length = 23, null=True)
+    email_Address = models.EmailField(max_length = 23 , null=True)
+    password = models.CharField(max_length = 23, null=True)
+
+    def __str__(self):
+        return self.USERNAME
