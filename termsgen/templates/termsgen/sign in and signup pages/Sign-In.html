@@ -1,3 +1,4 @@
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -5,11 +6,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{% static 'termsgen/sign in and signup pages/style.css' %}">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- <link rel="stylesheet" href="style.css"> -->
 	<link rel="stylesheet" href="{% static 'termsgen/sign in and signup pages/style2.css'%}">
-	<title>Sign Up Form</title>
+	<title>Login</title>
 </head>
 <body>
 	<div class="body-container">
@@ -18,7 +18,7 @@
 				<div class="nav-container">
 					<div class="logox">
 						<a href="">
-						<img class="logo" src="{% static 'termsgen/sign in and signup pages/image/Primary@3x'%}" alt="logo">
+						<img class="logo" src="{% static 'termsgen/sign in and signup pages/image/Primary@3x.png'%}" alt="logo">
 						</a>
 					</div>
 				</div>
@@ -30,30 +30,40 @@
 			<h2 class="title">Welcome back</h2>
 			<p class="sub">Sign in to continue to your account.</p>
 			</div>
+
+			<form method="POST" action="" class="login active">
+				{% csrf_token %}
+
 			<!-- INCREASE -->
 			<form method="POST" action="#" class="login active">
 				
 					{% csrf_token %}
 					<!-- {{form.as_p}} -->
+
 				<div class="inner">
 					<div class="form-group">
-						<label for="email">Email Address</label>
+						<label for="email">Username</label>
 						<div class="input-group">
-							<input type="email" id="email" placeholder="Enter email address">
+							<input type="text" name="username" id="email" placeholder="Enter email address">
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="password">Password</label>
 						<div class="input-group">
-							<input type="password" pattern=".{8,}" id="password" placeholder="Enter password">
+							<input type="password" name="password" pattern=".{8,}" id="password" placeholder="Enter password">
 							<i class='bx bx-lock-alt' ></i>
 						</div>
 					</div>
+					
+					{% for message in messages %}
+						<p id="messages">{{message}}</p>
+					{% endfor %}
+
 					<a class="fgt" href="forgot.html">Forgot password?</a>
-					<div> <button class="btn-submit">Sign Up</button></div>
+					<div> <button class="btn-submit">Sign In</button></div>
 							<p class="or">Or</p>
 					<div><button class="btn-submit" id="two"><a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#"><img src="https://img.icons8.com/color/16/000000/google-logo.png">  Sign In with Google </a></button></div>
-					<p class="acct">Don't have an account? <a href="Get-Started.html">Sign Up</a></p>
+					<p class="acct">Don't have an account? <a href="{% url 'getstarted' %}">Sign Up</a></p>
 				</div>
 			</form>
 		</div>

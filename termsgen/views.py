@@ -1,33 +1,87 @@
+
+from tokenize import group
+
 from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.forms import inlineformset_factory
 from django.contrib.auth.forms import UserCreationForm
 
+from django.contrib.auth import authenticate, login, logout
+
+from django.contrib import messages
+
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import Group
 from django.http import HttpResponseRedirect
+
 # Create your views here.
+
 from .models import basic
 from .forms import basicinfo
 
+
 # Create your views here.
+
 from .models import *
 from .forms import CreateUserForm
+
+from .decorators import unauthenticated_user, allowed_users, admin_only
 
 def index(request):
     return render(request, "termsgen/landing page/index.html")
 
+@unauthenticated_user
 def getstarted(request):
-    form = CreateUserForm()
+    
+        form = CreateUserForm()
+        if request.method == 'POST':
+            form = CreateUserForm(request.POST)
+            if form.is_valid():
+                user = form.save()
+                username = form.cleaned_data.get('username')
 
-    if request.method == 'POST':
-        form = CreateUserForm(request.POST)
-        if form.is_valid():
-            form.save()
+                group = Group.objects.get(name= 'customer')
+                user.groups.add(group)
 
-    context = {'form': form}
-    return render(request, "termsgen/sign in and signup pages/Get-Started.html", context)
+                Customer.objects.create(
+                    user=user,
+                )
 
+                messages.success(request, 'Account was created for ' + username)
+
+                return redirect('signin')
+
+        context = {'form': form}
+        return render(request, "termsgen/sign in and signup pages/Get-Started.html", context)
+
+@unauthenticated_user
 def signin(request):
+
+            if request.method == 'POST':
+                username = request.POST.get('username')
+                password = request.POST.get('password')
+
+                user = authenticate(request, username=username, password=password)
+
+                if user is not None:
+                    login(request, user)
+                    return redirect('dashboard')
+
+                else:
+                    messages.info(request, 'Username OR password is incorrect')
+
+            context = {}
+            return render(request, "termsgen/sign in and signup pages/Sign-In.html", context)
+
+def logoutUser(request):
+    logout(request)
+    return redirect('signin')
+
+def forgot(request):
+    context = {}
+    return render(request, "termsgen/sign in and signup pages/forgot.html", context)
+
     # INCREASE
     form = CreateUserForm()
 
@@ -40,13 +94,27 @@ def signin(request):
     
     return render(request, "termsgen/sign in and signup pages/Sign-In.html", context)
     
+@login_required(login_url='signin')
+@allowed_users(allowed_roles=['admin'])
 def products(request):
     return render(request, "termsgen/products and templates/product.html",)
 
+@login_required(login_url='signin')
+@admin_only
 def dashboard(request):
     products = Product.objects.all()
 
-    return render(request, "termsgen/dashboard/dashboard.html", {'products':products})
+    return render(request, "termsgen/dashboard/edashboard.html", {'products':products})
+
+@login_required(login_url='signin')
+@allowed_users(allowed_roles=['customer'])
+def userPage(request):
+    orders = request.user.customer.order_set.all()
+    context = {'order':orders}
+
+
+    return render(request, "termsgen/dashboard/user.html", context)
+
 
 def basic_info(request):
     submitted = False

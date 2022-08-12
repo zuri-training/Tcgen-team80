@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="{% static 'termsgen/sign in and signup pages/style2.css'%}">
-	<title>Sign Up</title>
+	<title>Sign Up Form</title>
 </head>
 <body>
 	<div class="body-container">
@@ -28,58 +28,41 @@
 			<h2 class="title">Get Started</h2>
 			<p class="sub">Register now to start generating your compliance documents.</p>
 			</div>
-			<form method="POST" action="" class="login active">
-				{% csrf_token %}
+			<form action="#" class="login active">
 				<div class="inner">
-					<div class="form-group">
-						<label for="email">Username</label>
-						<div class="input-group">
-						{{form.username}}
-						</div>
 					<div class="form-group">
 						<label for="email">Email Address</label>
 						<div class="input-group">
-						{{form.email}}
+							<input type="email" id="email" placeholder="Enter email address">
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="password">Password</label>
 						<div class="input-group">
-						{{form.password1}}
-							<i class='bx bx-lock-alt' ></i>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="password">Re-enter Password</label>
-						<div class="input-group">
-						{{form.password2}}
+							<input type="password" pattern=".{8,}" id="password" placeholder="Enter password">
 							<i class='bx bx-lock-alt' ></i>
 						</div>
 					</div>
 					<P class="tnc">By signing up I agree to the <a href="">Terms and conditions</a> and <a href="">Privacy
 						Policy</a></P>
 
-					<input type="submit" name="Create user" value="Sign Up" class="btn-submit">
-					{{form.errors}}
-					<p class="acct">Already have an account? <a href="{% url 'signin' %}">Sign In</a></p>
+					<div> <button class="btn-submit">Sign Up</button></div>
+							<p class="or">Or</p>
+					<div><button class="btn-submit" id="two"><a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" href="#"><img src="https://img.icons8.com/color/16/000000/google-logo.png"></a>  Sign up with Google </a></button></div>
+					<p class="acct">Already have an account? <a href="Sign-In.html">Sign In</a></p>
 				</div>
 			</form>
 		</div>
 
 	</div>
-
-	<script>
-		var form_fields = document.getElementsByTagName('input')
-		form_fields[1].placeholder='Enter username';
-		form_fields[2].placeholder='Enter email address';
-		form_fields[3].placeholder='Enter password';
-		form_fields[4].placeholder='Re-enter password';
-
-		for (var field in form_fields){
-			form_fields[field].className == ' form-control'
-		}
-
-	</script>
-
 </body>
 </html>
+
+
+<!--email field of login-->
+<div class="form-group">
+	<label for="email">Email Address</label>
+	<div class="input-group">
+		<input type="email" name="username" id="email" placeholder="Enter email address">
+	</div>
+</div>
