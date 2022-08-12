@@ -21,10 +21,10 @@
                     <li><a href="{% url 'dashboard' %}"><img src="{% static 'termsgen/dashboard/icons/dash_burger.png' %}" alt="" class="sicon">Dashboard</a></li>
                     <li><a href="#" class="feat-btn"><img src="{% static 'termsgen/dashboard/icons/policies.png' %}" alt="" class="sicon">Policies<img src="{% static '/termsgen/dashboard/icons/dropdown.png' %}" alt="" class="drop first"></a>
                     <ul id="feat-show">
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="{% url 'terms_conditions' %}">Terms & Conditions</a></li>
+                        <li><a href="{% url 'privacy' %}">Privacy policy</a></li>
                         <li><a href="#">Disclaimer</a></li>
-                        <li><a href="#">Return and refund</a></li>
+                        <li><a href="{% url 'return_refund' %}">Return and refund</a></li>
                     </ul>
                     </li>
                     <li><a href="#" class="serv-btn"><img src="{% static 'termsgen/dashboard/icons/settings.png' %}" alt="" class="sicon">Settings<img src="{% static '/termsgen/dashboard/icons/dropdown.png' %}" alt="" class="drop second"></a>
@@ -58,17 +58,18 @@
             </div>
 
             <div class="generate"> <!--generate buttons below dashboard title-->
-                <a class="butz" href="#">Terms & conditions<img src="{% static '/termsgen/dashboard/icons/generate.png' %}" alt="" id="genicon"></a>
-                <a class="butz" href="#">Privacy Policy<img src="{% static '/termsgen/dashboard/icons/generate.png' %}" alt="" id="genicon"></a>
+                <a class="butz" href="{% url 'terms_conditions' %}">Terms & conditions<img src="{% static '/termsgen/dashboard/icons/generate.png' %}" alt="" id="genicon"></a>
+                <a class="butz" href="{% url 'privacy' %}">Privacy Policy<img src="{% static '/termsgen/dashboard/icons/generate.png' %}" alt="" id="genicon"></a>
                 <a class="butz" href="#">Disclaimer<img src="{% static '/termsgen/dashboard/icons/generate.png' %}" alt="" id="genicon"></a>
-                <a class="butz" href="#">Return & Refund Policy<img src="{% static '/termsgen/dashboard/icons/generate.png' %}" alt="" id="genicon"></a>
+                <a class="butz" href="{% url 'return_refund' %}">Return & Refund Policy<img src="{% static '/termsgen/dashboard/icons/generate.png' %}" alt="" id="genicon"></a>
             </div> <!--generate buttons below dashboard title END-->
     
             <div class="projectz"><!--projects-->
     
                 <div class="project"> <!--project 1-->
                     <div class="category">
-                    <h2> <img src="{% static '/termsgen/dashboard/icons/ts_cs.png' %}" alt="" id="proj"> TERMS AND CONDITIONS</h2>
+                    <img src="{% static '/termsgen/dashboard/icons/ts_cs.png' %}" alt="" id="proj"> 
+                    <h2>TERMS AND CONDITIONS</h2>
                     <p>www.sitename.com</p>
                     </div>
     
@@ -76,10 +77,11 @@
 
                             <a href="#" id="prevdel1"><img src="{% static '/termsgen/dashboard/icons/preview.png' %}" alt="" class="sicon1">Preview</a><!--preview and delete-->
                             <a href="#" id="prevdel2"><img src="{% static '/termsgen/dashboard/icons/cancel.png' %}" alt="" class="sicon2">Delete</a><!--preview and delete-->
-
-                            <a href="#" id="shed1">Share</a><!--share, export, download-->
-                            <a href="#" id="shed2">Export</a><!--share, export, download-->
-                            <a href="#" id="shed3">Download</a><!--share, export, download-->
+                            <div id="SED">
+                                <a href="#" id="shed1">Share</a><!--share, export, download-->
+                                <a href="#" id="shed2">Export</a><!--share, export, download-->
+                                <a href="#" id="shed3">Download</a><!--share, export, download-->
+                            </div>
 
                     </div> <!--every action under the file with the buttons END-->
 
@@ -96,10 +98,11 @@
 
                         <a href="#" id="prevdel1"><img src="{% static '/termsgen/dashboard/icons/preview.png' %}" alt="" class="sicon1">Preview</a><!--preview and delete-->
                         <a href="#" id="prevdel2"><img src="{% static '/termsgen/dashboard/icons/cancel.png' %}" alt="" class="sicon2">Delete</a><!--preview and delete-->
-
-                        <a href="#" id="shed1">Share</a><!--share, export, download-->
-                        <a href="#" id="shed2">Export</a><!--share, export, download-->
-                        <a href="#" id="shed3">Download</a><!--share, export, download-->
+                        <div id="SED">
+                            <a href="#" id="shed1">Share</a><!--share, export, download-->
+                            <a href="#" id="shed2">Export</a><!--share, export, download-->
+                            <a href="#" id="shed3">Download</a><!--share, export, download-->
+                        </div>
 
                     </div> <!--every action under the file with the buttons END-->
 

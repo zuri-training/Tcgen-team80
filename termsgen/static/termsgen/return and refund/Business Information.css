@@ -17,12 +17,12 @@ body{
     position: relative;
 }
 .nav{
-    width: 12%;
+    width: 8%;
     display: flex;
     flex-direction: column;
     gap: 1%;
     position: fixed;
-    min-height: 100vh;
+    height: 100vh;
     color: #D9D9D9;
     text-align: center;
     font-family: 'Open Sans';
@@ -30,17 +30,27 @@ body{
     font-weight: 600;
     font-size: 14px;
     background: #00337B;
+    /* border:1px solid blue; */
+    box-shadow: 3px 3px 3px 3px;
+    top: 70px;
+    z-index: 2;
 }
-.logo{
-    margin: 10px;
-    margin-bottom: 30px;
+.logoxx{
+    width: 20%;
+    /* border: 1px solid red; */
 }
+.logoxx img{
+    width: 40%;
+    margin-left: 35%;
+    
+}
+
 .line {
     height: 50px;
     width: 0%;
     margin: 5px auto;
     background: #D9D9D9;
-    border: 0.06cm solid  #D9D9D9;
+    border: 0.03cm solid  #D9D9D9;
 }
 
          .page1,
@@ -53,9 +63,12 @@ body{
     text-align: center;
     margin: auto;
      line-height: 25px;
-    border: 3px solid#D9D9D9;
+    border: 1px solid #D9D9D9;
     border-radius: 50%;
 
+}
+.nav1{
+margin-top: 60px ;
 }
 .page1{
     color: #00337B;
@@ -73,8 +86,8 @@ body{
     }
 }
 .workbody{
-    width: 88%;
-    float: right;
+    width: 100%;
+    /* float: right; */
     /* background: #00337B; */
     top: 0%;
     right: 0%;
@@ -83,31 +96,40 @@ body{
 }
 
 .menu{
+    width: 100%;
     min-height: 57px;
-    background: rgba(204, 224, 253, 0.3);
+    /* border: 2px solid red; */
+    background: #F9FBFF;;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     font-size: 24px;
     line-height: 100%;
-    position: relative;
+    position: fixed;
+    z-index: 3;
+    display: flex;
 }
 .menu .menunav{
-    margin: auto;
+    width: 80%;
     margin-left:  25px;
     display:flex;
+    top: 50%;
+    
+    float:right;
     list-style: none;
     gap: 6%;
+    /* border: 1px solid red; */
+
 }
 .menunav li :hover{
-    background-color: rgba(25, 104, 221, 0.6);
-    color: gray;
+    background-color: rgba(25, 104, 221, 1);
+    color: white;
     padding: 5px;
 }
 a{
-    color: black;
+   color: #00337B;
     text-decoration: none;
 }
 .menunav .dropdown:hover{
@@ -135,7 +157,7 @@ a{
     color: gray;
 }
 .pagedetails{
-    width: 97%;
+    width: 100%;
     margin: auto;
     position: relative;
     
@@ -165,7 +187,8 @@ nav{
     /* justify-content: space-between; */
     width: 96%;
     margin: auto;
-    border: 2px solid rgba(25, 104, 221, 0.9);
+    border: 1px solid #001431;
+    
     border-radius: 20px;
     padding: 10px;
     text-align: left;
@@ -181,19 +204,19 @@ nav label{
 }
 #country{
     width: 100%;
-    border: 2px solid rgba(25, 104, 221, 0.9);
+    border: 1px solid #001431;
     padding: 10px;
     border-radius: 10px;
-    font-weight: 600;
+    font-weight: 400;
 }
 #date{
     width: 90%;
-    font-weight: 600px;
+    /* font-weight: 600px; */
     font-size: 20px;
     padding: 10px;
     background: rgba(92, 80, 80, 0.2);
     border-radius: 10px;
-    border: 2px solid rgba(25, 104, 221, 0.9);
+    border: 1px solid #001431;
     margin-bottom: 30px;
 }
 small{
@@ -205,11 +228,17 @@ label,
 }
 h1{
     font-size: 35px;
-    width: 70%;
+    height: 83px;
+    padding-top: 25px;
+    padding-left: 15px;
+    /* width: 70%; */
+    /* border:1px solid #00337B; */
+    background: rgba(204, 224, 253, 0.3);
 
 }
 h4{
-    width: 70%;
+    padding-left: 15px ;
+    /* width: 70%; */
     margin-top: 30px;
     font-size: 25px;
 
@@ -220,7 +249,7 @@ h4{
     border-radius: 8px;
     position: absolute;
     right: 3%;
-    top: 4%;    
+    top: 3.4%;    
     border:1px solid #2B80F7;
     color: #2B80F7;
     font-family: 'Poppins';
@@ -233,7 +262,7 @@ h4{
     padding: 10px 35px;
     color: whitesmoke;
     border-radius: 8px;
-    /* background: #00337B; */
+    background: #00337B;
     border: 1px solid rgb(74, 90, 124);
     float: right;
     font-family: 'Poppins';
@@ -244,6 +273,9 @@ h4{
 }
 .detailbody{
     position: relative;
+    width: 92%;
+    float: right;
+    margin-top: 76px;
 }
 .down{
     width: 50%;
@@ -266,20 +298,24 @@ p{
 .disable4{
     display: none;
     margin-top: 5px;
-    border: 2px solid rgba(25, 104, 221, 0.6);
+    /* border: 1px solid gray; */
     padding: 10px;
     border-radius: 10px ;
     font-family: 'Poppins';
     font-style: normal;
     /* text-align: center; */
+    font-weight: 300;
     z-index: 1;
 
 }
+
 input[type="text"],
 input[type="url"]{
-    border: 2px solid gray;
-    border-radius: 3px;
+    border: 1px solid gray;
+    border-radius: 4px;
     cursor: auto;
+    width: 94%;
+    padding: 5px;
 }
 .previewpage{
     position: absolute;
@@ -315,8 +351,11 @@ input[type="url"]{
     /* float: right; */
     
 }
+#burger{
+    display: none;
+}
 
-@media (max-width:600px){
+@media (max-width:700px){
 
     body{
         max-width: 100%;
@@ -325,6 +364,10 @@ input[type="url"]{
         display: block;
         width: 96%;
         margin: auto;
+        
+    }
+    .detailbody{
+        width: 85%;
     }
     .details1,
     .details2{
@@ -332,7 +375,8 @@ input[type="url"]{
         padding: 0%;
     }
     h1{
-        font-size: xx-large;
+        font-size: x-large;
+        padding-right: 140px;
     }
     h4{
         
@@ -342,23 +386,27 @@ input[type="url"]{
     font-size: 18px;
    }
    .menunav{
-    font-size: 15px;
+    font-size: 10px;
    }
    .menunav img{
     width: 15%;
    }
-   .workbody{
-    width: 85%;
-   }
+   
+  
    .nav{
     width: 15%;
     font-size: 12px;
    }
-   
-   .logo{
+    .logoxx{
+    width: 32%;
+    /* border: 1px solid red; */
+
+}
+   .logo img{
     margin-bottom: 18px;
-    width: 96%;
+    width: 100%;
     margin-left: 1%;
+    /* border: 1px solid red; */
    }
    .preview{
     padding: 5px;
@@ -369,3 +417,67 @@ input[type="url"]{
     font-size: 10px;
    }
 }
+
+@media (max-width:400px){
+    body{
+        width:100%
+    }
+    .nav{
+        width:100%;
+        z-index: 1;
+        display: block;
+        height: 120px;
+        
+        
+        
+    }
+    .nav1{
+        display: flex;
+        margin-top: 20px;
+        padding: 10px;
+        
+        
+    }
+    .menu .menunav {
+        font-size: 10px;
+        display: none;  
+    }
+    .line{
+        width: 75%;
+        height: 0;
+        margin: 0;
+        margin-left: 40px;
+        margin-top: 15px;
+        position: absolute;
+        z-index: -1;
+    }
+    .page2,
+    .page3,
+    .page4{
+        background-color: #00337B;
+        
+    }
+    .detailbody{
+        float: none;
+        top: 195px;
+        width: 90%;
+        margin: auto;
+        font-size: 12px;  
+    }
+    h1{
+        font-size: 20px;
+        background: none;
+    }
+    h4{
+        font-size: 18px;
+    }
+    h5{
+        font-size: 15px;
+    }
+    #burger{
+        display: block;
+        right: 10px;
+        position: absolute;
+        z-index: 4;
+    }
+}    

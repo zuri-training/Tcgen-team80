@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #F9FBFF;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+/*SIDE NAVIGATION*/
+
+.wrapper .sidebar .logo{
+    margin-left: 22%;
+    margin-top: 10%;
+    margin-bottom: 35.4%;
+    margin-right: 16.72%;
+    display: block;
+    width: 130px;
+}
+
+.wrapper .sidebar{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background-color: #00337B;
+}
+
+.wrapper .sidebar h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper .sidebar ul li:hover {
+    background-color: white;
+    border-right: 10px solid #0066F5;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.wrapper .sidebar ul li a{
+    color: white;
+    display: block;
+    position: relative;
+    padding: 15px;
+}
+
+.wrapper .sidebar ul li:hover a {
+    color: black;
+}
+
+/*active navigation*/
+
+.wrapper .sidebar ul li.active a{
+    background-color: white;
+    border-right: 10px solid #0066F5;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    color: black;
+}
+
+.wrapper .sidebar ul li.active a img {
+    filter: invert(90%) sepia(86%) saturate(2480%) hue-rotate(206deg) brightness(95%) contrast(102%);
+}
+
+.wrapper .sidebar ul li.active ul li a{
+    color:black;
+    background-color: white;
+    border-right-color: transparent;
+}
+
+.wrapper .sidebar ul ul li a:hover{
+    background-color: white !important;
+    color: #00337B !important;
+}
+
+/*side nav icons*/
+
+.wrapper .sidebar .sicon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10%;
+    margin-left: 15%;
+    top: 3px;
+    position:relative;
+}
+
+.wrapper .sidebar ul li:hover img {
+    filter: invert(90%) sepia(86%) saturate(2480%) hue-rotate(206deg) brightness(95%) contrast(102%);
+}
+
+.wrapper .sidebar ul ul {
+    position: static;
+    display: none;
+}
+
+.wrapper .sidebar ul ul li{
+    line-height: 10px;
+}
+
+.wrapper .sidebar ul ul li a{
+    font-size: 15px;
+    padding-left: -10px;
+}
+
+/*drop downs*/
+
+#feat-show{
+    padding-left: 50px;
+    background-color: white;
+}
+
+#serv-show{
+    padding-left: 50px;
+    background-color: white;
+}
+
+#feat-show.show{
+    display: block;
+}
+
+#serv-show.show1{
+    display: block;
+}
+
+.wrapper .sidebar ul li a .drop{
+    position: absolute;
+    top: 50%;
+    left: 220px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    width: 15px;
+    height: 15px;
+    transition: transform 0.4s;
+}
+
+.wrapper .sidebar ul li a .drop.rotate{
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+/*logout button*/
+
+.wrapper .sidebar .logout{
+    margin-top: 50%;
+    cursor: pointer;
+}
+
+.wrapper .sidebar .logout a{
+    color: white;
+    display: block;
+    padding: 15px;
+}
+
+.wrapper .sidebar .logout:hover {
+    background-color: white;
+    border-right: 10px solid #0066F5;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.wrapper .sidebar .logout a:hover{
+    color: black;
+}
+
+.wrapper .sidebar .logout:hover img {
+    filter: invert(90%) sepia(86%) saturate(2480%) hue-rotate(206deg) brightness(95%) contrast(102%);
+}
+
+/*MAIN SECTION*/
+
+.wrapper .main{
+    margin-left: 20%;
+    width: 80%;
+    display:block;
+}
+
+/*search*/
+
+.wrapper .main .search form{
+    background-color: #F9FBFF;
+    padding: 10px 300px 10px 300px;
+    box-shadow: 0px 2px 16px 0px #C7DEFF;
+}
+
+.wrapper .main .search form input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    margin: 1% 0;
+}
+
+::placeholder{
+    color: rgba(113, 113, 113, 0.5);
+}
+
+/*user icon*/
+
+/*dash title*/
+
+.wrapper .main .dashtitle h1{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #00337B;
+}
+
+.wrapper .main .dashtitle {
+    padding: 24px 0px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: none;
+    width: 90%;
+    position: relative;
+    border-bottom: 1px solid #999999;
+}
+
+/*generate buttons*/
+
+#genicon{
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    top: 5px;
+    position: relative;
+}
+
+.wrapper .main .generate{
+    margin-top: 4%;
+}
+
+.wrapper .main .generate .butz{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#2B80F7;
+    background-color: #F9FBFF;
+    border: 1px solid #2B80F7;
+    border-radius: 8px;
+    padding: 15px 15px;
+    margin-left: 2%;
+}
+
+/*Projects*/
+
+.wrapper .main .projectz{
+    margin-top: 3%;
+    margin-left: 2%;
+    border-radius: 5px;
+    padding: 20px 30px;
+    width: 90%;
+    height: 100%;
+    border: none;
+    background-color:#F0F5FF;
+    margin-bottom: 10%;
+}
+
+.wrapper .main .projectz .table tr th{
+    width: 500px;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: red;
+    border: 1px solid black;
+    align-items: center;
+}

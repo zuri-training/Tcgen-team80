@@ -1,0 +1,143 @@
+@media only screen and (max-width: 375px){
+    
+    
+    nav{
+        background-color: #F9FBFF;
+    }
+
+    .logo{
+        width: 30%;
+        min-width: 100px;
+    }
+
+    #nav-links{
+        display: none;
+    }
+
+    .action-button{
+        display: none;
+    }
+
+    #layer1{
+        display: flex;
+        flex-direction: column;
+        padding-top: 8rem;
+    }
+
+    .intro-img{
+        margin-left: 2rem;
+        position: absolute;
+        width: 65%;
+        height: 250px;
+        top: 14em;
+    }
+
+    .intro{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .intro h3{
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro p{
+        margin-top: 20em;
+    }
+
+    #layer2{
+        padding: 0;
+        margin-top: 20em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #layer2 h3{
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #box1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #top-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-image{
+        width: 25%;
+    }
+
+    #layer3{
+        margin-top: 3rem;
+    }
+
+    #layer3 h3{
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    #svg{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #svg p{
+        padding: 1rem;
+        width: 100%;
+    }
+
+    #svg img{
+        width: 100%;
+        height: 250px;
+    }
+
+    .svg-box1, .svg-box3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .svg-box2, .svg-box4{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .svg-image img{
+        width: 100%;
+    }
+
+    .svg-box1 p, .svg-box3 p, .svg-box2 p, .svg-box4 p{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+}

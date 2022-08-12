@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,27 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="shortcut icon" type="image/png" href="./Wireframe TermsGen/FavIcon secondary.svg">
-    <link rel="stylesheet" href="./4.css">
+    <link rel="shortcut icon" type="image/png" href="{% static 'termsgen/return and refund/Wireframe TermsGen/FavIcon secondary.svg'%}">
+    <link rel="stylesheet" href="{% static 'termsgen/return and refund/4.css'%}">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+
     
 </head>
 
 <body>
     <div class="container">
         <nav class="menu">
-            <figure class="logo"><img src="./Wireframe TermsGen/Primary 1.svg" alt="logo"></figure>
+            <figure class="logo"><img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Primary 1.svg'%}" alt="logo"></figure>
             <ul class="menunav">
                 <li><a href="#">Home</a></li>
-                <li class="drop"><a href="#">Generate <img src="./Wireframe TermsGen/Vector.svg" alt="icon" class="dropdown"></a>
-                <ul class="dropdw">
+                <li class="drop"><a href="#">Generate </a></li>
+                <!-- <ul class="dropdw">
                     <li><a href="#">Privacy policy</a></li>
                     <li><a href="#">Disclaimer</a></li>
                     <li><a href="#">Return and refund policy</a></li>
                     <li><a href="#">Terms and conditions</a></li> 
-                </ul></li>
+                </ul></li> -->
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Contant Us</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
+            <figure id="burger"><img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Frame 6379.svg'%}" alt=""></figure>
         </nav>
         <div class="pagename">
             <h1>Preview your document</h1>
@@ -39,12 +43,12 @@
             <div class="page ii"><h3>2</h3><small>Refund and Shipping</small></div>
             <div class="page iii"><h3>3</h3><small>Additional Information</small></div>
             <div class="page iv"><h3>4</h3><small>Preview Document</small></div>
-            <div class="page v"><h3>5</h3><small>Preview Document</small></div>
+           
             <div class="line"></div>
         </div>
         <div class="document">
             <!-- javascript for the document -->
-            <div class="document_page">
+            <div class="document_page" id="docPage">
                 <h1>Return and Refund Policy</h1>
                 <p>Updated at <span class="update"> </span></p>
                 <br>
@@ -71,13 +75,24 @@
                 <br>
                 <p>If you would like to return a product, the only way would be if you follow the next guidelines:</p>
                 <br>
-                <div class="ul">
-                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul id="guidelines">
+                    <li  id="product123">----- </li>
+                    <!-- <li  class="product124"> </li> -->
+                    <li  id="product125">----- </li>
+                    <li id="product126">----- </li>
+                    <li  id="product127">-----</li>
+                    <li id="product128">----- </li>
+                    <!-- <li  class="product129"> </li> -->
+                    <li  id="product1000">------- </li>
+                    <li  id="product1001">------- </li>
+                    <li  id="product1002">------- </li>
+                    <li  id="product1003">------- </li>
+                    <li  id="product1004">------- </li>
+                
+
+                    
                  </ul>
-                </div>
+               
                 <h2>Refunds</h2>
                 <p>We at <span class="appName"> </span> commit ourselves to
                     serving our customers with the best
@@ -149,17 +164,7 @@
                                 money.
                                 </p>
                                 <h2>Shipping</h2>
-                                    <p> <span class=”appName> </span> is not responsible for return
-
-                                    shipping costs. Every shipping has to
-
-                                    be paid by the customer, even if the
-
-                                    item had free shipping in the first place,
-
-                                    the customer has to pay for the
-
-                                    shipping in return.</p>
+                                    <p> <span id="shipping"> </span> .</p>
 
                                     <h2>Your Consent</h2>
 
@@ -225,30 +230,79 @@
             <br>
             <br>
             <select id="language" name="language">
+                <option>Select your preferred language</option>
                 <option value="ENG">English</option>
                 <option value="Fre">French</option>
                 <option value="Spa">Spanish</option>
             </select>
             <div class="options">
-                <div><img src="./Wireframe TermsGen/Secondary Button.svg" alt="share"></div>
-                <div class="export"> <div class="exportoverlay">
-                    <div class="overtop"><img src="./Wireframe TermsGen/Frame 6366.svg" alt="emailsent" srcset=""></div>
-                    <div class="overdown">
-                        <div class="overcontext">
-                            <h4>Choose the format you wish to export your file:</h4>
-                            <div class="fileformat">
-                                <img src="./Wireframe TermsGen/Embed.svg" alt="pdf">
-                                <img src="./Wireframe TermsGen/Embed-1.svg" alt="txt">
-                                <img src="./Wireframe TermsGen/Embed-2.svg" alt="docx">
-                            </div>
+                <div class="export">
+                    <div class="exportoverlay">
+                        <div class="overtop">
+                            <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Frame 6366.svg'%}" alt="emailsent" >
                         </div>
+                            <div class="overdown">
+                                <div class="overcontext">
+                                        <h4>Choose the format you wish to export your file:</h4>
+                                    <div class="fileformat">
+                                        <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Embed.svg'%}" alt="pdf"  id="pdfff" onclick="PDFgen()">
+                                        <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Embed-1.svg'%}" alt="txt">
+                                        <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Embed-2.svg'%}" alt="docx" onclick="Export2Word('document','word-content')">
+                                        <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Embed html.svg'%}" alt="HTML" onclick="window.print()">
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-                </div><img src="./Wireframe TermsGen/Secondary Button-1.svg" alt="share"></div>
-                <div><img src="./Wireframe TermsGen/Secondary Button-2.svg" alt="share"></div>
+                <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Export44.svg'%}" alt="export" ></div>
+                
+                <div><img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Export-144.svg'%}" alt="share"></div>
+                <div><img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Embed44.svg'%}" alt="embed"></div>
+                <div id="download2"><img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Download44.svg'%}" alt="download" id="downloadbtn" ></div>
                 
             </div>
+            <form action="./Additional Information.html">
+                <button type="submit" class="back">Back</button>
+            </form>
         </div>
+        
     </div>
-    <script src="./return policy.js"></script>
+    <script src="{% static 'termsgen/return and refund/return policy.js'%}"></script>
+    <script>
+
+        myappend("product123", getCookie("q"));
+        myappend("product125", getCookie("r"));
+        myappend("product126", getCookie("sist"));
+        myappend("product127", getCookie("tinn"));
+        myappend("product128", getCookie("u"));
+        myappend("shipping", getCookie("v"));
+        
+        
+        myappend("product1000", getCookie("a"));
+        myappend("product1001",getCookie("b"));
+        myappend("product1002", getCookie("c"));
+        myappend("product1003",getCookie("d"));
+        myappend("product1004",getCookie("e"));
+        </script>
+    <script>
+
+        const pdfbut = document.querySelector("#pdfff")
+
+        
+
+
+        function PDFgen() {
+            const element = document.getElementById("docPage");
+            
+            html2pdf()
+            .from(element)
+            .save();
+        }
+       
+        {% comment %} function Export2Word(element, filename = ''){ {% endcomment %}
+   
+}
+    </script>
+    
+
 </body>
 </html>

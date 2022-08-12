@@ -23,4 +23,10 @@ class basic(models.Model):
         return self.Company_name
 
 
+class signUp(models.Model):
+    email_Address = models.EmailField()
+    password = models.CharField(max_length=8, null=True)
 
+
+    # def_str_(self):
+    # return self.e
