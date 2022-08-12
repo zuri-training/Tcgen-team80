@@ -1,7 +1,13 @@
+from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.forms import inlineformset_factory
 from django.contrib.auth.forms import UserCreationForm
+
+from django.http import HttpResponseRedirect
+# Create your views here.
+from .models import basic
+from .forms import basicinfo
 
 # Create your views here.
 from .models import *
@@ -43,14 +49,17 @@ def dashboard(request):
     return render(request, "termsgen/dashboard/dashboard.html", {'products':products})
 
 def basic_info(request):
-    form = UserCreationForm()
-    if request.method == 'POST':
-          form = UserCreationForm(request.POST) 
-          if form.is_valid():
-            form.save  
-
-    context = {'forms':form}
-    return render(request, "termsgen/dashboard/basic_info.html",context)
+    submitted = False
+    if request.method == "POST":
+        form = basicinfo(request.POST)
+        if form.is_valid():
+            form.save
+            return HttpResponseRedirect('/basic-info?submitted = True')
+    else:
+        form = basicinfo
+        if 'submitted' in request.GET:
+            submitted == True
+    return render(request, "termsgen/dashboard/basic_info.html",{'form':form,'submitted':submitted})
     
 def web_info(request):
     return render(request, "termsgen/dashboard/web_info.html")
