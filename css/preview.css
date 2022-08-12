@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-box {
+    display: flex;
+    padding: 40px 0 30px 55px;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.top {
+    background-color: #ECF0F3;
+    padding: 30px 0 30px 80px;
+}
+
+header {
+    padding: 20px 50px 20px 50px;
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline;
+    padding-right: 40px;
+    color: #00337B;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #00337B;
+    width: 72px;
+    height: 24px;
+}
+
+.navbar {
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dashboard ul li {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom {
+    margin: 40px 352px 40px 352px;
+}
+
+.bottom h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*Disclaimer document*/
+.disclaimer {
+    background-color: rgba(41, 45, 50, 0.2);
+    margin: auto;
+    margin: 60px 0 17px 0;
+    padding: 20px;
+}
+
+.disclaimer h2 {
+    margin-bottom: 20px;
+}
+
+.disclaimer h3 {
+    margin-bottom: 20px;
+}
+
+.four ul {
+    padding-left: 30px;
+}
+
+.language {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.language select {
+    border: 1px solid #2B80F7;
+    border-radius: 8px;
+    padding: 13px 11px 13px 11px;
+    width: 350px;
+}
+
+/*buttons*/
+.buttons {
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#export {
+    padding: 13px 11px 13px 11px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #2B80F7;
+    margin-right: 25px;
+}
+
+#share {
+    padding: 13px 11px 13px 11px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #2B80F7;
+    margin-right: 25px;
+}
+
+#embed {
+    padding: 13px 11px 13px 11px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #2B80F7;
+    margin-right: 25px;
+}
+
+#download {
+    padding: 13px 11px 13px 11px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #2B80F7;
+}
+
+.back button {
+    float: left;
+    padding: 13px 11px 13px 11px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 100px 0 80px 80px;
+    color: #2B80F7;
+}
