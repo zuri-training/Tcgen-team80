@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,225 +7,244 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Additional Information</title>
     <link rel="shortcut icon" type="image/png" href="./Wireframe TermsGen/FavIcon secondary.svg">
-    <link rel="stylesheet" href="./Additional Information.css">
+    <link rel="stylesheet" href="{% static 'termsgen/return and refund/Additional Information.css'%}">
     
 </head>
 
 <body>
     <div class="container">
         <div class="nav">
-            <img src="./Wireframe TermsGen/Primary 1.svg" alt="logo" >
-            <div class="nav1"> 
-                <div class="page1">1</div>
-                <div><p>Business Information</p></div>
-                <div class="line"></div>
-                <div class="page2">2</div>
-                <div><p>Refund and Shipping Information</p></div>
-                <div class="line"></div>
-                <div class="page3">3</div>
-                <div><p>Additional Information</p></div>
-                <div class="line"></div>
-                <div class="page4">4</div>
-                <div><p>Security Details</p></div>
-                <div class="line"></div>
-                <div class="page5">5</div>
-                <div><p>Preview Document</p></div>
+            <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Primary 1.svg'%}" alt="logo" >
+            <div class="nav1">
+                <div>
+                    <div class="page1">1</div>
+                    <div><p>Business Information</p></div>
+                </div>
+                
+                <div class="line i1"></div>
+                <div>
+                    <div class="page2">2</div>
+                    <div><p>Refund and Shipping Information</p></div>
+                 </div>
+                <div class="line ii2"></div>
+                <div>
+                    <div class="page3">3</div>
+                    <div><p>Additional Information</p></div>
+                </div>
+                <div class="line iii3"></div>
+                <div>
+                    <div class="page4">4</div>
+                    <div><p>Preview Document</p></div>
+                </div>
+             
+               
             </div>
             
         </div>
         <div class="workbody">
             <div class="menu">
-                
+                <div class="logoxx">
+                    <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Primary 1.svg'%}" alt="logo" class="logo">
+                </div>
                 <ul class="menunav">
                     <li><a href="#">Home</a></li>
-                    <li class="drop"><a href="#">Generate <img src="./Wireframe TermsGen/Vector.svg" alt="dropdown" class="dropdown"></a>
-                    <ul class="dropdw">
+                    <li class="drop"><a href="#">Generate</a></li>
+                    <!-- <ul class="dropdw">
                         <li><a href="#">Privacy policy</a></li>
                         <li><a href="#">Disclaimer</a></li>
                         <li><a href="#">Return and refund policy</a></li>
                         <li><a href="#">Terms and conditions</a></li> 
-                    </ul></li>
+                    </ul></li> -->
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contant Us</a></li>
                 </ul>
+                <figure id="burger"><img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Frame 6379.svg'%}" alt=""></figure>
             </div>
         
             <div class="details">
                 <div class="box">
                     <div class="top">
                         <h1>Enter Additional Information</h1>
-                        <button class="preview"> Preview</button>
+                        <button type="submit" class="preview"> Preview</button>
                         <div class="previewpage">
+                            <h1>Return and Refund Policy</h1>
                             <button class="close">Close</button>
-                        <h1>Return and Refund Policy</h1>
-                            <p>Updated at <span class="update"> </span></p>
-                            <br>
-                            <h2>Definitions and key terms</h2>
-                            <p>To help explain as clearly as possible in this Return and Refund Policy every time any of there terms are referenced, are stricly defined as: 
+                           
+                                <p>Updated at <span class="update"> </span></p>
                                 <br>
-                            <div class="ul">
-                                <ul>
-                                    <li><strong>Company:</strong> When this policy mentions "Company," "we," "us," or "our," it refers to <span class="companyname"> </span> </span>, <span class="comAddress"> </span> that is responsible for your information under this Return and Refund Policy</li>
-                                    <li><strong>Customer:</strong> refers to the company, organization or person that signs up to use the <span class="appName"> </span>Service to manage the relationships with your consumers or service users.</li>
-                                    <li><strong>Device:</strong> any internet connected device such as phone, tablet, computers or any other devices that can be used to visit<span class="appName"> </span>and use the serives. </li>
-                                    <li><strong>Service:</strong> refers to the service provided by <span class="appName"> </span> as described in the relative terms (if available) and on this platform.</li>
-                                    <li><strong>Website:</strong><span class="appName"> </span>'s site, which can be accessed via this URL:<span class="WebName"></span> </li>
-                                    <li><strong>You:</strong>a person or entity that is registered with <span class="appName"> </span> to use the Services. </li>
-                                </ul>
-                                </div>
-                            </p>
-                            <h2>Return and Refund Policy</h2>
-                            <p>Thanks for shopping at <span class="appName"> </span>. We appreciate the fact that you like to buy the stuff we build. We also want to make sure you have a rewarding experience while you're exploring, evaluating, and purchasing our products.</p>
-                            <br>
-                            <p>As with any shopping experience, there are terms and conditions that apply to transactions at <span class="appName"> </span>. We'll be as brief as our attorneys will allow. The main thing to remember is that by placing an order or making a purchase at <span class="appName"> </span>, you agree to the terms set forth below along with <span class="appName"> </span>'s Privacy Policy.</p>
-                            <br>
-                            <p>If there's something wrong with the product you bought, or if you are not happy with it, you have () to issue a refund and return your item.</p>
-                            <br>
-                            <p>If you would like to return a product, the only way would be if you follow the next guidelines:</p>
-                            <br>
-                            <div class="ul">
-                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                             </ul>
-                            </div>
-                            <h2>Refunds</h2>
-                            <p>We at <span class="appName"> </span> commit ourselves to
-                                serving our customers with the best
-                                products. Every single product that you
-                                choose is thoroughily inspected,
-                                checked for defects and packaged with
-                                utmost care. We do this to ensure that
-                                you fall in love with our products.
+                                <h2>Definitions and key terms</h2>
+                                <p>To help explain as clearly as possible in this Return and Refund Policy every time any of there terms are referenced, are stricly defined as: 
+                                    <br>
+                                <div class="ul">
+                                    <ul>
+                                        <li><strong>Company:</strong> When this policy mentions "Company," "we," "us," or "our," it refers to <span class="companyname"> </span> </span>, <span class="comAddress"> </span> that is responsible for your information under this Return and Refund Policy</li>
+                                        <li><strong>Customer:</strong> refers to the company, organization or person that signs up to use the <span class="appName"> </span>Service to manage the relationships with your consumers or service users.</li>
+                                        <li><strong>Device:</strong> any internet connected device such as phone, tablet, computers or any other devices that can be used to visit<span class="appName"> </span>and use the serives. </li>
+                                        <li><strong>Service:</strong> refers to the service provided by <span class="appName"> </span> as described in the relative terms (if available) and on this platform.</li>
+                                        <li><strong>Website:</strong><span class="webname4"> </span>'s site, which can be accessed via this URL:<span class="WebName"></span> </li>
+                                        <li><strong>You:</strong>a person or entity that is registered with <span class="appName"> </span> to use the Services. </li>
+                                    </ul>
+                                    </div>
                                 </p>
+                                <h2>Return and Refund Policy</h2>
+                                <p>Thanks for shopping at <span class="appName"> </span>. We appreciate the fact that you like to buy the stuff we build. We also want to make sure you have a rewarding experience while you're exploring, evaluating, and purchasing our products.</p>
                                 <br>
-                                <p>Sadly, there are times when we may not
-
-                                    have the product(s) that you choose in
+                                <p>As with any shopping experience, there are terms and conditions that apply to transactions at <span class="appName"> </span>. We'll be as brief as our attorneys will allow. The main thing to remember is that by placing an order or making a purchase at <span class="appName"> </span>, you agree to the terms set forth below along with <span class="appName"> </span>'s Privacy Policy.</p>
+                                <br>
+                                <p>If there's something wrong with the product you bought, or if you are not happy with it, you have () to issue a refund and return your item.</p>
+                                <br>
+                                <p>If you would like to return a product, the only way would be if you follow the next guidelines:</p>
+                                <br>
+                                <div class="ul">
+                                    <ul id="guidelines">
+                                        <li  id="product123">----- </li>
+                                        <!-- <li  class="product124"> </li> -->
+                                        <li  id="product125">----- </li>
+                                        <li id="product126">----- </li>
+                                        <li  id="product127">-----</li>
+                                        <li id="product128">----- </li>
+                                        <!-- <li  class="product129"> </li> -->
+                                        <li  id="product1000">------- </li>
+                                        <li  id="product1001">------- </li>
+                                        <li  id="product1002">------- </li>
+                                        <li  id="product1003">------- </li>
+                                        <li  id="product1004">------- </li>
                                     
-                                    stock, or may face some issues with
-                                    
-                                    our inventory and quality check. In such
-                                    
-                                    cases, we may have to cancel your
-                                    
-                                    order. You will be intimated about it in
-                                    
-                                    advance so that you don't have to worry
-                                    
-                                    unnecessarily about your order. If you
-                                    
-                                    have purchased via Online payment
-                                    
-                                    (not Cash on Delivery), then you will be
-                                    
-                                    refunded once our team confirms your
-                                    
-                                    request.
+        
+                                        
+                                     </ul>
+                                </div>
+                                <h2>Refunds</h2>
+                                <p>We at <span class="appName"></span> commit ourselves to
+                                    serving our customers with the best
+                                    products. Every single product that you
+                                    choose is thoroughily inspected,
+                                    checked for defects and packaged with
+                                    utmost care. We do this to ensure that
+                                    you fall in love with our products.
                                     </p>
                                     <br>
-                                    <p>We carry out thorough quality check
-
-                                        before processing the ordered item. We
+                                    <p>Sadly, there are times when we may not
+    
+                                        have the product(s) that you choose in
                                         
-                                        take utmost care while packing the
+                                        stock, or may face some issues with
                                         
-                                        product. At the same time we ensure
+                                        our inventory and quality check. In such
                                         
-                                        that the packing is good such that the items won't get damaged during transit.
+                                        cases, we may have to cancel your
                                         
-                                        Please note that <span class=”appName> </span> is not
+                                        order. You will be intimated about it in
                                         
-                                        liable for damages that are caused to
+                                        advance so that you don't have to worry
                                         
-                                        the items during transit or
+                                        unnecessarily about your order. If you
                                         
-                                        transportation.
+                                        have purchased via Online payment
+                                        
+                                        (not Cash on Delivery), then you will be
+                                        
+                                        refunded once our team confirms your
+                                        
+                                        request.
                                         </p>
                                         <br>
-                                        <p>We will revise your returned product as
-
-                                            soon as we receive it and if it follows
+                                        <p>We carry out thorough quality check
+    
+                                            before processing the ordered item. We
                                             
-                                            the guidelines addressed above, we will
+                                            take utmost care while packing the
                                             
-                                            proceed to issue a refund of your
+                                            product. At the same time we ensure
                                             
-                                            purchase. Your refund may take a
+                                            that the packing is good such that the items won't get damaged during transit.
                                             
-                                            couple of days to process but you will
+                                            Please note that <span class=”appName> </span> is not
                                             
-                                            be notified when you receive your
+                                            liable for damages that are caused to
                                             
-                                            money.
+                                            the items during transit or
+                                            
+                                            transportation.
                                             </p>
-                                            <h2>Shipping</h2>
-                                                <p> <span class=”appName> </span> is not responsible for return
-
-                                                shipping costs. Every shipping has to
-
-                                                be paid by the customer, even if the
-
-                                                item had free shipping in the first place,
-
-                                                the customer has to pay for the
-
-                                                shipping in return.</p>
-
-                                                <h2>Your Consent</h2>
-
-                                                <p>By using our platform, registering an
-
-                                                account, or making a purchase, you
-
-                                                hereby consent to our Return & Refund
-
-                                                Policy and agree to its terms.</p>
-
-                                                <h3>Changes To Our Return & Refund Policy</h3>
-
-                                                <p>Should we update, amend or make any
-
-                                                changes to this document so that they
-
-                                                accurately reflect our Service and
-
-                                                policies. Unless otherwise required by
-
-                                                law, those changes will be prominently
-
-                                                posted here. Then, if you continue to
-
-                                                use the Service, you will be bound by
-
-                                                the updated Return & Refund Policy. If
-
-                                                you do not want to agree to this or any
-
-                                                updated Return & Refund Policy, you
-
-                                                can delete your account.</p>
-
-                                                <h2>Contact Us</h2>
-
-                                                <p>If, for any reason, You are not
-
-                                                completely satisfied with any good or
-
-                                                service that we provide, don't hesitate
-
-                                                to contact us and we will discuss any of
-
-                                                the issues you are going through with
-
-                                                our product.
-                                                <div class="ul">
-                                                <ul class="contactinfo">
-                                                    
-                                                </ul>
-                                                </div>
+                                            <br>
+                                            <p>We will revise your returned product as
+    
+                                                soon as we receive it and if it follows
+                                                
+                                                the guidelines addressed above, we will
+                                                
+                                                proceed to issue a refund of your
+                                                
+                                                purchase. Your refund may take a
+                                                
+                                                couple of days to process but you will
+                                                
+                                                be notified when you receive your
+                                                
+                                                money.
                                                 </p>
+                                                <h2>Shipping</h2>
+                                                    <p> <span id="shipping"> </span> .</p>
+    
+                                                    <h2>Your Consent</h2>
+    
+                                                    <p>By using our platform, registering an
+    
+                                                    account, or making a purchase, you
+    
+                                                    hereby consent to our Return & Refund
+    
+                                                    Policy and agree to its terms.</p>
+    
+                                                    <h3>Changes To Our Return & Refund Policy</h3>
+    
+                                                    <p>Should we update, amend or make any
+    
+                                                    changes to this document so that they
+    
+                                                    accurately reflect our Service and
+    
+                                                    policies. Unless otherwise required by
+    
+                                                    law, those changes will be prominently
+    
+                                                    posted here. Then, if you continue to
+    
+                                                    use the Service, you will be bound by
+    
+                                                    the updated Return & Refund Policy. If
+    
+                                                    you do not want to agree to this or any
+    
+                                                    updated Return & Refund Policy, you
+    
+                                                    can delete your account.</p>
+    
+                                                    <h2>Contact Us</h2>
+    
+                                                    <p>If, for any reason, You are not
+    
+                                                    completely satisfied with any good or
+    
+                                                    service that we provide, don't hesitate
+    
+                                                    to contact us and we will discuss any of
+    
+                                                    the issues you are going through with
+    
+                                                    our product.
+                                                    <div class="ul">
+                                                    <ul class="contactinfo">
+                                                        <li class="contactEmail"></li>
+                                                        <li class="contactphone"></li>
+                                                        <li class="contactUrl"></li>
+                                                        <li class="contactmedia"></li>
+                                                        <li class="contactppost"></li>
+                                                        
+                                                    </ul>
+                                                    </div>
+                                                    </p>
 
                         </div>
                     </div>
@@ -310,11 +330,11 @@
                                     <div class="category">
                                         <label for="dot-119">
                                             <span class="dot eleven9"></span>
-                                            <span class="invalid">Yes, a returned product can be exchanged for a new one</span>
+                                            <span class="invalid">Yes, we notify customers once a refund is accepted </span>
                                         </label>
                                         <label for="dot-129">
                                             <span class="dot twelve9"></span>
-                                            <span class="invalid">No, a returned product cannot be exchanged for a new one</span>
+                                            <span class="invalid">No, we don't notify customers once a refund is accepted</span>
                                         </label>
                                       
                                     </div>
@@ -341,7 +361,7 @@
                                             <span class="shipping">By visiting a page on our website</span>
                                         </label>
                                         <div class="contactWeb">
-                                            <label for="cWeb">Enter Contact Email</label>
+                                            <label for="cWeb">Enter Contact Web Address</label>
                                             <input type="url" name="web" id="cWeb" placeholder="Enter Contact Website " required>
 
                                         </div>
@@ -350,7 +370,7 @@
                                             <span class="discount">By contacting our social media support service</span>
                                         </label>
                                         <div class="contactsocial">
-                                            <label for="cmedia">Enter Contact Email</label>
+                                            <label for="cmedia">Enter Contact Social Media</label>
                                             <input type="text" name="media" id="cmedia" placeholder="Enter Contact social " required>
 
                                         </div>
@@ -360,7 +380,7 @@
                                         </label>
 
                                         <div class="contactnum">
-                                            <label for="cNum">Enter Contact Email</label>
+                                            <label for="cNum">Enter Contact Number</label>
                                             <input type="tel" name="num" id="cNum" placeholder="Enter Contact Number " required>
 
                                         </div>
@@ -369,7 +389,7 @@
                                             <span class="discount">By sending post mail</span>
                                         </label>
                                         <div class="contactpost">
-                                            <label for="cPost">Enter Contact Email</label>
+                                            <label for="cPost">Enter Contact Postal <Address></Address></label>
                                             <input type="text" name="postmail" id="cpost" placeholder="Enter Contact Post Address " required>
 
                                         </div>
@@ -379,20 +399,20 @@
                                 
                             </div>
                         </div>
-                        <!-- <form action="./Refund and Shipping Information.html"> -->
+                        <form action="./Refund and Shipping Information.html">
                         <div class="down">
                             <button type="submit" class="back">
                                 <table>
                                     <tr>
-                                        <th> <img src="./Wireframe TermsGen/arrow-left.svg" alt="arrow"></th>
+                                        <th> <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/arrow-left.svg'%}" alt="arrow"></th>
                                         <td>Back</td>
                                     </tr>
                                 </table>
                                </button>
-                            <!-- </form> -->
-                               <!-- <form action="./4.html"> -->
-                            <button type= "submit"  class="continue">Continue</button>
-                            <!-- </form> -->
+                            </form>
+                               <form action="./4.html">
+                            <button type= "submit"  id="continue3" class="continue" onclick=" myfunction2()">Continue</button>
+                            </form>
                         </div>
 
                     </div>    
@@ -407,7 +427,7 @@
         const ilist3 = document.querySelector(".contactnum");
         const ilist4 = document.querySelector(".contactpost");
         const ilist6 = document.querySelector(".previewpage")
-        const contactInfo = document.querySelector(".contactinfo")
+        
         const emailInfo = document.createElement("li");
  
        const howdiv = document.querySelector("#dot-159");
@@ -439,12 +459,45 @@
 
 
 
+
  
-    
-    // document.getElementById
-    
+howdiv5.onclick = function() {
+    ilist6.style.display = "block";
+};
+howdiv6.onclick = function() {
+    ilist6.style.display = "none";
+}
+const continue3 = document.querySelector("#continue3")
+continue3.addEventListener("click", () =>{
+    setCookie("contactmail", Contact_email.value);
+    setCookie("contactweb",Contact_web.value);
+    setCookie("contactsocial",Contact_social.value);
+    setCookie("contactnum", Contact_number.value);
+    setCookie("contactpost", Contact_postmail.value);
+});
+    setCookie("dot19","A product can be refunded without the receipt")
+    setCookie("dot29", "A product cannot be refunded without the receipt")
+    setCookie("dot49", "Every product has to be returned in its original packaging")
+    setCookie("dot59","A returned product can be refunded on a new packaging")
+    setCookie("dot79", "A damaged product can be refunded")
+    setCookie("dot89", "A damaged product cannot be refunded")
+    setCookie("dot99", "A returned product can be exchanged for a new one")
+    setCookie("dot109", "A returned product cannot be exchanged for a new one")
+    setCookie("dot119", " We notify customers once a refund is accepted")
+    setCookie("dot129", "We don't notify customers once a refund is accepted")
+
+
+
 
     </script>
-    <script src="./return policy.js"></script>
+<script src="{% static 'termsgen/return and refund/return policy.js'%}"></script>
+<script>
+myappend("product123", getCookie("q"));
+myappend("product125", getCookie("r"));
+myappend("product126", getCookie("sist"));
+myappend("product127", getCookie("tinn"));
+myappend("product128", getCookie("u"));
+myappend("shipping", getCookie("v"));
+</script>
 </body>
 </html>

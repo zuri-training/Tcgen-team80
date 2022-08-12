@@ -1,4 +1,7 @@
+
 from tokenize import group
+
+from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.forms import inlineformset_factory
@@ -10,10 +13,19 @@ from django.contrib import messages
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import Group
+from django.http import HttpResponseRedirect
 
 # Create your views here.
+
+from .models import basic
+from .forms import basicinfo
+
+
+# Create your views here.
+
 from .models import *
 from .forms import CreateUserForm
+
 from .decorators import unauthenticated_user, allowed_users, admin_only
 
 def index(request):
@@ -69,6 +81,18 @@ def logoutUser(request):
 def forgot(request):
     context = {}
     return render(request, "termsgen/sign in and signup pages/forgot.html", context)
+
+    # INCREASE
+    form = CreateUserForm()
+
+    if request.method == 'POST':
+        form = CreateUserForm(request.POST)
+        if form.is_valid():
+            form.save()
+
+    context = {'form': form}
+    
+    return render(request, "termsgen/sign in and signup pages/Sign-In.html", context)
     
 @login_required(login_url='signin')
 @allowed_users(allowed_roles=['admin'])
@@ -93,8 +117,18 @@ def userPage(request):
 
 
 def basic_info(request):
-    return render(request, "termsgen/dashboard/basic_info.html")
-
+    submitted = False
+    if request.method == "POST":
+        form = basicinfo(request.POST)
+        if form.is_valid():
+            form.save
+            return HttpResponseRedirect('/basic-info?submitted = True')
+    else:
+        form = basicinfo
+        if 'submitted' in request.GET:
+            submitted == True
+    return render(request, "termsgen/dashboard/basic_info.html",{'form':form,'submitted':submitted})
+    
 def web_info(request):
     return render(request, "termsgen/dashboard/web_info.html")
 

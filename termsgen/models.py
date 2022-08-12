@@ -1,5 +1,3 @@
-from sre_constants import CATEGORY
-from unicodedata import category
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -13,40 +11,32 @@ class Customer(models.Model):
     profile_pic = models.ImageField(null=True, blank=True)
     date_created = models.DateTimeField(auto_now_add=True, null=True)
 
-    def __str__(self):
-        return self.name
+from django.db import models
 
-class Tag(models.Model):
-    name = models.CharField(max_length=200, null=True)
 
-    def __str__(self):
-        return self.name
+# Create your models here.
 
-class Product(models.Model):
-    CATEGORY = (
-        ('Indoor', 'Indoor'),
-        ('Out door', 'Out door'),
-        )
-
-    name = models.CharField(max_length=200, null=True)
-    price = models.FloatField(null=True)
-    category = models.CharField(max_length=200, null=True, choices=CATEGORY)
-    description = models.CharField(max_length=200, null=True, blank=True)
-    date_created = models.DateTimeField(auto_now_add=True, null=True)
-    tags = models.ManyToManyField(Tag)
-
-    def __str__(self):
-        return self.name
-
-class Order(models.Model):
-    STATUS = (
-            ('Pending', 'Pending'),
-            ('Out of delivery', 'Out of delivery'),
-            ('Delivered', 'Delivered'),
-            )
-
-    customer = models.ForeignKey(Customer, null=True, on_delete= models.SET_NULL)
-    product = models.ForeignKey(Product, null=True, on_delete= models.SET_NULL)
-    date_created = models.DateTimeField(auto_now_add=True, null=True)
-    status = models.CharField(max_length=200, null=True, choices=STATUS)
+class basic(models.Model):
+    Company_name = models.CharField(max_length = 23, null=True)
+    email_Address = models.CharField(max_length = 23 , null=True)
+    phone_number = models.CharField(max_length = 23,  null=True)
+    fax_number = models.CharField(max_length=23, null=True)
+    Address = models.CharField(max_length=23, null=True)
+    country = models.CharField(max_length=23, null=True)
+    state_province_or_teritory = models.CharField(max_length=23, null=True)
+    city = models.CharField(max_length = 23, null=True)
+    zip_or_postal_code = models.CharField(max_length = 23, null=True)
     
+
+
+    def __str__(self):
+        return self.Company_name
+
+
+class signUp(models.Model):
+    email_Address = models.EmailField()
+    password = models.CharField(max_length=8, null=True)
+
+
+    # def_str_(self):
+    # return self.e
