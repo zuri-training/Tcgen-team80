@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,50 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Information</title>
-    
-
-    </script>
-    <link rel="shortcut icon" type="image/png" href="./Wireframe TermsGen/FavIcon secondary.svg">
-    <link rel="stylesheet" href="static\termsgen\return and refund\Business Information.css">
+    <link rel="shortcut icon" type="image/png" href="{% static 'termsgen/return and refund/Wireframe TermsGen/FavIcon secondary.svg'%}">
+    <link rel="stylesheet" href="{% static 'termsgen/return and refund/Business Information.css' %}">
 </head>
 
 <body>
     <div class="container">
         <div class="nav">
-            <img src="./Wireframe TermsGen/Primary 1.svg" alt="logo" class="logo">
+            
             <div class="nav1">
-                <div class="page1">1</div>
-                <div><p>Business Information</p></div>
-                <div class="line"></div>
-                <div class="page2">2</div>
-                <div><p>Refund and Shipping Information</p></div>
-                <div class="line"></div>
-                <div class="page3">3</div>
-                <div><p>Additional Information</p></div>
-                <div class="line"></div>
-                <div class="page4">4</div>
-                <div><p>Security Details</p></div>
-                <div class="line"></div>
-                <div class="page5">5</div>
-                <div><p>Preview Document</p></div>
+                <div>
+                    <div class="page1">1</div>
+                    <div><p>Business Information</p></div>
+                </div>
+                
+                <div class="line i1"></div>
+                <div>
+                    <div class="page2">2</div>
+                    <div><p>Refund and Shipping Information</p></div>
+                 </div>
+                <div class="line ii2"></div>
+                <div>
+                    <div class="page3">3</div>
+                    <div><p>Additional Information</p></div>
+                </div>
+                <div class="line iii3"></div>
+                <div>
+                    <div class="page4">4</div>
+                    <div><p>Preview Document</p></div>
+                </div>
+             
+               
             </div>
             
         </div>
         <div class="workbody">
             <div class="menu">
-                
+                <div class="logoxx">
+                     <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Primary 1.svg' %}" alt="logo" class="logo">
+                </div>
                 <ul class="menunav">
                     <li><a href="#">Home</a></li>
-                    <li class="drop"><a href="#">Generate <img src="./Wireframe TermsGen/Vector.svg" alt="icon" class="dropdown"></a>
-                    <ul class="dropdw">
+                    <li class="drop"><a href="#">Generate</a></li>
+                    <!-- <ul class="dropdw">
                     <li><a href="#">Privacy policy</a></li>
                     <li><a href="#">Disclaimer</a></li>
                     <li><a href="#">Return and refund policy</a></li>
                     <li><a href="#">Terms and conditions</a></li> 
-                    </ul></li>
+                    </ul></li> -->
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contant Us</a></li>
                 </ul>
+                <figure id="burger"><img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Frame 6379.svg'%}" alt=""></figure>
             </div>
         
             <div class="detailbody">
@@ -58,7 +67,7 @@
                 
                     <h1>Enter Business Information</h1>
                     <h4>Tell us about your business</h4>
-                    <button type="submit" class="preview">Preview</button>
+                    <button type="submit" class="preview" >Preview</button>
                         <div class="previewpage">
                             <button type="submit" class="close">Close</button>
                             <h1>Return and Refund Policy</h1>
@@ -90,7 +99,7 @@
                                         <table>
                                             <tr>
                                             <th rowspan="2">
-                                                <img src="./Wireframe TermsGen/Women create a website using a laptop and a desktop computer.svg" alt="so,eth">
+                                                <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Women create a website using a laptop and a desktop computer.svg'%}" alt="so,eth">
                                             </th>
                                             <th>Website</th>
                                             <tr><td><small>Return and Refund Policy for a website</small></td></tr>
@@ -101,10 +110,12 @@
                                     
                                 </nav>
                                 <div class="disable1">
-                                    <label for="input webname">Enter name of Website</label>
+                                    <label for="input webname">What is the name of your website</label>
+                                    <br>
                                     <input type="text" name="input webname" id="input webname" class="web1" value="Web" required>
                                      <br>
-                                    <label for="input website">Enter name of Website</label>
+                                    <label for="input website">Please provide your website URL</label>
+                                    <br>
                                     <input type="url" name="input website" id="input website" class="web2" required>
                                 </div>
                             <br>
@@ -113,9 +124,9 @@
                                     <table>
                                         <tr>
                                         <th rowspan="2">
-                                            <img src="./Wireframe TermsGen/Online ordering pizza in a mobile application.svg" alt="so,eth">
+                                            <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Online ordering pizza in a mobile application.svg'%}" alt="so,eth">
                                         </th>
-                                        <th>Application</th>
+                                        <th>App</th>
                                         <tr><td><small>Return and Refund Policy for an app</small></td></tr>
                                     </tr>
                                     </table>
@@ -125,6 +136,7 @@
                             </nav>
                             <div class="disable2">
                                 <label for="input appname">Enter name of Application</label>
+                                <br>
                                 <input type="text" name="input appname" class="phone1" id="input appname">
                             </div>
                             <br>
@@ -400,7 +412,7 @@
                                     <table>
                                         <tr>
                                         <th rowspan="2">
-                                            <img src="./Wireframe TermsGen/profile picture of person in glasses and orange shirt.svg" alt="so,eth">
+                                            <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/profile picture of person in glasses and orange shirt.svg'%}" alt="so,eth">
                                         </th>
                                         <th>Individual</th>
                                         <tr><td><small>i.e a freelancer</small></td></tr>
@@ -411,17 +423,17 @@
                                
                             
                             </nav>
-                            <div class="disable3">
+                            <!-- <div class="disable3">
                                 <label for="input individual">Enter name of Individual</label>
                                 <input type="text" name="input individual" id="input individual" required>
-                            </div>
+                            </div> -->
                             <br>
                             <nav >
                                 <label for="company">
                                     <table>
                                         <tr>
                                         <th rowspan="2">
-                                            <img src="./Wireframe TermsGen/big bank building.svg" alt="so,eth">
+                                            <img src="{% static 'termsgen/return and refund/Wireframe TermsGen/big bank building.svg'%}" alt="so,eth">
                                         </th>
                                         <th>Company</th>
                                         <tr><td><small>e.g Limited Liability company, coporation, etc.</small></td></tr>
@@ -435,6 +447,7 @@
                             </nav>
                             <div class="disable4">
                                 <label for="input company">Enter name of Company</label>
+                                <br>
                                 <input type="text" name="input company" class="com1" id="input company" required>
                             </div>
                         </div>
@@ -443,8 +456,9 @@
                    
                 </div>
                 <div class="down">
-                    <form action="./Refund and Shipping Information.html">
-                        <button type="submit" id="continue1" class="continue">Continue</button>
+                    
+                    <form action="{% static 'termsgen/return and refund/Refund and Shipping Information.html'%}">
+                        <button type="submit" id="continue1" class="continue" >Continue</button>
                     </form>
                 </div>
             </div>
@@ -457,13 +471,13 @@
     <script >
         const list = document.querySelector(".disable1");
         const list1 = document.querySelector(".disable2");
-        const list2 = document.querySelector(".disable3");
+        // const list2 = document.querySelector(".disable3");
         const list3 = document.querySelector(".disable4");
         const ilist6 = document.querySelector(".previewpage")
         
        const showdiv = document.querySelector("#website");
        const showdiv1 = document.querySelector("#phone");
-       const showdiv2 = document.querySelector("#entity");
+    //    const showdiv2 = document.querySelector("#entity");
        const showdiv3 = document.querySelector("#company");
        const howdiv5 = document.querySelector(".preview")
        const howdiv6 = document.querySelector(".close")
@@ -472,6 +486,7 @@
        name.addEventListener("change", function(e){
         if (name.checked){
             divi.style.display = "block";
+            
         }else{
             divi.style.display = "none"
         }
@@ -480,22 +495,33 @@
     
     hidediv(showdiv, list)
     hidediv(showdiv1, list1)
-    hidediv(showdiv2, list2)
+    // hidediv(showdiv2, list2)
     hidediv(showdiv3, list3)
 
     howdiv5.onclick = function() {
         ilist6.style.display = "block";
+
     };
     howdiv6.onclick = function() {
         ilist6.style.display = "none";
     }
+
+continue1.addEventListener("click", () =>{
+    setCookie("webname", web1.value);
+    setCookie("website",web2.value);
+    setCookie("phone",phone1.value);
+    setCookie("date", Da_te.value);
+    setCookie("company", com1.value);
+
+});
+
     // const datenow = document.querySelector("#date").value
     // console.log(date)
     // document.cookie = `${datenow}` 
     // console.log(document.cookie)
     
     </script>
-    <script src="./return policy.js"></script>
+    <script src="{% static 'return and refund/return policy.js'%}"></script>
     
 </body>
 </html>

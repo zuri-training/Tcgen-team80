@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,46 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Done</title>
-    <link rel="stylesheet" href="./5.css">
-    <link rel="shortcut icon" type="image/png" href="./Wireframe TermsGen/FavIcon secondary.svg">
+    <link rel="stylesheet" href="{% static 'termsgen/return and refund/5.css'%}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'termsgen/return and refund/Wireframe TermsGen/FavIcon secondary.svg'%}">
     
 </head>
 <body>
     <div class="container">
         <nav class="menu">
-            <figure class="logo"><img src="./Wireframe TermsGen/Primary 1.svg" alt="logo"></figure>
+            <figure class="logo"><img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Primary 1.svg'%}" alt="logo"></figure>
             <ul class="menunav">
                 <li><a href="#">Home</a></li>
-                <li class="drop"><a href="#">Generate <img src="./Wireframe TermsGen/Vector.svg" alt="icon" class="dropdown"></a>
-                <ul class="dropdw">
+                <li class="drop"><a href="#">Generate</a></li>
+                <!-- <ul class="dropdw">
                     <li><a href="#">Privacy policy</a></li>
                     <li><a href="#">Disclaimer</a></li>
                     <li><a href="#">Return and refund policy</a></li>
                     <li><a href="#">Terms and conditions</a></li> 
-                </ul></li>
+                </ul></li> -->
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contant Us</a></li>
             </ul>
+            <figure id="burger"><img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Frame 6379.svg'%}" alt=""></figure>
         </nav>
         <div class="pagename">
-            <h1>Preview your document</h1>
+            <h1>RETURN AND REFUND POLICY GENERATOR</h1>
         </div>
-        <div class="status">
-            <h2>Your document is ready</h2>
-        </div>
-    
         <div class="pagenum">
-            <div class="page i"><h3>1</h3><small>Business Information</small></div>
-            <div class="page ii"><h3>2</h3><small>Refund and Shipping</small></div>
-            <div class="page iii"><h3>3</h3><small>Additional Information</small></div>
-            <div class="page iv"><h3>4</h3><small>Preview Document</small></div>
-            <div class="page v"><h3>5</h3><small>Preview Document</small></div>
-            <div class="line"></div>
+            <h1>DONE!!!</h1>
         </div>
         <div class="onlybody">
-            <div class="done"><img src="./Wireframe TermsGen/downloaded.svg" alt="Done"></div>
-            <a href="#"><img src="./Wireframe TermsGen/Secondary Button34.svg" alt="homepage"></a>
+            <div class="done"><img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Vector donne.svg'%}" alt="Done"></div>
+             <div class="text"><h3>Your File has been downloaded Succesfully</h3></div>
+            <a href="#"><img src="{% static 'termsgen/return and refund/Wireframe TermsGen/Secondary Button34.svg'%}" alt="homepage"></a>
         </div>
     </div>
+    <script src="{% static 'termsgen/return and refund/return policy.js'%}">
+
+    </script>
 </body>
 </html>
