@@ -107,7 +107,7 @@ For team_80 members, follow the following steps to collaborate:
 10. Go to Github and create a new pull request to the main branch. It will then be reviewed and merged into the master.
 
 ## Deployment Instructions
-Please not that the framework used is the Django Template Language
+Please note that the framework used is the Django Template Language
 1. Clone the project repository to the server using `git clone https://github.com/zuri-training/Tcgen-team80.git main`
 2. Create and activate a new virtual environment inside the project folder on the server using `python3 -m venv <name_of_virtualenv>`
 3. Install all project dependencies using `pip3 install -r requirements.txt`
