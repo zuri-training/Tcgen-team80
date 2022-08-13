@@ -437,6 +437,17 @@
   .imgText{
     margin-top: 10px;
   }
+      label{
+  /* border: 1px solid ; */
+  margin-right: 50%;
+}
+.namme{
+  margin-right: 65%;
+}
+.howww{
+  margin-right: 45%;
+  
+}
 
   
   }
