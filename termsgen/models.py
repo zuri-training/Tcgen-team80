@@ -11,7 +11,7 @@ class Customer(models.Model):
     profile_pic = models.ImageField(null=True, blank=True)
     date_created = models.DateTimeField(auto_now_add=True, null=True)
 
-from django.db import models
+# from django.db import models
 
 
 # Create your models here.
