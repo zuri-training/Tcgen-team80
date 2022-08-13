@@ -1,15 +1,8 @@
 from django.contrib import admin
-
-from .models import database, signUp
+from .models import basic,signUp,Customer
 
 # Register your models here.
 
-
-from .models import basic
-
-
 admin.site.register(basic)
-
-
-admin.site.register(database)
+admin.site.register(Customer)
 admin.site.register(signUp)
