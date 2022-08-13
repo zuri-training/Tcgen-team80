@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="p2-legal-advice-and-testimonials.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <title>Business Information</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- sidebar section containing logo and progress bar -->
+
+        <section class="navigation-bar">
+            
+            <div class="navbar">
+                <nav>  
+                    <div class="logobox">
+                        <img src="Primary@3x.png" alt="termsgen-logo" class="logo">
+                    </div>
+                     
+                    <div class="navtabs">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Generate</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-profile">
+                        <div class="ellipse">G</div>
+                        <!-- <div class="dashboard">
+                            <p>Dashboard</p>
+                        </div> -->
+                    </div>
+                </nav>
+            </div>            
+        </section>
+
+
+        <!-- Main section containing navbar and content -->
+
+        <section class="main">
+
+            <div class="sidebar">
+
+                <div class="list">
+                    <div class="sidebar-icons">
+                        <a class=" anchors" href="#">
+                            <p class="inactive">1</p>
+                        </a>
+                        <p>Business Information</p>
+                    </div>
+    
+                    <div>
+                        <hr class="vert">
+                    </div>
+                    
+                    <div class="sidebar-icons">
+                        <a class="anchors" href="#">
+                            <p class="active">2</p>
+                        </a>
+                        <p>Legal advice and testimonials</p>
+                    </div>
+                    
+                    <div>
+                        <hr class="vert">
+                    </div>
+    
+                    <div class="sidebar-icons">
+                        <a class="anchors" href="#">
+                            <p class="inactive">3</p>
+                        </a>
+                        <p>Addtional Information</p>
+                    </div>
+                    
+                    <div>
+                        <hr class="vert">
+                    </div>
+    
+                    <div class="sidebar-icons">
+                        <a class="anchors" href="#">
+                            <p class="inactive">4</p>
+                        </a>
+                        <p>Preview Document</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="top">
+                    <div class="biz-info">
+                        <h1>Legal Advice and Testimonials</h1>
+                        <div class="preview-btn" style="cursor:pointer" onclick="openNav()">
+                            <a href="#">preview</a>
+                        </div>
+                    </div>
+
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                          <img src="./Terms Of Use.png" alt="template preview">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+
+                    <div class="Q">
+                        <div class="column">
+
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Does your Website contain any Legal advice?</h3>
+                                <p class="ignore">(eg. legal advice as of what to do in certain situations where the law is involved)</p>
+                                <input type="radio" id="Q1-yes" name="Q1" value="Yes" class="radio">
+                                <label for="Q1-yes">Yes, my website/app contains legal advice</label><br>
+                                <input type="radio" id="Q1-no" name="Q1" class="radio" value="No">
+                                <label for="Q1-no">No.</label>
+                            </div>
+    
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Does your Website contain any Medical advice?</h3>
+                                <p class="ignore">(eg. medical advice as of what to do in certain situations where any medical or health treatment is involved)</p>
+                                <input type="radio" id="Q2-yes" name="Q2" value="Yes" class="radio">
+                                <label for="Q2-yes">Yes.</label><br>
+                                <input type="radio" id="Q2-no" name="Q2" class="radio" value="No">
+                                <label for="Q2-no">No.</label>
+                            </div>
+    
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Does your Website contain any Educational advice</h3>
+                                <p class="ignore">(eg.  educational advice as of any piece of content that tries to educate on something whatsoever.)</p>
+                                <input type="radio" id="Q3-yes" name="Q3" value="Yes" class="radio">
+                                <label for="Q3-yes">Yes, my website/app contains educational advice</label><br>
+                                <input type="radio" id="Q3-no" name="Q3" class="radio" value="No">
+                                <label for="Q3-no">No.</label>
+                            </div>
+                            
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Does your Website/App contain any Physical Excerise advice? </h3>
+                                <p class="ignore">(eg. physical excersice advicelike gymnastics,fitness,weight training and any excercise related content.)</p>
+                                <input type="radio" id="Q4-yes" name="Q4 value="Yes" class="radio">
+                                <label for="Q4-yes">Yes, my website/app contains physical excercise advice</label><br>
+                                <input type="radio" id="Q4-no" name="Q4" class="radio" value="No">
+                                <label for="Q4-no">No.</label>
+                            </div>
+                            
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Does your Website/App contain any Finance advice?</h3>
+                                <p class="ignore">(eg. finance advice as of any such information or other material as tax, investment,financial.)</p>
+                                <input type="radio" id="Q5-yes" name="Q5 value="Yes" class="radio">
+                                <label for="Q5-yes">Yes, my website/app contains finance advice</label><br>
+                                <input type="radio" id="Q5-no" name="Q5" class="radio" value="No">
+                                <label for="Q5-no">No.</label>
+                            </div>
+                            
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Does your Website/App show ads?</h3>
+                                <input type="radio" id="Q6-yes" name="Q6 value="Yes" class="radio">
+                                <label for="Q6-yes">Yes, my website/app show ads.</label><br>
+                                <input type="radio" id="Q6-no" name="Q6" class="radio" value="No">
+                                <label for="Q6-no">No.</label>
+                            </div>
+                            
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Do you want to include a disclaimer about testimonials included on your website/app?</h3>
+                                <p class="ignore">In case you have testimonials/reviews about your website/app or any other other website/app.</p>
+                                <input type="radio" id="Q7-yes" name="Q7 value="Yes" class="radio">
+                                <label for="Q7-yes">Yes, include a disclaimer about testionials included on my website/app</label><br>
+                                <input type="radio" id="Q7-no" name="Q7" class="radio" value="No">
+                                <label for="Q7-no">No.</label>
+                            </div>
+                            
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Are those testimonials paid or affiliated with you?</h3>
+                                <input type="radio" id="Q8-yes" name="Q8 value="Yes" class="radio">
+                                <label for="Q8-yes">Yes.</label><br>
+                                <input type="radio" id="Q8-no" name="Q8" class="radio" value="No">
+                                <label for="Q8-no">No.</label>
+                            </div>
+                        </div>
+
+                    </div>
+    
+                    <div class="buttons">
+                        <div class="back-btn">
+                            <a href="p1-business-info.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#2B80F7" stroke="#2B80F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>Back</a>
+                        </div>
+    
+                        <div class="next-btn">
+                            <a href="p3-additional-info.html">Continue</a>
+                        </div>
+                    </div>
+
+                </div>                    
+            </div>
+        </section>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
