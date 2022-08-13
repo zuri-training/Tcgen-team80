@@ -12,6 +12,7 @@ This is a platform that allows users and owners of businesses or brands to gener
 * [Usage](#usage)
 * [Project Status](#project-status)
 * [Collaboration](#collaboration)
+* [Deployment Instructions](#deployment-instructions)
 * [How To Navigate Repository](#how-to-navigate-repository)
 * [Contributors](#contributors)
 * [Documentation](#documentation)
@@ -104,6 +105,11 @@ For team_80 members, follow the following steps to collaborate:
 9. Then push your branch:<br/>
     `git push origin branchName` - This creates the branch remotely and pushes to that branch on the Github
 10. Go to Github and create a new pull request to the main branch. It will then be reviewed and merged into the master.
+
+## Deployment Instructions
+1. Clone the project repository to the server using `git clone https://github.com/zuri-training/Tcgen-team80.git main`
+2. Create and activate a new virtual environment inside the project folder on the server using `python3 -m venv <name_of_virtualenv>`
+3. Install all project dependencies using `pip3 install -r requirements.txt`
 
 ## How To Navigate Repository
 1. `Tcgen-team80` is the django project folder.
