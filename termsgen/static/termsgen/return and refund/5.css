@@ -125,11 +125,12 @@ body{
  .text{
     margin-bottom: 50px;
  }
+ #exitt,
  #burger{
     display: none;
  }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     body{
         width: 100%;
     }
@@ -159,10 +160,12 @@ body{
 @media (max-width:400px) {
     #burger{
         display: block;
+        width: 20px;
+        margin-right: 20px;
     }
     .menunav{
         display:none ;
-        font-size: 10px;
+        font-size: 18px;
         margin: auto;
     }
     .pagename{
@@ -173,5 +176,35 @@ body{
     .pagenum{
         margin-top: 170px;
         margin-bottom: 15px;
+    }
+    #exitt{
+        display: block;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        width: 30px;
+    }
+    .menu .menunav{
+        position: fixed;
+        background: #00337B;
+        flex-direction: column;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        left: 0%;
+        right: 0%;
+        padding: 15%;
+        text-align: left;
+        width: 100%;
+        gap: 30px;
+        z-index: 44;
+    
+    }
+    .menunav li a{
+        color: #d9d9d9;
+    }
+    .menu img{
+        width: 100%;
+        margin-left: 20%;
     }
 }

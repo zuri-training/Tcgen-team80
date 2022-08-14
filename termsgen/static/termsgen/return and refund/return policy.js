@@ -1,13 +1,14 @@
 const icon = document.getElementById("burger")
-// const page5 = document.querySelector(".")
+const icon2 = document.getElementById("exitt")
 const menu = document.querySelector(".menunav")
 icon.onclick= function() {
-    if (menu.style.display == "none") {
         menu.style.display = "flex";
-    } else{
-        menu.style.display = "none";
-    }
 
+};
+icon2.onclick= function() {
+   
+        menu.style.display = "none";
+    
 };
 
 
