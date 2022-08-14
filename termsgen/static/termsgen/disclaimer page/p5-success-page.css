@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    /* position: relative; */
+    width: 100%;
+    
+}
+
+/* styling for navigation bar */
+
+.logobox{
+    padding: 1rem;
+    width: 11%;
+    z-index: 999;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+.navbar{
+    width: 100%;
+    /* height: 7.74%; */
+    background-color: #F9FBFF;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+.navtabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;    
+
+}
+
+.navtabs ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+}
+
+nav ul li a{
+    color: #0055CC;
+    text-decoration: none;
+    font-size: 1.32vw;
+    font-weight: 500;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #5599F8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+.dropdown{
+    width: 15px;
+    margin-left: 10px;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.ellipse{
+    width: 40px;
+    height: 40px;
+    background-color: #0055CC;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+.dashboard p{
+    color: white;
+    font-size: 1.32vw;
+    font-weight: 600;
+}
+
+/* header of the main content */
+
+.biz-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10% 1rem 7.5rem;
+    border-bottom: 1px solid #969696;
+}
+
+.biz-info h1{
+    font-size: 1.76vw;
+    font-weight: 600;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* progress bar styling starts here*/
+
+.bar{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+.num1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.line{
+    position: relative;
+    background-color: #333;
+    width: 510px;
+    top: 4.375rem;
+    z-index: -2;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    width: 3vw;
+    height: 3vw;
+    border: 1px solid;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #00337B;
+}
+
+.circle4{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50px;
+    background-color: #0055CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.text{
+    font-weight: 600;
+    color: #968686;
+}
+
+.text4{
+    font-weight: 600;
+    color: #0055CC;
+}
+
+.p{
+    font-size: 1.37vw;
+    font-weight: 800;
+}
+
+/* main page with success message */
+
+
+.success-icon img{
+    margin-top: 2rem;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.34vw;
+    font-weight: 800;
+    margin: 2rem 0;
+}
+
+.options{
+    border-radius: 0.5rem;
+    background-color: #0055CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 3rem auto;
+}
+
+.options a{
+    color: white;
+    font-size: 1.76vw;
+    font-weight: 800;
+    text-decoration: none;
+}

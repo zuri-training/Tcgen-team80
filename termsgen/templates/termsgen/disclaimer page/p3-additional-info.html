@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="p3-additional-info.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <title>Business Information</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- sidebar section containing logo and progress bar -->
+
+        <section class="navigation-bar">            
+            <div class="navbar">
+                <nav>
+                    <div class="logobox">
+                        <img src="Primary@3x.png" alt="termsgen-logo" class="logo">
+                    </div>            
+                    <div class="navtabs">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Generate</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-profile">
+                        <div class="ellipse">G</div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Main section containing navbar and content -->
+
+        <section class="main">
+            <div class="sidebar">
+
+                <div class="list">
+                    <div class="sidebar-icons">
+                        <a class=" anchors" href="#">
+                            <p class="inactive">1</p>
+                        </a>
+                        <p>Business Information</p>
+                    </div>
+    
+                    <div>
+                        <hr class="vert">
+                    </div>
+                    
+                    <div class="sidebar-icons">
+                        <a class="anchors" href="#">
+                            <p class="inactive">2</p>
+                        </a>
+                        <p>Legal advice and testimonials</p>
+                    </div>
+                    
+                    <div>
+                        <hr class="vert">
+                    </div>
+    
+                    <div class="sidebar-icons">
+                        <a class="anchors" href="#">
+                            <p class="active">3</p>
+                        </a>
+                        <p>Addtional Information</p>
+                    </div>
+                    
+                    <div>
+                        <hr class="vert">
+                    </div>
+    
+                    <div class="sidebar-icons">
+                        <a class="anchors" href="#">
+                            <p class="inactive">4</p>
+                        </a>
+                        <p>Preview Document</p>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="main-content">
+                <div class="top">
+                    <div class="biz-info">
+                        <h1>Enter Additional Information</h1>
+                        <div class="preview-btn" style="cursor:pointer" onclick="openNav()">
+                            <a href="#">preview</a>
+                        </div>
+                    </div>
+
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                          <img src="./Terms Of Use.png" alt="template preview">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+
+                    <div class="Q">
+                        <div class="column">
+
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Does your website/app have copyrighted content?</h3>
+                                <p class="ignore">Copyright is intended to protect the original expression of an idea in the form of a creative work, but not the idea itself. (eg. texts, images, names).
+                                </p>
+                                <input type="radio" id="Q1-yes" name="Q1" value="Yes" class="radio">
+                                <label for="Q1-yes">Yes, my website has copyrighted content</label><br>
+                                <input type="radio" id="Q1-no" name="Q1" class="radio" value="No">
+                                <label for="Q1-no">No.</label>
+                            </div>
+    
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Do you want to include a disclaimer about affiliate links included on your website/app? <font COLOR="red">*</font>
+                                </h3>
+                                <input type="radio" id="Q2-yes" name="Q2" value="Yes" class="radio">
+                                <label for="Q2-yes">Yes, include a disclaimer about affilate linksinluded on my website or app?</label><br>
+                                <input type="radio" id="Q2-no" name="Q2" class="radio" value="No">
+                                <label for="Q2-no">No.</label>
+                            </div>
+    
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Do you participate in affiliate programs? <font COLOR="red">*</font>
+                                </h3>
+                                <input type="radio" id="Q3-yes" name="Q3" value="Yes" class="radio">
+                                <label for="Q3-yes">Yes, I do participate in Affilate Programs</label><br>
+                                <input type="radio" id="Q3-no" name="Q3" class="radio" value="No">
+                                <label for="Q3-no">No.</label>
+                            </div>
+                            
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;">Do you want to include a disclaimer about external links included on your website/app? <font COLOR="red">*</font>
+                                </h3>
+                                <p class="ignore">External links are links to other websites
+                                </p>
+                                <input type="radio" id="Q4-yes" name="Q4 value="Yes" class="radio">
+                                <label for="Q4-yes">Yes, include a disclaimer about external links on my website/app</label><br>
+                                <input type="radio" id="Q4-no" name="Q4" class="radio" value="No">
+                                <label for="Q4-no">No.</label>
+                            </div>
+                            
+                            <div class="questions">
+                                <h3 style="margin-bottom: 0px;"> How can users contact you? <font COLOR="red">*</font>
+                                </h3>
+                                <input type="checkbox" id="Q1-email" name="Q1" value="Email" class="radio">
+                                <label for="Q1-email">By Email</label><br>
+    
+                                <input type="checkbox" id="Q1-phone" name="Q1" value="Phone" class="radio">
+                                <label for="Q1-phone">By Phone Number</label><br>
+    
+                                <input type="checkbox" id="Q1-webpage" name="Q1" value="Visiting your Webpage" class="radio">
+                                <label for="Q1-webpage">By Visiting your Webpage</label><br>
+    
+                                <input type="checkbox" id="Q1-address" name="Q1" value="Address" class="radio">
+                                <label for="Q1-address">By Address</label>
+                            </div>       
+                        </div>
+
+                    </div>
+    
+                    <div class="buttons">
+                        <div class="back-btn">
+                            <a href="p2-legal-advice-and-testimonials.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#2B80F7" stroke="#2B80F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>Back</a>
+                        </div>
+    
+                        <div class="next-btn">
+                            <a href="p4-preview-page.html">Continue</a>
+                        </div>
+                    </div>
+
+                </div>                    
+            </div>
+        </section>
+
+
+
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
