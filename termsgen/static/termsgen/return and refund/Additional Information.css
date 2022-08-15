@@ -16,20 +16,23 @@ body{
     /* position: relative; */
 }
 .nav{
-    width: 12%;
+    width: 8%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding-top: 10px;
+    gap: 1%;
     position: fixed;
-    min-height: 100vh;
+    height: 100vh;
     color: #D9D9D9;
     text-align: center;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
     background: #00337B;
+    /* border:1px solid blue; */
+    box-shadow: 3px 3px 3px 3px;
+    top: 70px;
+    z-index: 1;
 }
 
 .line {
@@ -37,7 +40,7 @@ body{
     width: 0%;
     margin: 5px auto;
     background: #D9D9D9;
-    border: 0.06cm solid  #D9D9D9;
+    border: 0.03cm solid  #D9D9D9;
 }
 
          .page1,
@@ -71,7 +74,7 @@ body{
 }
 
 .workbody{
-    width: 88%;
+    width: 100%;
     position: absolute;
     top: 0%;
     right: 0%;
@@ -79,37 +82,42 @@ body{
     
 
 }
-.box{
-    padding: 20px;
-    
-}
+
 .menu{
+    width: 100%;
     min-height: 57px;
-    background: rgba(204, 224, 253, 0.3);
+    /* border: 2px solid red; */
+    background: #F9FBFF;;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     font-size: 24px;
     line-height: 100%;
-    position: relative;
+    position: fixed;
+    z-index: 2;
+    display: flex;
 }
 .menu .menunav{
-    /* min-width:60% ; */
-    margin: auto;
+    width: 80%;
     margin-left:  25px;
     display:flex;
+    top: 50%;
+    
+    float:right;
     list-style: none;
     gap: 6%;
+    /* border: 1px solid red; */
+
 }
 .menunav li :hover{
-    background-color: rgba(25, 104, 221, 0.6);
-    color: gray;
+    background-color: rgb(25, 104, 221);
+    color:#F9FBFF;
     padding: 5px;
 }
 a{
-    color: black;
+    color: #00337B;
     text-decoration: none;
 }
 .menunav .dropdown:hover{
@@ -186,6 +194,15 @@ a{
     background: #0055CC;
     border-color: #d9d9d9;
 }
+.logoxx{
+    width: 20%;
+    /* border: 1px solid red; */
+}
+.logoxx img{
+    width: 40%;
+    margin-left: 35%;
+    
+}
 .questions{
     display: flex;
     justify-content: space-between;
@@ -209,13 +226,32 @@ a{
 }
 
 .down{
+    width: 90%;
+    margin: auto;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
 .top{
+    width: 98.3%;
     display: flex;
-    justify-content: space-between;
+    padding: 20px;
+    justify-content:space-between;
+    background: #ECF0F3;
+    padding-top: 25px;
+    height: 80px;
+
+}
+/* .box{
+    padding: 20px;
+    
+} */
+.details{
+    width: 92%;
+    float: right;
+    margin-top: 70px;
+    
+    /* background: #00337B; */
 }
 .main{
     margin-top: 50px;
@@ -307,7 +343,21 @@ p{
     position: relative;
 }
 
-@media (max-width:600px){
+#cEmail,
+#cWeb,
+#cmedia,
+#cNum,
+#cpost{
+ padding: 5px;
+ border: 1px solid black;
+ border-radius: 5px;
+}
+#burger{
+    display: none;
+}
+
+
+@media (max-width:700px){
 
     body{
         width: 100%;
@@ -323,28 +373,35 @@ p{
         padding: 0%;
     }
     h1{
-        font-size: xx-large;
-        width: 70%;
+        font-size: larger;
+        padding-right: 60px;
     }
     h4{
         
-        font-size: larger;
+        font-size: large;
+    }
+    .top{
+        width: 93.1%;
     }
    .menunav{
     font-size: 12px;
    }
-   .workbody{
-    width: 84%;
+   /* .workbody{
+    width: 100%;
     
-   }
+   } */
    .nav{
     width: 16%;
     font-size: 12px;
    }
-   .logo{
+   /* .logo{
     margin-bottom: 18px;
     width: 96%;
     margin-left: 0;
+   } */
+   .logoxx img{
+    margin-top :9px;
+    width: 60%;
    }
    .preview{
     padding: 0;
@@ -353,7 +410,94 @@ p{
    button{
     font-size: 10px;
    }
+   .details{
+    width: 84%;
+   }
    button img{
     width: 70%
    }
+}
+
+@media (max-width:400px) {
+    body{
+        width: 100%;
+    }
+.nav{
+    width:100%;
+    z-index: 1;
+    display: block;
+    height: 120px;
+    
+}
+.nav1{
+    display: flex;
+    
+}
+.menu .menunav {
+    font-size: 10px;
+    display: none;  
+}
+.line{
+    width: 80%;
+    height: 0;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 15px;
+    position: absolute;
+    z-index: -1;
+}
+.page1,
+.page2,
+.page4{
+    background-color: #00337B;
+    
+}
+.workbody{
+    width: 100%;
+    
+   }
+.details{
+    float: none;
+    /* top: 195px; */
+    width: 100%;
+    margin: auto;
+    margin-top: 206px;
+    font-size: 12px;  
+}
+.box{
+    margin-left: 8px;
+}
+.top h1{
+    font-size: 20px;
+    
+}
+.top{
+    background: none;
+    padding: 3px;
+}
+h1{
+    font-size: larger;
+    padding-right: 40px;
+}
+h4{
+    font-size: 18px;
+}
+h5{
+    font-size: 15px;
+}
+
+.platform-title,
+.producttype-title,
+.refund-title,
+.discount-title,
+.invalid-title,
+.shipping-title{
+    font-size: 15px;
+}
+#burger{
+    display: block;
+    right: 10px;
+    position: absolute;
+    z-index: 4;
+}
 }

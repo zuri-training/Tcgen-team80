@@ -20,22 +20,28 @@ body{
 .menu{
     width: 100%;
     display: flex;
-    background-color: #00337B;
+    background-color:#F9FBFF;
+    padding-bottom: 30px;
     padding-top: 30px;
     justify-content: space-between;
     line-height: 100%;
     font-family: 'Poppins';
+    top: 0%;
     font-style: normal;
     font-weight: 500;
-    position: relative;
+    position: fixed;
+    z-index: 10;
     
 }
 .menu a{
     text-decoration: none;
-    color: #F9F6EE;
+    color: #00337B;
 }
+
 .menu a:hover{
-    background-color: lightgray;
+    background-color: rgb(25, 104, 221);
+    color:#F9FBFF;
+    padding: 5px;
 }
 .menunav .drop:hover .dropdw{
     display: block;
@@ -45,7 +51,7 @@ body{
     /* border: 2px solid black; */
 }
 .menu img{
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .menunav{
@@ -56,7 +62,7 @@ body{
     gap:5%;
     color:#F9F6EE;
 }
-.dropdw{
+/* .dropdw{
     background: rgb(142, 150, 189);
     display: none;
     list-style: none;
@@ -70,13 +76,18 @@ body{
     line-height: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-}
+} */
 .status,
 .pagename{
     padding: 10px;
 }
 .pagename{
-    border-bottom: 2px solid #969696;
+    /* border: 2px solid #969696; */
+    margin-top: 90px;
+    padding-top: 37px;
+    padding-bottom: 40px;
+    background: #ECF0F3;
+    z-index: -1;
 }
 .pagenum{
     display: flex;
@@ -138,48 +149,29 @@ body{
     width: 70%;
     height: 500px;
     background-color: #0055CC;
-    margin: 30px auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
     overflow: auto;
     cursor:pointer;
     border: 2px solid rgba(68, 60, 60,0.5)
 }
 .document_page{
-    width: 98%;
-    margin: auto;
-    padding: 1%;
     background: white;
-}
-.previewpage{
-    position: absolute;
-    width: 94%;
-    background: white;
-    z-index: 1;
-    height: 190vh;
-    padding: 1%;
-    margin: auto;
-    top: 20px;
-    left: 2%;
-    border-radius: 10px;
-    overflow: auto;
-    border: 2px solid #2B80F7;
-    box-shadow:0px 0px 6px 5px  #00337B;
-    display: none;
-}
-
-.ul{
-    width: 100%;
-    /* border: 3px solid  #00337B; */
-    position: relative
-}
-.document_page ul{
-    width: 94%;
-    margin-left: 5%;
-    /* float: right; */
+    padding: 10px;
+    text-align: left;
     
 }
+.document_page li{
+    margin:10px ;
+    margin-left: 30px;
+}
+
 .language{
+    max-width: 50%;
     /* background: red; */
-    /* height: 300px; */
+    text-align: center;
+    height: 300px;
     position: relative;
     /* width: max-content; */
     margin: auto;
@@ -188,11 +180,18 @@ body{
 .options{
     display: flex;
     justify-content: space-evenly;
+
+}
+
+.options{
+    margin-top: 30px;
+   
 }
 .overtop{
     background: #0055CC;
     height: 30%;
     border-radius: 10px 10px 0px 0px;
+    position: relative;
 }
 .overdown{
     background:#F9F6EE;
@@ -201,7 +200,8 @@ body{
 
 }
 
-/* padding: 20px 20px 0px 20px; */
+
+
 .exportoverlay{
     border: 2px solid rgba(68, 60, 60,0.5);
     border-radius: 10px;
@@ -214,28 +214,27 @@ body{
     height: 240px;
     z-index: 1;
 }
-.export:hover .exportoverlay{
-    display: block;
-   
+.export .fileformat img {
+    width: 60px;
+  
 }
 
- .export .fileformat img {
-    width: 80px;
-    height: 60px;
+.export .overtop img{
+    position: absolute;
+    margin-left: 39.6%;
+    margin-top:30px;
+
+    
     
 }
-.export .overtop img{
-    width: 120px;
-    height: 80px;
-    position: absolute;
-    top:30px;
-    left: 30%;
-    margin: auto;
-}
+
 .options div img{
+    display: flex;
     width: 100px;
-    height: 60px;
+    /* border: 1px solid red; */
+    
 }
+
 h4{
   
     width: 70%;
@@ -249,15 +248,142 @@ h4{
     /* background: #00337B; */
 }
 select{
-    color: #2B80F7;
-    border:1px solid #2B80F7;
+    color: black;
+    border:1px solid #5F5F5F;
     border-radius: 8px;
     padding: 10px 25px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+    
 }
-@media (max-width:600px){
 
+.back{
+    
+    width: 40%;
+    background: #0e54b8;
+    margin: auto;
+    color: #F9F6EE;
+    border-radius: 8px;
+    margin-top: 50px;
+    padding: 10px 35px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+.export:hover .exportoverlay{
+    display: block;
+   
+}
+
+#burger{
+    display: none;
+}
+
+#downloadbtn{
+    width: 120px;
+}
+
+@media (max-width:700px) {
     body{
         width: 100%;
     }
+    .menunav{
+        font-size: 13px;
+        width: 75%;
+        /* display: none; */
+        
+    }
+    .language{
+        font-size: 12px;
+        max-width: 75%;
+        /* border: 1px solid red; */
+    }
+    .options div img{
+        display: flex;
+        width: 85px;  
+    }
+    .export .fileformat img {
+        width: 50px;
+      
+    }
+    #downloadbtn{
+        width: 100px;
+    }
 }
+
+    @media (max-width:400px) {
+        
+    
+    #burger{
+        display: block;
+        right: 10px;
+        position: absolute;
+        z-index: 4;
+    }
+    .menunav{
+        font-size: 10px;
+        display: none;
+    }
+    .pagenum{
+        /* border: 1px solid red; */
+        margin: 0%;
+        gap: 4px;
+        background: #00337B;
+        color: #F9F6EE;
+        padding-top: 10px;
+        
+    }
+    .pagenum div small{
+        font-size: 10px;
+    }
+    .pagenum .line  {
+        border:1px solid #F9F6EE;
+        /* background: #F9F6EE; */
+        z-index: 1;
+    }
+    .page{
+        z-index: 2;
+        border: 1px soild #ECF0F3;
+    }
+    .pagenum h3{
+        border: 2px solid #ECF0F3;
+        background: #00337B;
+        color: #ECF0F3;
+    }
+    .iv h3{
+        background: #ECF0F3;
+        color: #00337B;border: 1px solid  #0055CC;
+        box-shadow: 0px 0px 4px 2px #F9F6EE;
+    }
+    .pagename{
+        margin-top: 70px;
+    }
+    .pagename h1{
+        font-size: 20px;
+    }
+    .options div img{
+        display: flex;
+        width: 63px;  
+    }
+    .export .fileformat img {
+        width: 50px;
+      
+    }
+    #downloadbtn{
+        width: 70px;
+    }
+    .language{
+        max-width: 86%;
+    }
+    select{
+        font-size: 10px;
+    }
+    button{
+        font-size: 10px;
+        max-width: 30%;
+        text-align: center;
+    }
+}
+
+
  

@@ -1,18 +1,17 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="{% static 'termsgen/landing page/style.css' %}">
+        <link rel="shortcut icon" type="image/png" href="{% static 'termsgen/dashboard/icons/FavIcon secondary@3x.png' %}">
     </head>
 
     <body>
-        <section>
-            <div class="hero-container">
                 <nav>
                     <div id="nav-container">
                         <div class="logo">
@@ -33,221 +32,220 @@
                             <i class="fa fa-bars"></i>
                         </a>
 
-
                         <div class="action-button">
                             <a href="#"><button id="login">Log in</button></a>
                             <a href="#"><button id="sign-up">Sign up</button></a>
                         </div>
                     </div>
                 </nav>
-
                 <main>
-
-                    <div id="layer1">
+                    <div class="boxOne"">
                         <div class="intro">
-                            <h3> #1 Free Terms And Conditions Generator</h3>
+                            <span>Free Terms And <br> Conditions Generator</span>
                             <p>Generate free, tailor-made and
-                                attorney-drafted privacy policies
+                                attorney-drafted privacy<br> policies
                                 and terms and conditions to help
-                                protect your business and
-                                stay on the right side of the law.</p>
-                            <a href="#"><button id="start-btn">Get Started</button></a>
+                                protect your<br> business and
+                                stay on the right side of the law.
+                            </p>
+                            <button class="btn">Get started</button>
                         </div>
-                        <div class="intro-img">
-                            <img id="image1" src="{% static 'termsgen/landing page/Images/intro-img.png' %}" alt="image">
-                        </div>
-                    </div>
-            </div>
-
-
-            <div id="layer2">
-                <h3>What We Offer </h3>
-
-                <div class="boxes">
-                    <div id="top">
-                    <div id="box1">
-                        <div id="top-box">
-                            <div><img id="icons" src="{% static 'termsgen/landing page/images/privacy-icon.png' %}" alt=""></div>
-                            <div><a href="">Privacy Policy</a></div>
-                    </div>
-                        <div id="offer-text">
-                            <p>Legal agreement about the
-                                information you may collect from a user.</p>
-                        </div>
+                        <img class="infoImage" src="{% static 'termsgen/landing page/Images/intro-img.png' %}" alt="image">
                     </div>
 
-                    <div id="box2">
-                        <div id="top-box">
-                            <div><img id="icons" src="{% static 'termsgen/landing page/images/terms-icon.png' %}" alt=""></div>
-                        <div><a href="">Terms And Conditions</a></div>
+                    <h3 class="boxOffer">What We Offer</h3>
+
+                    <div class="boxTwo">
+                        <div class="legalInformation">
+                            <div class="legalDocs">
+                                <img class="legalImage" src="{% static 'termsgen/landing page/Images/privacy-icon.png' %}" alt="logo">
+                                <h2>Privacy Policy</h2>
+                            </div>
+                            <p>Legal agreement about the<br> information you may collect from a user.</p>
                         </div>
-                        <div id="offer-text">
-                            <p>Legal agreement about the
-                                information you may collect from a user.</p>
+                        <div class="legalInformationTwo">
+                            <div class="legalDocx">
+                                <img class="legalDocxImage" src="{% static 'termsgen/landing page/Images/terms-icon.png' %}" alt="logo">
+                                <h2>Terms And<br>Conditions</h2>
+                            </div>
+                            <p>Legal agreement between<br> your service and a user.</p>
                         </div>
                     </div>
+                    <div class="boxThree">
+                        <div class="legalInformationThree">
+                            <div class="legalDocs">
+                                <img class="legalImage" src="{% static 'termsgen/landing page/Images/disclaimer-icon.png' %}" alt="logo">
+                                <h2>Disclaimer</h2>
+                            </div>
+                            <p>Legal agreement that states the liability <br>
+                                that falls outside the terms 
+                               and conditions <br> agreement between your service and a user.
+                            </p>
+                        </div>
+                        
+                        <div class="legalInformationTwo">
+                            <div class="legalDocx">
+                                <img class="legalDocxImage"  src="{% static 'termsgen/landing page/Images/refund-icon.png' %}" alt="logo">
+                                <h2>Return And <br> Refund Policy</h2>
+                            </div>
+                            <p>Legal agreement that states the condition in <br>
+                                which a user can get a refund or return a<br> product.
+                            </p>
+                        </div>
                     </div>
 
-                    <div id="top2">
-                <div id="box1">
-                    <div id="top-box">
-                        <div><img id="icons" src="{% static 'termsgen/landing page/Images/disclaimer-icon.png' %}" alt=""></div>
-                        <div><a href="">Disclaimer</a></div>
-                    </div>
-                    <div id="offer-text">
-                        <p>Legal agreement about the
-                            information you may collect from a user.</p>
-                    </div>
-                </div>  
-
-                <div id="box2">
-                    <div id="top-box">
-                        <div><img id="icons" src="{% static 'termsgen/landing page/Images/refund-icon.png' %}" alt=""></div>
-                    <div><a href="">Refund And Return Policy</a></div>
-                    </div>
-                    <div id="offer-text">
-                        <p>Legal agreement about the
-                            information you may collect from a user.</p>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div>
-            
-            
-
-            <div id="layer3">
-                <h3>How it works</h3>
-                <div id="svg">
-                    <div class="svg-box1">
-                        <img src="{% static 'termsgen/landing page/Images/pana.png' %}" alt="">
+                    <h3 class="boxOffer">How It Works</h3>
+                    
+                    <div class="boxSix">
+                        <img class="leftImage" src="{% static 'termsgen/landing page/Images/first.svg' %}" alt="logo">
                         <p>Create a TermsGen account in 30 seconds.</p>
                     </div>
-
-                    <div class="svg-box2">
+                    <div class="boxSeven">
                         <p>Click on the document you want to generate.</p>
-                        <img src="{% static 'termsgen/landing page/Images/svg3.png' %}" alt="">
+                        <img class="rightImage" src="{% static 'termsgen/landing page/Images/second.svg'%} alt="logo">
+                    </div>
+                    <div class="boxSix">
+                        <img class="leftImage" src="{% static 'termsgen/landing page/Images/thirdImage.svg'%} alt="logo">
+                        <p>Tailor the policy to your needs by supplying<br>some basic information.</p>
+                    </div>
+                    <div class="boxSeven">
+                        <p>Generate and export your policy in PDF, HTML <br> link.</p>
+                        <img class="rightImage" src="{% static 'termsgen/landing page/Images/fourthImage.svg'%} alt="logo">
                     </div>
 
-                    <div class="svg-box3">
-                        <img src="{% static 'termsgen/landing page/Images/svg 2.png' %}" alt="">
-                        <p>Tailor the policy to your needs by supplying some basic information</p>
-                    </div>
+                    <h3 class="boxOffer">Testimonials</h3>
 
-                    <div class="svg-box4">
-                        <p>Tailor the policy to your needs by supplying some basic information</p>
-                        <img src="{% static 'termsgen/landing page/Images/amico.png' %}" alt="">
-                    </div>
-                </div>
-  
-
-
-            <div id="layer4">
-                <h3>Testimonials</h3>
-                <div id="rate-box">
-                    <div id="stars">
-                        
-                        <div id="star1">
-                        <img style="width: 40px;" src="{% static 'termsgen/landing page/images/c.png' %}" alt="">
-                        <img style="width: 80px;" src="{% static 'termsgen/landing page/images/5-Star-Rating-Vector-Transparent-PNG (1).png' %}"></div>
-
-                        <div id="star1"><img style="width: 40px;" src="{% static 'termsgen/landing page/images/b.png' %}" alt="">
-                        <img style="width: 80px;" src="{% static 'termsgen/landing page/images/5-Star-Rating-Vector-Transparent-PNG (1).png' %}"></div>
-
-                        <div id="star1"><img style="width: 40px;" src="images/m.png" alt="">
-                        <img style="width: 80px;" src="{% static 'termsgen/landing page/images/5-Star-Rating-Vector-Transparent-PNG (1).png' %}"></div>
-                    </div>
-
-                    <div id="rate">
-                        <div id="text"><p>Termsgen is the best
-                            terms and conditions
-                            generator I’ve used.
-                            I got 99% satisfaction.<br><strong>
-                                _ Comfort</strong></p></div>
-                        
-                 
-                        <div id="text"><p>The site is super fast
-                            and easy to use. I got
-                            my policy generated
-                            in a couple of minutes.<br><strong>
-                                _ Cici</strong></p></div>
-                
-                       <div id="text"> <p>The site is super fast
-                            and easy to use. I got
-                            my policy generated
-                            in a couple of minutes.<br><strong>_ Ben</strong></p></div>
-                    </div>
-                </div>
-            </div>
-                
-           
-            <div id="layer5">
-                <h6> Our Benefits</h6>
-                <div class="lay5-boxes">
-                    <div id="b-box1">
-                        <div id="lay5-img"><img src="{% static 'termsgen/landing page/Images/Vector (2).png' %}" alt="Image"></div>
-                        <p>Our attorneys have a combinned practice experience of 50+ Years.
-                            No amateur here.</p>
-                    </div>
-                    <div id="b-box1">
-                        <div id="lay5-img"><img src="{% static 'termsgen/landing page/Images/card-slash.png' %}" alt="Image"></div>
-                        <p>Our Policies are completely free to use. No hidden charges.</p>
-                    </div>
-                    <div id="b-box1">
-                        <div id="lay5-img"><img src="{% static 'termsgen/landing page/Images/Group 8 (1).png' %}" alt="Image"></div>
-                        <p>You can customize your policies to your specific needs. No generic stuff.</p>
-                    </div>
-                    <div id="b-box1">
-                        <div id="lay5-img"><img src="{% static 'termsgen/landing page/Images/export.png' %}" alt="Image"></div>
-                        <p>Export your policies in any format of your choice. No holding back.</p>
-                    </div>
-                </div>
-                <div id="cta">
-                    <p>Ready to generate your policy?</p>
-                    <div id="cta-btn"><a href=""><button id="start-btn">Get Started</button></a></div>
-                </div>
-            </div>
-            </main>
-
-            <footer>
-                <div class="f-boxes">
-                    <div id="logo">
-                        <img src="{% static 'termsgen/landing page/Images/Group 5.jpg' %}" alt="LOGO">
-                        <p>Copyright &copy; 2022 Termsgen <br>All rights reserved.</p>
-                    </div>
-                    <div class="f-box">
-                        <div id="f-box1">
-                            <p>Products</p>
-                            <ul>
-                                <li><a href="#">Privacy policy generator</a></li>
-                                <li><a href="#">Terms and conditions generator</a></li>
-                                <li><a href="#">Return and refund policy generator</a></li>
-                                <li><a href="#">Disclaimer generator</a></li>
+                    <div class="starRating">
+                        <div class="boxEight">
+                            <div class="ratings">
+                                <img src="{% static 'termsgen/landing page/Images/c.svg' %} alt="logo">
+                                <img src="{% static 'termsgen/landing page/Images/stars.svg' %} alt="logo">
+                            </div>
+                            <p>Termsgen is the best<br>
+                                terms and conditions <br>
+                                generator I've used.<br>
+                                I got 99% satisfaction.<br>
+                            </p>
+                            <li class="name">Comfort</li>
                         </div>
-                        <div id="f-box2">
-                            <p>Company</p>
-                            <ul>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms of use</a></li>
-                                <li><a href="#">Disclaimer</a></li>
-                                <li><a href="#">Refund policy</a></li>
+                        <div class="line">
+                            <img src="{% static 'termsgen/landing page/Images/line.svg' %}alt="">
                         </div>
-                        <div id="f-box3">
-                            <p>Support</p>
-                            <ul>
-                                <li><a href="#">Help and support</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Security FAQs</a></li>
-                                <li><a href="#">Partners</a></li>
-                            </ul>
+                        <div class="boxEight">
+                            <div class="ratings">
+                                <img src="{% static 'termsgen/landing page/Images/b.svg'%} alt="">
+                                <img src="{% static 'termsgen/landing page/Images/stars.svg' %} alt="logo">
+                            </div>
+                            <p>The site is super fast <br> 
+                                and easy to use. I got <br>
+                                my policy generated <br>
+                                in a couple of minutes.<br>
+                            </p>
+                            <li class="name">Ben</li>
+                        </div>
+                        <div class="line">
+                            <img src="{% static 'termsgen/landing page/Images/line.svg' %} alt="">
+                        </div>
+                        <div class="boxEight">
+                            <div class="ratings">
+                                <img src="{% static 'termsgen/landing page/Images/m.svg' %} alt="">
+                                <img src="{% static 'termsgen/landing page/Images/stars.svg' %} alt="logo">
+                            </div>
+                            <p>The 24/7 customer <br>
+                                support opened channel <br>
+                                of communication is <br>
+                                thrilling. They're reliable <br>
+                            </p>
+                            <li class="name">Mellissa</li>
                         </div>
                     </div>
 
-            </footer>
+                    <h3 class="boxOffer">Our Benefits</h3>
 
-        </section>
+                    <div class="boxNine">
+                        <div class="box">
+                            <img class="corImg" src="{% static 'termsgen/landing page/Images/one.svg' %} alt="logo">
+                            <p>
+                                Our attorneys have a <br> 
+                                combined practice <br>
+                                  experience of 50+ <br>
+                                Years. No amateur <br>
+                                   here.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <img src="{% static 'termsgen/landing page/Images/two.svg' %} alt="logo">
+                            <p>You can customize <br>
+                                your policies to your <br> 
+                                specific needs.No<br> generic stuff.
+                            </p>
+
+                        </div>
+                        <div class="box">
+                            <img src="{% static 'termsgen/landing page/Images/third.svg' %} alt="logo">
+                            <p>
+                                Our Policies are <br>
+                                completely free to <br>
+                                use. No hidden <br> 
+                                charges.
+                            </p>
+
+                        </div>
+                        <div class="box">
+                            <img src="{% static 'termsgen/landing page/Images/four.svg' %} alt="logo">
+                            <p>
+                                Export your policies in<br>
+                                any format of your <br>
+                                choice. No holding <br>
+                                back.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="boxTen">
+                        <p class="generatePolicy">Ready to generate your policies?</p>
+                        <button class="btn">Get started</button>
+                    </div>
+                </main>    
+                    <div class="footer">
+                        <div class="footer-logo">
+                            <img class="favicon" src="{% static 'termsgen/landing page/Images/favicon.svg' %} alt="favicon">
+                            <p class="p-class">Copyright © 2022 Termsgen.<br>All rights reserved.</p>
+                        </div>
+                        <div class="textField">
+                            <div class="text-content">
+                                <h3>Products</h3>
+                                <div class="textfield">
+                                    <li><a class="a" href="#">Privacy policy generator</a></li>
+                                    <li><a class="a" href="#">Terms and conditions generator</a></li>
+                                    <li><a class="a" href="#">Return and refund policy generator</a></li>
+                                    <li><a class="a" href="#">Disclaimer generator</a></li>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h3>Company</h3>
+                                <div class="textfield">
+                                    <li><a class="a" href="#">About us</a></li>
+                                    <li><a class="a" href="#">FAQs</a></li>
+                                    <li><a class="a" href="#">Privacy policy</a></li>
+                                    <li><a class="a" href="#">Terms of use</a></li>
+                                    <li><a class="a" href="#">Disclaimer</a></li>
+                                    <li><a class="a" href="#">Refund policy</a></li>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h3>Support</h3>
+                                <div class="textfield">
+                                    <li><a class="a" href="#">Help and support</a></li>
+                                    <li><a class="a" href="#">Contact us</a></li>
+                                    <li><a class="a" href="#">Security FAQs</a></li>
+                                    <li><a class="a" href="#">Partners</a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+
 
     </body>
 

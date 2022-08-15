@@ -9,6 +9,7 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- <link rel="stylesheet" href="style.css"> -->
 	<link rel="stylesheet" href="{% static 'termsgen/sign in and signup pages/style2.css'%}">
+	<link rel="shortcut icon" type="image/png" href="{% static 'termsgen/dashboard/icons/FavIcon secondary@3x.png' %}">
 	<title>Login</title>
 </head>
 <body>
@@ -30,8 +31,16 @@
 			<h2 class="title">Welcome back</h2>
 			<p class="sub">Sign in to continue to your account.</p>
 			</div>
+
 			<form method="POST" action="" class="login active">
 				{% csrf_token %}
+
+			<!-- INCREASE -->
+			<form method="POST" action="#" class="login active">
+				
+					{% csrf_token %}
+					<!-- {{form.as_p}} -->
+
 				<div class="inner">
 					<div class="form-group">
 						<label for="email">Username</label>
