@@ -1,7 +1,4 @@
-
 from tokenize import group
-
-from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.forms import inlineformset_factory
@@ -13,20 +10,14 @@ from django.contrib import messages
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import Group
-from django.http import HttpResponseRedirect
 
 # Create your views here.
-
-from .models import basic
-from .forms import basicinfo
-
-
-# Create your views here.
-
 from .models import *
 from .forms import CreateUserForm
-
 from .decorators import unauthenticated_user, allowed_users, admin_only
+
+def index(request):
+    return render(request, "termsgen/landing page/index.html")
 
 def index(request):
     return render(request, "termsgen/landing page/index.html")
@@ -40,13 +31,6 @@ def getstarted(request):
             if form.is_valid():
                 user = form.save()
                 username = form.cleaned_data.get('username')
-
-                group = Group.objects.get(name= 'customer')
-                user.groups.add(group)
-
-                Customer.objects.create(
-                    user=user,
-                )
 
                 messages.success(request, 'Account was created for ' + username)
 
@@ -76,35 +60,21 @@ def signin(request):
 
 def logoutUser(request):
     logout(request)
-    return redirect('signin')
+    return redirect('home')
 
 def forgot(request):
     context = {}
     return render(request, "termsgen/sign in and signup pages/forgot.html", context)
-
-    # INCREASE
-    form = CreateUserForm()
-
-    if request.method == 'POST':
-        form = CreateUserForm(request.POST)
-        if form.is_valid():
-            form.save()
-
-    context = {'form': form}
-    
-    return render(request, "termsgen/sign in and signup pages/Sign-In.html", context)
     
 @login_required(login_url='signin')
-@allowed_users(allowed_roles=['admin'])
 def products(request):
     return render(request, "termsgen/products and templates/product.html",)
 
 @login_required(login_url='signin')
-@admin_only
 def dashboard(request):
-    products = Product.objects.all()
+    products = Customer.objects.all()
 
-    return render(request, "termsgen/dashboard/edashboard.html", {'products':products})
+    return render(request, "termsgen/dashboard/dashboard.html", {'products':products})
 
 @login_required(login_url='signin')
 @allowed_users(allowed_roles=['customer'])
@@ -117,27 +87,22 @@ def userPage(request):
 
 
 def basic_info(request):
-    submitted = False
-    if request.method == "POST":
-        form = basicinfo(request.POST)
-        if form.is_valid():
-            form.save
-            return HttpResponseRedirect('/basic-info?submitted = True')
-    else:
-        form = basicinfo
-        if 'submitted' in request.GET:
-            submitted == True
-    return render(request, "termsgen/dashboard/basic_info.html",{'form':form,'submitted':submitted})
-    
+    return render(request, "termsgen/dashboard/basic_info.html")
+
+#web info page of the dashboard
 def web_info(request):
     return render(request, "termsgen/dashboard/web_info.html")
 
+#contact us page
 def contact_us(request):
     return render(request, "termsgen/contact us page/contact_us.html")
 
+#about us page
 def about_us(request):
     return render(request, "termsgen/about us page/about_us.html")
 
+#privacy policy
+@login_required(login_url='signin')
 def privacy(request):
     return render(request, "termsgen/privacy policy page/index.html")
 
@@ -153,9 +118,25 @@ def additionalinfo(request):
 def security(request):
     return render(request, "termsgen/privacy policy page/security.html")
 
+#return and refund
+@login_required(login_url='signin')
 def return_and_refund(request):
+    return render(request, 'termsgen/return and refund pages/index.html')
+
+def return_and_refund_2(request):
     return render(request, 'termsgen/return and refund pages/Refund and Shipping Information.html')
 
+def return_and_refund_3(request):
+    return render(request, 'termsgen/return and refund pages/Additional Information.html')
+
+def return_and_refund_4(request):
+    return render(request, 'termsgen/return and refund pages/4.html')
+
+def return_and_refund_5(request):
+    return render(request, 'termsgen/return and refund pages/5.html')
+
+#terms and conditions
+@login_required(login_url='signin')
 def terms_and_conditions(request):
     return render(request, "termsgen/terms and condition/p1-business-info.html")
 

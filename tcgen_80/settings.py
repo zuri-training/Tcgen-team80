@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [
@@ -76,18 +77,14 @@ WSGI_APPLICATION = 'tcgen_80.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-      'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'termsgen_db',
+        'USER': 'postgres',
+        'PASSWORD': '##44379ASo??',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'NAME': 'tcgen_db',
-    #     'USER': os.getenv('DB_USER'),
-    #     'PASSWORD': os.getenv('DB_PASSWORD'),
-    #     'HOST': 'localhost',
-    #     'PORT': 5432,
-    # }
 }
 
 

@@ -1,15 +1,10 @@
+import imp
+from multiprocessing.spawn import import_main_path
+from typing import OrderedDict
 from django.contrib import admin
-
-from .models import database, signUp
 
 # Register your models here.
 
+from .models import *
 
-from .models import basic
-
-
-admin.site.register(basic)
-
-
-admin.site.register(database)
-admin.site.register(signUp)
+admin.site.register(Customer)
