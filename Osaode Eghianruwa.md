@@ -22,6 +22,8 @@ https://drive.google.com/file/d/1ijArLihM9CI1gs3jc0rurFxPRfMoKBaq/view
 
 **Backend registration and login authentication** - https://github.com/zuri-training/Tcgen-team80/issues/39
 
+https://github.com/zuri-training/Tcgen-team80/blob/main/termsgen/models.py
+
 **GitHub issues resolved:**
 https://github.com/zuri-training/Tcgen-team80/issues/2
 https://github.com/zuri-training/Tcgen-team80/issues/22

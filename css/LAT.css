@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+header {
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline;
+    padding-right: 40px;
+    color: #00337B;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #00337B;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.navbar {
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dashboard {
+    text-align: right;
+    margin-top: -42px;
+}
+
+.dashboard ul li {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    list-style-type: none;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 48px;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+main {
+    background: #FFFFFF;
+    display: flex;
+    margin: auto;
+
+}
+
+.sidebar {
+    background-color: #00337B;
+    width: 173px;
+    text-align: center;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+/*Progress bar*/
+.progress {
+    margin-top: 100px;
+}
+
+.one p {
+    border: 1px solid white;
+    border-radius: 100%;
+    color: #D9D9D9;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.one h6 {
+    color: #D9D9D9;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.one h1 {
+    line-height: 15px;
+    color: #968686;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.two p {
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: white;
+    color: blue;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.two h6 {
+    color: #D9D9D9;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.two h1 {
+    line-height: 15px;
+    color: #968686;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.three p {
+    border: 1px solid white;
+    border-radius: 100%;
+    color: #D9D9D9;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.three h6 {
+    color: #D9D9D9;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.three h1 {
+    line-height: 15px;
+    color: #968686;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.four p {
+    border: 1px solid white;
+    border-radius: 100%;
+    color: #D9D9D9;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.four h6 {
+    color: #D9D9D9;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.top {
+    padding: 20px;
+    padding-right: 0;
+    display: flex;
+    margin-top: 36px;
+    justify-content: space-between;
+    background-color: #ECF0F3;
+}
+
+.top h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    margin-right: 280px;
+}
+
+.top button {
+    box-sizing: border-box;
+    width: 184px;
+    height: 48px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    justify-items: right;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #407BFF;
+    border: 1px solid #407BFF;
+}
+
+.page {
+    margin-top: 60px;
+    margin: 78px 0 0 55px;
+}
+
+.buttons {
+    margin-top: 46.5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 80px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.back {
+    padding: 16px 32px 16px 32px;
+    border-radius: 8px;
+    border: 2px solid #2B80F7;
+}
+
+.back a {
+    color: #2B80F7;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.continue {
+    float: right;
+    background-color: #2B80F7;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 32px 16px 32px;
+
+}
+
+.continue a {
+    color: #D9D9D9;;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
