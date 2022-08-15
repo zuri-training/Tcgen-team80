@@ -218,6 +218,10 @@ __Chituru Chikwem__
 * Github - https://github.com/Gudieblonde
 * Track- Fullstack
 
+__Baridomaka Pop-yornwin__
+* Github -https://github.com/Domaka
+* Track - FullStack
+
 ## Documentation
 A more detailed documentation on the updates and details of this project can be found here - "https://docs.google.com/document/d/12jgXlrcLgm9036wlhCjBQm_Kf-kMVzCoUXxW1ZHB7AE/edit"
 
